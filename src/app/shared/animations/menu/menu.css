@@ -1,4 +1,4 @@
-body {
+/* body {
   align-items: center;
   display: flex;
   height: 100%;
@@ -7,8 +7,10 @@ body {
   overflow: hidden;
   position: absolute;
   width: 100%;
-}
+} */
 .ham {
+  width: 28.58px;
+  height: 28.57px;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   transition: transform 400ms;
@@ -44,7 +46,7 @@ body {
 .ham1.active .bottom {
   stroke-dashoffset: -138px;
 }
-.ham2 .top {
+/* .ham2 .top {
   stroke-dasharray: 40 121;
 }
 .ham2 .bottom {
@@ -158,9 +160,9 @@ body {
   stroke-dashoffset: -64px;
 }
 .ham8.active .middle {
-  /* //stroke-dashoffset: -20px; */
+  //stroke-dashoffset: -20px;
   transform: rotate(90deg);
 }
 .ham8.active .bottom {
   stroke-dashoffset: -64px;
-}
+} */
