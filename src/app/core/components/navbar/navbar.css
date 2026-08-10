@@ -1,0 +1,3 @@
+.offcanvas {
+  --bs-offcanvas-width: min(300px, 85vw);
+}

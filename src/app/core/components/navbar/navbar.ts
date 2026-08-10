@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { Menu } from '../../../shared/animations/menu/menu';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
-  imports: [Menu],
+  imports: [RouterLink],
   templateUrl: './navbar.html',
   styleUrl: './navbar.css',
 })
