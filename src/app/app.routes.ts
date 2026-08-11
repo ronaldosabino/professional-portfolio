@@ -30,4 +30,8 @@ export const routes: Routes = [
     path: 'skills',
     loadComponent: () => import('./features/skills/skills').then((m) => m.Skills),
   },
+  {
+    path: 'contact',
+    loadComponent: () => import('./features/contact/contact').then((m) => m.Contact),
+  },
 ];
