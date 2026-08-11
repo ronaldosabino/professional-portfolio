@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { Projects } from './features/projects/projects';
 
 export const routes: Routes = [
   {
@@ -20,5 +21,9 @@ export const routes: Routes = [
   {
     path: 'education',
     loadComponent: () => import('./features/education/education').then((m) => m.Education),
+  },
+  {
+    path: 'projects',
+    loadComponent: () => import('./features/projects/projects').then((m) => Projects),
   },
 ];
