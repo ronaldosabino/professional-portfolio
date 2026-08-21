@@ -84,22 +84,31 @@
 
     <div class="row mb-5">
 
-        <div class="col-lg-7">
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
 
-            <span class="text-primary fw-semibold">
-                O que eu faço
-            </span>
+            <div class="col-12 col-md-8">
+                <span class="text-primary fw-semibold">
+                    O que eu faço
+                </span>
 
-            <h2 class="display-6 fw-bold mt-2">
-                Desenvolvimento orientado a resultados
-            </h2>
+                <h2 class="display-6 fw-bold mt-2">
+                    Desenvolvimento orientado a resultados
+                </h2>
 
-            <p class="text-secondary mt-3">
-                Meu trabalho vai além de escrever código.
-                Busco compreender o problema, analisar as necessidades
-                e construir soluções que façam sentido para o negócio
-                e para quem utiliza o sistema.
-            </p>
+                <p class="text-secondary mt-3">
+                    Meu trabalho vai além de escrever código.
+                    Busco compreender o problema, analisar as necessidades
+                    e construir soluções que façam sentido para o negócio
+                    e para quem utiliza o sistema.
+                </p>
+            </div>
+
+            <div class="d-flex justify-content-md-end flex-column flex-md-row col-12 col-md-4">
+                <button routerLink="/experiences" class="btn btn-outline-primary">
+                    Ver experiências
+                    <i class="bi bi-arrow-right ms-2"></i>
+                </button>
+            </div>
 
         </div>
 
@@ -384,6 +393,15 @@
 
     </div>
 
+    <div class="d-flex flex-column flex-md-row justify-content-center mt-4">
+
+        <button routerLink="/skills" class="btn btn-outline-primary">
+            Outras habilidades
+            <i class="bi bi-arrow-right ms-2"></i>
+        </button>
+
+    </div>
+
 </section>
 
 
@@ -404,8 +422,8 @@
 
         </div>
 
-        <button routerLink="/projetos" class="btn btn-outline-primary">
-            Ver todos
+        <button routerLink="/projects" class="btn btn-outline-primary">
+            Ver projetos
             <i class="bi bi-arrow-right ms-2"></i>
         </button>
 
@@ -620,6 +638,15 @@
                 </p>
 
             </div>
+
+        </div>
+
+        <div class="d-flex flex-column flex-md-row justify-content-center">
+
+            <button routerLink="/educacao" class="btn btn-outline-primary">
+                Conhecer minha formação
+                <i class="bi bi-arrow-right ms-2"></i>
+            </button>
 
         </div>
 
