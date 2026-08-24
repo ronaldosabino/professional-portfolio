@@ -184,7 +184,7 @@
                 </div>
 
 
-                <form>
+                <form [formGroup]="form">
 
                     <!-- NOME -->
                     <div class="mb-4">
@@ -193,7 +193,7 @@
                             Nome
                         </label>
 
-                        <input type="text" id="name" class="form-control form-control-lg" placeholder="Seu nome">
+                        <input type="text" id="name" class="form-control form-control-lg" placeholder="Seu nome" formControlName="name">
 
                     </div>
 
@@ -205,7 +205,7 @@
                             E-mail
                         </label>
 
-                        <input type="email" id="email" class="form-control form-control-lg" placeholder="seuemail@email.com">
+                        <input type="email" id="email" class="form-control form-control-lg" placeholder="seuemail@email.com" formControlName="email">
 
                     </div>
 
@@ -217,9 +217,9 @@
                             Assunto
                         </label>
 
-                        <select id="subject" class="form-select form-select-lg">
+                        <select id="subject" class="form-select form-select-lg" formControlName="subject">
 
-                            <option selected disabled>
+                            <option selected disabled [value]=null>
                                 Selecione uma opção
                             </option>
 
@@ -255,13 +255,13 @@
                             Mensagem
                         </label>
 
-                        <textarea id="message" class="form-control" rows="6" placeholder="Escreva sua mensagem..."></textarea>
+                        <textarea id="message" class="form-control" rows="6" placeholder="Escreva sua mensagem..." formControlName="message"></textarea>
 
                     </div>
 
 
                     <!-- BOTÃO -->
-                    <button type="submit" class="btn btn-primary btn-lg d-flex align-items-center">
+                    <button (click)="submit()" class="btn btn-primary btn-lg d-flex align-items-center">
                         Enviar mensagem
                         <i class="bi bi-send ms-2"></i>
                     </button>
