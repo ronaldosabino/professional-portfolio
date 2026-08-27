@@ -704,7 +704,7 @@
 <!-- CTA -->
 <section class="py-5">
 
-    <div class="bg-body-tertiary rounded-4 p-5 text-center">
+    <div class="bg-primary text-white text-center rounded-4 p-5">
 
         <i class="bi bi-lightbulb fs-1 text-primary"></i>
 
@@ -712,15 +712,23 @@
             Tem um projeto em mente?
         </h2>
 
-        <p class="lead text-secondary mx-auto my-4" style="max-width: 650px;">
+        <p class="lead opacity-75 mx-auto my-4" style="max-width: 650px;">
             Se você está procurando alguém para transformar uma
             ideia em uma solução web, vamos conversar.
         </p>
 
-        <a routerLink="/contato" class="btn btn-primary btn-lg">
-            Entre em contato
-            <i class="bi bi-arrow-right ms-2"></i>
-        </a>
+        <div class="d-flex justify-content-center flex-wrap gap-3">
+
+            <button routerLink="/experiences" class="btn btn-light btn-lg col-12 col-md-6 col-lg-3">
+                Experiências
+                <i class="bi bi-arrow-right ms-2"></i>
+            </button>
+
+            <button routerLink="/contact" class="btn btn-outline-light btn-lg col-12 col-md-6 col-lg-3">
+                Entre em contato
+            </button>
+
+        </div>
 
     </div>
 
