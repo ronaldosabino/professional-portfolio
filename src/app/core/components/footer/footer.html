@@ -1,80 +1,195 @@
-<div class="container py-5 border-top">
-    <div class="row">
-        <!-- About -->
-        <div class="col-12 col-lg-3  mb-5 mb-lg-0">
-            <strong class="d-block mb-3">Ronaldo Sabino</strong>
+<footer class="border-top mt-5">
 
-            <div class="d-flex flex-column gap-1 mb-3">
-                <small class="d-block">Analista e Desenvolvedor de Sistemas com 3 anos de experiência no desenvolvimento de aplicações web.</small>
-                <small class="d-block">Atuo na modernização de sistemas legados, e desenvolvimento de interfaces responsivas focadas em desempenho, escalabilidade e experiência do usuário.</small>
+    <div class="container py-5">
+
+        <div class="row g-5">
+
+            <!-- IDENTIDADE -->
+            <div class="col-lg-4 col-12">
+
+
+                <h2 class="text-primary fs-3 fw-bold mb-3">
+                    Ronaldo Sabino
+                </h2>
+
+                <p class="text-secondary mb-4" style="max-width: 420px;">
+                    Analista e Desenvolvedor de Sistemas apaixonado
+                    por tecnologia, desenvolvimento de software e
+                    pela criação de soluções que geram valor.
+                </p>
+
+
+                <!-- REDES -->
+                <div class="d-flex gap-2">
+
+                    <a href="https://www.linkedin.com/in/ronaldo-sabino/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px;" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+
+
+                    <a href="https://github.com/ronaldosabino" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px;" aria-label="GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
+
+                    <a href="https://wa.me/5581994479584?text=Olá%20Ronaldo!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade." class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px;" aria-label="E-mail">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+
+                    <a href="mailto:filiperonlado1@gmail.com" class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px;" aria-label="E-mail">
+                        <i class="bi bi-envelope-at-fill"></i>
+                    </a>
+
+                </div>
+
             </div>
 
-            <div class="d-flex flex-row gap-3">
-                <a href="https://www.linkedin.com/in/ronaldo-sabino/" target="_blank">
-                    <i class="bi bi-linkedin"></i>
-                </a>
 
-                <a href="https://github.com/ronaldosabino" target="_blank">
-                    <i class="bi bi-github"></i>
-                </a>
+            <!-- NAVEGAÇÃO -->
+            <div class="col-6 col-lg-2">
 
-                <a href="https://wa.me/5581994479584?text=Olá%20Ronaldo!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade." target="_blank">
-                    <i class="bi bi-whatsapp"></i>
-                </a>
+                <h3 class="fs-6 fw-bold mb-3">
+                    Navegação
+                </h3>
+
+                <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+
+                    <li>
+                        <a routerLink="/home" class="text-secondary text-decoration-none">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a routerLink="/about" class="text-secondary text-decoration-none">
+                            Sobre mim
+                        </a>
+                    </li>
+
+                    <li>
+                        <a routerLink="/projects" class="text-secondary text-decoration-none">
+                            Projetos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a routerLink="/experiences" class="text-secondary text-decoration-none">
+                            Experiências
+                        </a>
+                    </li>
+
+                    <li>
+                        <a routerLink="/education" class="text-secondary text-decoration-none">
+                            Educação
+                        </a>
+                    </li>
+
+                    <li>
+                        <a routerLink="/skills" class="text-secondary text-decoration-none">
+                            Habilidades
+                        </a>
+                    </li>
+
+                    <li>
+                        <a routerLink="/contact" class="text-secondary text-decoration-none">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
             </div>
+
+
+            <!-- CONTATO -->
+            <div class="d-none d-md-block col-6 col-lg-3">
+
+                <h3 class="fs-6 fw-bold mb-3">
+                    Contato
+                </h3>
+
+                <ul class="list-unstyled mb-0">
+
+                    <li class="mb-2">
+
+                        <a routerLink="/contact" class="text-secondary text-decoration-none">
+                            +55 81 9447-9584
+                        </a>
+
+                    </li>
+
+                    <li class="mb-2">
+
+                        <a href="mailto:seuemail@email.com" class="text-secondary text-decoration-none">
+                            filiperonaldo1@gmail.com
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <span class="text-secondary">
+                            Recife, Brasil
+                        </span>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CTA -->
+            <div class="col-lg-3">
+
+                <h3 class="fs-6 fw-bold mb-3">
+                    Vamos conversar?
+                </h3>
+
+                <p class="text-secondary small">
+                    Tem um projeto, oportunidade ou simplesmente
+                    quer trocar uma ideia sobre tecnologia?
+                </p>
+
+                <a routerLink="/contact" class="btn btn-primary mt-2">
+                    Entre em contato
+                    <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+
+            </div>
+
         </div>
 
-        <!-- Navegation -->
-        <div class="col-6 col-lg-3">
-            <strong class="d-block mb-3">Navegação</strong>
-            <ul class="list-unstyled d-flex flex-column gap-1">
-                <li class="pointer" routerLink="/home">Home</li>
-                <li class="pointer" routerLink="/about">Sobre</li>
-                <li class="pointer" routerLink="/projects">Projetos</li>
-                <li class="pointer" routerLink="/skills">Habilidades</li>
-                <li class="pointer" routerLink="/experiences">Experiências</li>
-                <li class="pointer" routerLink="/education">Educação</li>
-                <li class="pointer" routerLink="/contact">Contato</li>
-            </ul>
+
+        <!-- DIVISOR -->
+        <hr class="my-4">
+
+
+        <!-- RODAPÉ INFERIOR -->
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+
+            <p class="text-secondary small mb-0">
+                © 2026 Ronaldo Sabino. Todos os direitos reservados.
+            </p>
+
+
+            <div class="d-flex align-items-center gap-3">
+
+                <a routerLink="/home" class="text-secondary small text-decoration-none">
+                    Início
+                </a>
+
+                <a routerLink="/contact" class="text-secondary small text-decoration-none">
+                    Contato
+                </a>
+
+                <a href="#" class="text-secondary small text-decoration-none">
+                    Voltar ao topo
+                </a>
+
+            </div>
+
         </div>
 
-        <!-- Technologies -->
-        <div class="col-6 col-lg-3">
-            <strong class="d-block mb-3">Tecnologias</strong>
-            <ul class="list-unstyled">
-                <li><i class="fa-brands fa-angular me-2 text-center"></i> Angular</li>
-                <li><i class="bi bi-typescript me-2"></i> TypeScript</li>
-                <li><i class="fa-brands fa-html5 me-2 text-center"></i> HTML</li>
-                <li><i class="bi bi-css me-2"></i> CSS</li>
-                <li><i class="fa-brands fa-square-js me-2 text-center"></i> JavaScript</li>
-                <li><i class="bi bi-bootstrap-fill me-2"></i> Bootstrap</li>
-                <li><i class="bi bi-git me-2"></i> Git</li>
-            </ul>
-        </div>
-
-        <!-- Contact -->
-        <div class="col-12 col-lg-3">
-            <strong class="d-block mb-3">Contato</strong>
-
-            <ul class="list-unstyled mb-3">
-                <li> <i class="bi bi-phone me-2"></i> <span>(81) 99447-9584</span> </li>
-                <li> <i class="bi bi-envelope-at me-2"></i> <span>filiperonaldo1@gmail.com</span> </li>
-                <li> <i class="bi bi-geo-alt me-2"></i> <span>Recife • Brasil</span> </li>
-            </ul>
-
-            <a href="https://wa.me/5581994479584?text=Olá%20Ronaldo!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade." target="_blank">
-                <button class="btn btn-primary mt-4 d-flex align-items-center">
-                    Vamos conversar! <i class="bi bi-rocket-takeoff ms-2"></i>
-                </button>
-            </a>
-        </div>
-
-        <!-- Line -->
-        <div class="px-3 my-5">
-            <hr />
-        </div>
-
-        <!-- Copyright -->
-        <p class="text-center m-0">&copy; 2026 Ronaldo Sabino. Todos os direitos reservados.</p>
     </div>
-</div>
+
+</footer>
