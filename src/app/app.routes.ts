@@ -34,4 +34,8 @@ export const routes: Routes = [
     path: 'contact',
     loadComponent: () => import('./features/contact/contact').then((m) => m.Contact),
   },
+  {
+    path: '**',
+    loadComponent: () => import('./features/not-found/not-found').then((m) => m.NotFound),
+  },
 ];
