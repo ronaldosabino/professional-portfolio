@@ -1,87 +1,234 @@
-<div class="container-fluid fixed-top bg-white shadow-sm py-4 border-bottom">
+<header class="fixed-top bg-body shadow-sm border-bottom">
 
-    <div class="container-sm d-flex flex-row justify-content-between align-items-center">
+    <nav class="navbar navbar-expand-lg py-3" aria-label="Navegação principal">
 
-        <!-- Logo -->
-        <i class="fa-brands fa-resolving fs-1 pointer text-primary" routerLink="/home"></i>
+        <div class="container">
 
-        <!-- Navegação Desktop -->
-        <nav>
-            <ul class="d-none d-lg-flex flex-row gap-4 list-unstyled m-0">
-                <li routerLink="/home" class="pointer">Home</li>
-                <li routerLink="/about" class="pointer">Sobre</li>
-                <li routerLink="/projects" class="pointer">Projetos</li>
-                <li routerLink="/experiences" class="pointer">Experiências</li>
-                <li routerLink="/education" class="pointer">Educação</li>
-                <li routerLink="/skills" class="pointer">Habilidades</li>
-                <li routerLink="/contact" class="pointer">Contato</li>
-            </ul>
-        </nav>
-
-        <!-- Menu mobile -->
-        <button class="btn p-0 border-0 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Abrir menu">
-
-            <i class="bi bi-list fs-1"></i>
-
-        </button>
-
-    </div>
-
-</div>
+            <!-- LOGO -->
+            <a routerLink="/" class="navbar-brand d-flex align-items-center" aria-label="Ir para a página inicial">
+                <i class="fa-brands fa-resolving fs-1 text-primary"></i>
+            </a>
 
 
-<!-- Menu lateral mobile -->
+            <!-- NAVEGAÇÃO DESKTOP -->
+            <div class="d-none d-lg-flex align-items-center gap-4">
+
+                <ul class="navbar-nav gap-2">
+
+                    <li class="nav-item">
+
+                        <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link" aria-current="page">
+                            Home
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a routerLink="/about" routerLinkActive="active" class="nav-link">
+                            Sobre
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a routerLink="/skills" routerLinkActive="active" class="nav-link">
+                            Habilidades
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a routerLink="/projects" routerLinkActive="active" class="nav-link">
+                            Projetos
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a routerLink="/experiences" routerLinkActive="active" class="nav-link">
+                            Experiências
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a routerLink="/education" routerLinkActive="active" class="nav-link">
+                            Educação
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a routerLink="/contact" routerLinkActive="active" class="nav-link">
+                            Contato
+                        </a>
+
+                    </li>
+
+                </ul>
+
+
+                <!-- AJUSTES -->
+                <a routerLink="/settings" routerLinkActive="active" class="btn btn-link text-secondary p-2" aria-label="Abrir ajustes" title="Ajustes">
+                    <i class="bi bi-gear fs-5"></i>
+                </a>
+
+            </div>
+
+
+            <!-- BOTÃO MENU MOBILE -->
+            <button type="button" class="btn p-0 border-0 d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Abrir menu">
+                <i class="bi bi-list fs-1"></i>
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- MENU LATERAL MOBILE -->
 <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
 
-    <!-- Cabeçalho -->
-    <div class="offcanvas-header border-bottom" style="padding: 2rem 1rem ;">
+    <!-- CABEÇALHO -->
+    <div class="offcanvas-header border-bottom py-4">
 
-        <h5 class="offcanvas-title" id="mobileMenuLabel">
+        <h2 class="offcanvas-title fs-5 fw-bold" id="mobileMenuLabel">
             Menu
-        </h5>
+        </h2>
 
-        <button type="button" id="close" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar">
-        </button>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar menu"></button>
 
     </div>
 
 
-    <!-- Conteúdo -->
-    <div class="offcanvas-body">
+    <!-- CONTEÚDO -->
+    <div class="offcanvas-body d-flex flex-column">
 
-        <nav>
-            <ul class="list-unstyled d-flex flex-column gap-4">
+        <nav aria-label="Navegação mobile">
 
-                <li class="pointer" routerLink="/home" data-bs-dismiss="offcanvas">
-                    Home
+            <ul class="navbar-nav gap-2">
+
+                <li class="nav-item">
+
+                    <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link py-3 px-3 rounded-3" data-bs-dismiss="offcanvas">
+                        <i class="bi bi-house me-2"></i>
+                        Início
+                    </a>
+
                 </li>
 
-                <li class="pointer" routerLink="/about" data-bs-dismiss="offcanvas">
-                    Sobre
+
+                <li class="nav-item">
+
+                    <a routerLink="/about" routerLinkActive="active" class="nav-link py-3 px-3 rounded-3" data-bs-dismiss="offcanvas">
+                        <i class="bi bi-person me-2"></i>
+                        Sobre
+                    </a>
+
                 </li>
 
-                <li class="pointer" routerLink="/projects" data-bs-dismiss="offcanvas">
-                    Projetos
+
+                <li class="nav-item">
+
+                    <a routerLink="/skills" routerLinkActive="active" class="nav-link py-3 px-3 rounded-3" data-bs-dismiss="offcanvas">
+                        <i class="bi bi-code-slash me-2"></i>
+                        Habilidades
+                    </a>
+
                 </li>
 
-                <li class="pointer" routerLink="/experiences" data-bs-dismiss="offcanvas">
-                    Experiências
+
+                <li class="nav-item">
+
+                    <a routerLink="/projects" routerLinkActive="active" class="nav-link py-3 px-3 rounded-3" data-bs-dismiss="offcanvas">
+                        <i class="bi bi-folder me-2"></i>
+                        Projetos
+                    </a>
+
                 </li>
 
-                <li class="pointer" routerLink="/education" data-bs-dismiss="offcanvas">
-                    Educação
+
+                <li class="nav-item">
+
+                    <a routerLink="/experiences" routerLinkActive="active" class="nav-link py-3 px-3 rounded-3" data-bs-dismiss="offcanvas">
+                        <i class="bi bi-briefcase me-2"></i>
+                        Experiências
+                    </a>
+
                 </li>
 
-                <li class="pointer" routerLink="/skills" data-bs-dismiss="offcanvas">
-                    Habilidades
+
+                <li class="nav-item">
+
+                    <a routerLink="/education" routerLinkActive="active" class="nav-link py-3 px-3 rounded-3" data-bs-dismiss="offcanvas">
+                        <i class="bi bi-mortarboard me-2"></i>
+                        Educação
+                    </a>
+
                 </li>
 
-                <li class="pointer" routerLink="/contact" data-bs-dismiss="offcanvas">
-                    Contato
+
+                <li class="nav-item">
+
+                    <a routerLink="/contact" routerLinkActive="active" class="nav-link py-3 px-3 rounded-3" data-bs-dismiss="offcanvas">
+                        <i class="bi bi-envelope me-2"></i>
+                        Contato
+                    </a>
+
+                </li>
+
+
+                <!-- DIVISOR -->
+                <li>
+                    <hr class="my-3">
+                </li>
+
+
+                <!-- AJUSTES -->
+                <li class="nav-item">
+
+                    <a routerLink="/settings" routerLinkActive="active" class="nav-link py-3 px-3 rounded-3" data-bs-dismiss="offcanvas">
+                        <i class="bi bi-gear me-2"></i>
+                        Ajustes
+                    </a>
+
                 </li>
 
             </ul>
+
         </nav>
+
+
+        <!-- RODAPÉ DO MENU -->
+        <div class="mt-auto pt-4">
+
+            <div class="border-top pt-4">
+
+                <p class="text-secondary small mb-1">
+                    Ronaldo Sabino
+                </p>
+
+                <p class="text-secondary small mb-0">
+                    Analista e Desenvolvedor de Sistemas
+                </p>
+
+            </div>
+
+        </div>
 
     </div>
 

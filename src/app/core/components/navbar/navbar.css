@@ -1,3 +1,62 @@
 .offcanvas {
-  --bs-offcanvas-width: min(300px, 85vw);
+  --bs-offcanvas-width: min(320px, 85vw);
+}
+
+/* LINKS DESKTOP */
+
+.nav-link {
+  position: relative;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--bs-primary);
+}
+
+.nav-link.active {
+  color: var(--bs-primary);
+  font-weight: 500;
+}
+
+/* INDICADOR DO LINK ATIVO */
+
+@media (min-width: 992px) {
+  .navbar-nav .nav-link::after {
+    content: '';
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 2px;
+
+    background-color: var(--bs-primary);
+
+    transform: scaleX(0);
+
+    transition: transform 0.2s ease;
+  }
+
+  .navbar-nav .nav-link.active::after {
+    transform: scaleX(1);
+  }
+}
+
+/* LINKS DO MENU MOBILE */
+
+@media (max-width: 991.98px) {
+  .offcanvas .nav-link {
+    color: var(--bs-body-color);
+  }
+
+  .offcanvas .nav-link:hover,
+  .offcanvas .nav-link.active {
+    color: var(--bs-primary);
+
+    background-color: var(--bs-primary-bg-subtle);
+  }
 }
