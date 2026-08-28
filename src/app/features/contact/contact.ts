@@ -30,11 +30,15 @@ export class Contact {
     const message = this.form.get('message')!.value;
 
     if (name === '' || email === '' || subject === '' || message === '') {
-      console.error('preencha todos os campos');
+      alert('Preencha todos os campos do formulário!');
     } else {
       this.text = `Oi, Ronlado! Eu me chamo ${name}. Quero falar com você sobre um(a) ${subject}. ${message}. Este é o meu email para contato: ${email}`;
       console.log(this.form.getRawValue());
-      window.location.href = `https://wa.me/5581994479584?text=${this.text}`;
+      window.open(`https://wa.me/5581994479584?text=${this.text}`, '_blank');
     }
+  }
+
+  sendMessage() {
+    window.open(`https://wa.me/5581994479584?text=Olá,%20Ronaldo!`, '_blank');
   }
 }
