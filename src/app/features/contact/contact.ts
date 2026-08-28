@@ -14,6 +14,8 @@ import {
   styleUrl: './contact.css',
 })
 export class Contact {
+  text: string = '';
+
   form = new FormGroup({
     name: new FormControl(''),
     email: new FormControl(''),
@@ -22,15 +24,17 @@ export class Contact {
   });
 
   submit() {
-    if (
-      this.form.get('name')!.value === '' ||
-      this.form.get('email')!.value === '' ||
-      this.form.get('subject')!.value === '' ||
-      this.form.get('message')!.value === ''
-    ) {
+    const name = this.form.get('name')!.value;
+    const email = this.form.get('email')!.value;
+    const subject = this.form.get('subject')!.value;
+    const message = this.form.get('message')!.value;
+
+    if (name === '' || email === '' || subject === '' || message === '') {
       console.error('preencha todos os campos');
     } else {
+      this.text = `Oi, Ronlado! Eu me chamo ${name}. Quero falar com você sobre um(a) ${subject}. ${message}. Este é o meu email para contato: ${email}`;
       console.log(this.form.getRawValue());
+      window.location.href = `https://wa.me/5581994479584?text=${this.text}`;
     }
   }
 }
