@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import { Projects } from './features/projects/projects';
 
 export const routes: Routes = [
   {
@@ -33,6 +32,10 @@ export const routes: Routes = [
   {
     path: 'contact',
     loadComponent: () => import('./features/contact/contact').then((m) => m.Contact),
+  },
+  {
+    path: 'settings',
+    loadComponent: () => import('./features/settings/settings').then((m) => m.Settings),
   },
   {
     path: '**',
