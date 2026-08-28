@@ -25,86 +25,34 @@
 
 </section>
 
+<form [formGroup]="form">
+    <!-- APARÊNCIA -->
+    <section class="py-4">
 
-<!-- APARÊNCIA -->
-<section class="py-4">
+        <div class="row">
 
-    <div class="row">
+            <div class="col-lg-9">
 
-        <div class="col-lg-9">
+                <div class="border rounded-4 overflow-hidden">
 
-            <div class="border rounded-4 overflow-hidden">
+                    <!-- TÍTULO -->
+                    <div class="p-4 border-bottom">
 
-                <!-- TÍTULO -->
-                <div class="p-4 border-bottom">
+                        <div class="d-flex align-items-center gap-3">
 
-                    <div class="d-flex align-items-center gap-3">
+                            <div class="bg-primary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
+                                <i class="bi bi-palette fs-4 text-primary"></i>
+                            </div>
 
-                        <div class="bg-primary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
-                            <i class="bi bi-palette fs-4 text-primary"></i>
-                        </div>
+                            <div>
 
-                        <div>
+                                <h2 class="fs-4 fw-bold mb-1">
+                                    Aparência
+                                </h2>
 
-                            <h2 class="fs-4 fw-bold mb-1">
-                                Aparência
-                            </h2>
-
-                            <p class="text-secondary small mb-0">
-                                Personalize a aparência do portfólio.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- TEMA -->
-                <div class="p-4 border-bottom">
-
-                    <div class="row align-items-center g-4">
-
-                        <div class="col-md-7">
-
-                            <h3 class="fs-5 fw-semibold mb-1">
-                                Tema
-                            </h3>
-
-                            <p class="text-secondary small mb-0">
-                                Escolha como o portfólio deve ser exibido.
-                            </p>
-
-                        </div>
-
-
-                        <div class="col-md-5">
-
-                            <div class="btn-group w-100" role="group">
-
-                                <input type="radio" class="btn-check" name="theme" id="themeLight" value="light">
-
-                                <label class="btn btn-outline-secondary" for="themeLight">
-                                    <i class="bi bi-sun me-1"></i>
-                                    Claro
-                                </label>
-
-
-                                <input type="radio" class="btn-check" name="theme" id="themeDark" value="dark">
-
-                                <label class="btn btn-outline-secondary" for="themeDark">
-                                    <i class="bi bi-moon me-1"></i>
-                                    Escuro
-                                </label>
-
-
-                                <input type="radio" class="btn-check" name="theme" id="themeSystem" value="system" checked>
-
-                                <label class="btn btn-outline-secondary" for="themeSystem">
-                                    <i class="bi bi-display me-1"></i>
-                                    Sistema
-                                </label>
+                                <p class="text-secondary small mb-0">
+                                    Personalize a aparência do portfólio.
+                                </p>
 
                             </div>
 
@@ -112,125 +60,86 @@
 
                     </div>
 
-                </div>
+
+                    <!-- TEMA -->
+                    <div class="p-4 border-bottom">
+
+                        <div class="row align-items-center g-4">
+
+                            <div class="col-md-7">
+
+                                <h3 class="fs-5 fw-semibold mb-1">
+                                    Tema
+                                </h3>
+
+                                <p class="text-secondary small mb-0">
+                                    Escolha como o portfólio deve ser exibido.
+                                </p>
+
+                            </div>
 
 
-                <!-- ANIMAÇÕES -->
-                <div class="p-4">
+                            <div class="col-md-5">
 
-                    <div class="d-flex justify-content-between align-items-center gap-4">
+                                <div class="btn-group w-100" role="group">
 
-                        <div>
+                                    <input type="radio" class="btn-check" name="theme" id="themeLight" value="light" (change)="changeTheme()" formControlName="theme">
 
-                            <h3 class="fs-5 fw-semibold mb-1">
-                                Animações
-                            </h3>
-
-                            <p class="text-secondary small mb-0">
-                                Ative ou desative as animações e
-                                transições da interface.
-                            </p>
-
-                        </div>
+                                    <label class="btn btn-outline-secondary" for="themeLight">
+                                        <i class="bi bi-sun me-1"></i>
+                                        Claro
+                                    </label>
 
 
-                        <div class="form-check form-switch">
+                                    <input type="radio" class="btn-check" name="theme" id="themeDark" value="dark" (change)="changeTheme()" formControlName="theme">
 
-                            <input class="form-check-input" type="checkbox" role="switch" id="animations" checked>
+                                    <label class="btn btn-outline-secondary" for="themeDark">
+                                        <i class="bi bi-moon me-1"></i>
+                                        Escuro
+                                    </label>
 
-                            <label class="form-check-label visually-hidden" for="animations">
-                                Ativar animações
-                            </label>
 
-                        </div>
+                                    <input type="radio" class="btn-check" name="theme" id="themeSystem" value="system" (change)="changeTheme()" formControlName="theme" checked>
 
-                    </div>
+                                    <label class="btn btn-outline-secondary" for="themeSystem">
+                                        <i class="bi bi-display me-1"></i>
+                                        Sistema
+                                    </label>
 
-                </div>
+                                </div>
 
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- IDIOMA -->
-<section class="py-4">
-
-    <div class="row">
-
-        <div class="col-lg-9">
-
-            <div class="border rounded-4 overflow-hidden">
-
-                <!-- TÍTULO -->
-                <div class="p-4 border-bottom">
-
-                    <div class="d-flex align-items-center gap-3">
-
-                        <div class="bg-primary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
-                            <i class="bi bi-translate fs-4 text-primary"></i>
-                        </div>
-
-                        <div>
-
-                            <h2 class="fs-4 fw-bold mb-1">
-                                Idioma
-                            </h2>
-
-                            <p class="text-secondary small mb-0">
-                                Escolha o idioma dos textos.
-                            </p>
+                            </div>
 
                         </div>
 
                     </div>
 
-                </div>
+
+                    <!-- ANIMAÇÕES -->
+                    <div class="p-4">
+
+                        <div class="d-flex justify-content-between align-items-center gap-4">
+
+                            <div>
+
+                                <h3 class="fs-5 fw-semibold mb-1">
+                                    Animações
+                                </h3>
+
+                                <p class="text-secondary small mb-0">
+                                    Ative ou desative as animações e
+                                    transições da interface.
+                                </p>
+
+                            </div>
 
 
-                <!-- Língua -->
-                <div class="p-4">
+                            <div class="form-check form-switch">
 
-                    <div class="row align-items-center g-4">
+                                <input class="form-check-input" type="checkbox" role="switch" id="animations" checked>
 
-                        <div class="col-md-7">
-
-                            <h3 class="fs-5 fw-semibold mb-1">
-                                Língua
-                            </h3>
-
-                            <p class="text-secondary small mb-0">
-                                Escolha a língua dos textos exibidos no portfólio.
-                            </p>
-
-                        </div>
-
-
-                        <div class="col-md-5">
-
-                            <div class="btn-group w-100" role="group">
-
-                                <input type="radio" class="btn-check" name="language" id="portugueseLanguage" value="light" checked>
-
-                                <label class="btn btn-outline-secondary" for="portugueseLanguage">
-                                    Português
-                                </label>
-
-
-                                <input type="radio" class="btn-check" name="language" id="englishLanguage" value="dark">
-
-                                <label class="btn btn-outline-secondary" for="englishLanguage">
-                                    English
-                                </label>
-
-
-                                <input type="radio" class="btn-check" name="language" id="spanishLanguage" value="system">
-
-                                <label class="btn btn-outline-secondary" for="spanishLanguage">
-                                    Español
+                                <label class="form-check-label visually-hidden" for="animations">
+                                    Ativar animações
                                 </label>
 
                             </div>
@@ -245,38 +154,88 @@
 
         </div>
 
-    </div>
+    </section>
 
-</section>
+    <!-- IDIOMA -->
+    <section class="py-4">
 
+        <div class="row">
 
-<!-- ACESSIBILIDADE -->
-<section class="py-4">
+            <div class="col-lg-9">
 
-    <div class="row">
+                <div class="border rounded-4 overflow-hidden">
 
-        <div class="col-lg-9">
+                    <!-- TÍTULO -->
+                    <div class="p-4 border-bottom">
 
-            <div class="border rounded-4 overflow-hidden">
+                        <div class="d-flex align-items-center gap-3">
 
-                <div class="p-4 border-bottom">
+                            <div class="bg-primary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
+                                <i class="bi bi-translate fs-4 text-primary"></i>
+                            </div>
 
-                    <div class="d-flex align-items-center gap-3">
+                            <div>
 
-                        <div class="bg-primary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
-                            <i class="bi bi-universal-access fs-4 text-primary"></i>
+                                <h2 class="fs-4 fw-bold mb-1">
+                                    Idioma
+                                </h2>
+
+                                <p class="text-secondary small mb-0">
+                                    Escolha o idioma dos textos.
+                                </p>
+
+                            </div>
+
                         </div>
 
-                        <div>
+                    </div>
 
-                            <h2 class="fs-4 fw-bold mb-1">
-                                Acessibilidade
-                            </h2>
 
-                            <p class="text-secondary small mb-0">
-                                Ajuste a interface para uma experiência
-                                de navegação mais confortável.
-                            </p>
+                    <!-- Língua -->
+                    <div class="p-4">
+
+                        <div class="row align-items-center g-4">
+
+                            <div class="col-md-7">
+
+                                <h3 class="fs-5 fw-semibold mb-1">
+                                    Língua
+                                </h3>
+
+                                <p class="text-secondary small mb-0">
+                                    Escolha a língua dos textos exibidos no portfólio.
+                                </p>
+
+                            </div>
+
+
+                            <div class="col-md-5">
+
+                                <div class="btn-group w-100" role="group">
+
+                                    <input type="radio" class="btn-check" name="language" id="portugueseLanguage" value="portuguese" (change)="changeLanguage()" formControlName="language" checked>
+
+                                    <label class="btn btn-outline-secondary" for="portugueseLanguage">
+                                        Português
+                                    </label>
+
+
+                                    <input type="radio" class="btn-check" name="language" id="englishLanguage" value="english" (change)="changeLanguage()" formControlName="language">
+
+                                    <label class="btn btn-outline-secondary" for="englishLanguage">
+                                        English
+                                    </label>
+
+
+                                    <input type="radio" class="btn-check" name="language" id="spanishLanguage" value="spanish" (change)="changeLanguage()" formControlName="language">
+
+                                    <label class="btn btn-outline-secondary" for="spanishLanguage">
+                                        Español
+                                    </label>
+
+                                </div>
+
+                            </div>
 
                         </div>
 
@@ -284,47 +243,158 @@
 
                 </div>
 
+            </div>
 
-                <!-- TAMANHO DA FONTE -->
-                <div class="p-4 border-bottom">
+        </div>
 
-                    <div class="row align-items-center g-4">
+    </section>
 
-                        <div class="col-md-7">
 
-                            <h3 class="fs-5 fw-semibold mb-1">
-                                Tamanho da fonte
-                            </h3>
+    <!-- ACESSIBILIDADE -->
+    <section class="py-4">
 
-                            <p class="text-secondary small mb-0">
-                                Ajuste o tamanho dos textos do portfólio.
-                            </p>
+        <div class="row">
+
+            <div class="col-lg-9">
+
+                <div class="border rounded-4 overflow-hidden">
+
+                    <div class="p-4 border-bottom">
+
+                        <div class="d-flex align-items-center gap-3">
+
+                            <div class="bg-primary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
+                                <i class="bi bi-universal-access fs-4 text-primary"></i>
+                            </div>
+
+                            <div>
+
+                                <h2 class="fs-4 fw-bold mb-1">
+                                    Acessibilidade
+                                </h2>
+
+                                <p class="text-secondary small mb-0">
+                                    Ajuste a interface para uma experiência
+                                    de navegação mais confortável.
+                                </p>
+
+                            </div>
 
                         </div>
 
+                    </div>
 
-                        <div class="col-md-5">
 
-                            <div class="btn-group w-100" role="group">
+                    <!-- TAMANHO DA FONTE -->
+                    <div class="p-4 border-bottom">
 
-                                <input type="radio" class="btn-check" name="fontSize" id="fontSmall" value="small">
+                        <div class="row align-items-center g-4">
 
-                                <label class="btn btn-outline-secondary" for="fontSmall">
-                                    A-
+                            <div class="col-md-7">
+
+                                <h3 class="fs-5 fw-semibold mb-1">
+                                    Tamanho da fonte
+                                </h3>
+
+                                <p class="text-secondary small mb-0">
+                                    Ajuste o tamanho dos textos do portfólio.
+                                </p>
+
+                            </div>
+
+
+                            <div class="col-md-5">
+
+                                <div class="btn-group w-100" role="group">
+
+                                    <input type="radio" class="btn-check" name="fontSize" id="fontSmall" value="small" (change)="changeFontSize()" formControlName="fontSize">
+
+                                    <label class="btn btn-outline-secondary" for="fontSmall">
+                                        A-
+                                    </label>
+
+
+                                    <input type="radio" class="btn-check" name="fontSize" id="fontNormal" value="normal" (change)="changeFontSize()" formControlName="fontSize" checked>
+
+                                    <label class="btn btn-outline-secondary" for="fontNormal">
+                                        A
+                                    </label>
+
+
+                                    <input type="radio" class="btn-check" name="fontSize" id="fontLarge" value="large" (change)="changeFontSize()" formControlName="fontSize">
+
+                                    <label class="btn btn-outline-secondary" for="fontLarge">
+                                        A+
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONTRASTE -->
+                    <div class="p-4 border-bottom">
+
+                        <div class="d-flex justify-content-between align-items-center gap-4">
+
+                            <div>
+
+                                <h3 class="fs-5 fw-semibold mb-1">
+                                    Alto contraste
+                                </h3>
+
+                                <p class="text-secondary small mb-0">
+                                    Aumente o contraste dos elementos
+                                    para facilitar a leitura.
+                                </p>
+
+                            </div>
+
+
+                            <div class="form-check form-switch">
+
+                                <input class="form-check-input" type="checkbox" role="switch" id="highContrast">
+
+                                <label class="form-check-label visually-hidden" for="highContrast">
+                                    Ativar alto contraste
                                 </label>
 
+                            </div>
 
-                                <input type="radio" class="btn-check" name="fontSize" id="fontNormal" value="normal" checked>
+                        </div>
 
-                                <label class="btn btn-outline-secondary" for="fontNormal">
-                                    A
-                                </label>
+                    </div>
 
 
-                                <input type="radio" class="btn-check" name="fontSize" id="fontLarge" value="large">
+                    <!-- REDUZIR MOVIMENTO -->
+                    <div class="p-4">
 
-                                <label class="btn btn-outline-secondary" for="fontLarge">
-                                    A+
+                        <div class="d-flex justify-content-between align-items-center gap-4">
+
+                            <div>
+
+                                <h3 class="fs-5 fw-semibold mb-1">
+                                    Reduzir movimento
+                                </h3>
+
+                                <p class="text-secondary small mb-0">
+                                    Reduza efeitos de movimento e transições
+                                    para uma navegação mais confortável.
+                                </p>
+
+                            </div>
+
+
+                            <div class="form-check form-switch">
+
+                                <input class="form-check-input" type="checkbox" role="switch" id="reduceMotion">
+
+                                <label class="form-check-label visually-hidden" for="reduceMotion">
+                                    Reduzir movimento
                                 </label>
 
                             </div>
@@ -335,67 +405,108 @@
 
                 </div>
 
+            </div>
 
-                <!-- CONTRASTE -->
-                <div class="p-4 border-bottom">
+        </div>
 
-                    <div class="d-flex justify-content-between align-items-center gap-4">
-
-                        <div>
-
-                            <h3 class="fs-5 fw-semibold mb-1">
-                                Alto contraste
-                            </h3>
-
-                            <p class="text-secondary small mb-0">
-                                Aumente o contraste dos elementos
-                                para facilitar a leitura.
-                            </p>
-
-                        </div>
+    </section>
 
 
-                        <div class="form-check form-switch">
+    <!-- NAVEGAÇÃO -->
+    <section class="py-4">
 
-                            <input class="form-check-input" type="checkbox" role="switch" id="highContrast">
+        <div class="row">
 
-                            <label class="form-check-label visually-hidden" for="highContrast">
-                                Ativar alto contraste
-                            </label>
+            <div class="col-lg-9">
+
+                <div class="border rounded-4 overflow-hidden">
+
+                    <div class="p-4 border-bottom">
+
+                        <div class="d-flex align-items-center gap-3">
+
+                            <div class="bg-primary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
+                                <i class="bi bi-compass fs-4 text-primary"></i>
+                            </div>
+
+                            <div>
+
+                                <h2 class="fs-4 fw-bold mb-1">
+                                    Navegação
+                                </h2>
+
+                                <p class="text-secondary small mb-0">
+                                    Configure alguns comportamentos de navegação.
+                                </p>
+
+                            </div>
 
                         </div>
 
                     </div>
 
-                </div>
+
+                    <!-- SCROLL TO TOP -->
+                    <div class="p-4 border-bottom">
+
+                        <div class="d-flex justify-content-between align-items-center gap-4">
+
+                            <div>
+
+                                <h3 class="fs-5 fw-semibold mb-1">
+                                    Voltar ao topo
+                                </h3>
+
+                                <p class="text-secondary small mb-0">
+                                    Ao mudar de página, iniciar a visualização
+                                    novamente no topo.
+                                </p>
+
+                            </div>
 
 
-                <!-- REDUZIR MOVIMENTO -->
-                <div class="p-4">
+                            <div class="form-check form-switch">
 
-                    <div class="d-flex justify-content-between align-items-center gap-4">
+                                <input class="form-check-input" type="checkbox" role="switch" id="scrollTop" checked>
 
-                        <div>
+                                <label class="form-check-label visually-hidden" for="scrollTop">
+                                    Voltar ao topo
+                                </label>
 
-                            <h3 class="fs-5 fw-semibold mb-1">
-                                Reduzir movimento
-                            </h3>
-
-                            <p class="text-secondary small mb-0">
-                                Reduza efeitos de movimento e transições
-                                para uma navegação mais confortável.
-                            </p>
+                            </div>
 
                         </div>
 
+                    </div>
 
-                        <div class="form-check form-switch">
 
-                            <input class="form-check-input" type="checkbox" role="switch" id="reduceMotion">
+                    <!-- LINKS EXTERNOS -->
+                    <div class="p-4">
 
-                            <label class="form-check-label visually-hidden" for="reduceMotion">
-                                Reduzir movimento
-                            </label>
+                        <div class="d-flex justify-content-between align-items-center gap-4">
+
+                            <div>
+
+                                <h3 class="fs-5 fw-semibold mb-1">
+                                    Links externos
+                                </h3>
+
+                                <p class="text-secondary small mb-0">
+                                    Abrir links externos em uma nova aba.
+                                </p>
+
+                            </div>
+
+
+                            <div class="form-check form-switch">
+
+                                <input class="form-check-input" type="checkbox" role="switch" id="externalLinks" checked>
+
+                                <label class="form-check-label visually-hidden" for="externalLinks">
+                                    Abrir links externos em nova aba
+                                </label>
+
+                            </div>
 
                         </div>
 
@@ -407,104 +518,92 @@
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
-<!-- NAVEGAÇÃO -->
-<section class="py-4">
+    <!-- PRIVACIDADE -->
+    <section class="py-4">
 
-    <div class="row">
+        <div class="row">
 
-        <div class="col-lg-9">
+            <div class="col-lg-9">
 
-            <div class="border rounded-4 overflow-hidden">
+                <div class="border rounded-4 overflow-hidden">
 
-                <div class="p-4 border-bottom">
+                    <div class="p-4 border-bottom">
 
-                    <div class="d-flex align-items-center gap-3">
+                        <div class="d-flex align-items-center gap-3">
 
-                        <div class="bg-primary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
-                            <i class="bi bi-compass fs-4 text-primary"></i>
-                        </div>
+                            <div class="bg-primary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
+                                <i class="bi bi-shield-check fs-4 text-primary"></i>
+                            </div>
 
-                        <div>
+                            <div>
 
-                            <h2 class="fs-4 fw-bold mb-1">
-                                Navegação
-                            </h2>
+                                <h2 class="fs-4 fw-bold mb-1">
+                                    Privacidade
+                                </h2>
 
-                            <p class="text-secondary small mb-0">
-                                Configure alguns comportamentos de navegação.
-                            </p>
+                                <p class="text-secondary small mb-0">
+                                    Informações sobre seus dados e preferências.
+                                </p>
 
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- SCROLL TO TOP -->
-                <div class="p-4 border-bottom">
-
-                    <div class="d-flex justify-content-between align-items-center gap-4">
-
-                        <div>
-
-                            <h3 class="fs-5 fw-semibold mb-1">
-                                Voltar ao topo
-                            </h3>
-
-                            <p class="text-secondary small mb-0">
-                                Ao mudar de página, iniciar a visualização
-                                novamente no topo.
-                            </p>
-
-                        </div>
-
-
-                        <div class="form-check form-switch">
-
-                            <input class="form-check-input" type="checkbox" role="switch" id="scrollTop" checked>
-
-                            <label class="form-check-label visually-hidden" for="scrollTop">
-                                Voltar ao topo
-                            </label>
+                            </div>
 
                         </div>
 
                     </div>
 
-                </div>
 
+                    <!-- ARMAZENAMENTO -->
+                    <div class="p-4 border-bottom">
 
-                <!-- LINKS EXTERNOS -->
-                <div class="p-4">
+                        <div class="d-flex gap-3">
 
-                    <div class="d-flex justify-content-between align-items-center gap-4">
+                            <i class="bi bi-hdd fs-4 text-primary"></i>
 
-                        <div>
+                            <div>
 
-                            <h3 class="fs-5 fw-semibold mb-1">
-                                Links externos
-                            </h3>
+                                <h3 class="fs-5 fw-semibold">
+                                    Preferências locais
+                                </h3>
 
-                            <p class="text-secondary small mb-0">
-                                Abrir links externos em uma nova aba.
-                            </p>
+                                <p class="text-secondary small mb-0">
+                                    Algumas configurações podem ser armazenadas
+                                    localmente no navegador para que suas
+                                    preferências sejam mantidas entre visitas.
+                                </p>
+
+                            </div>
 
                         </div>
 
+                    </div>
 
-                        <div class="form-check form-switch">
 
-                            <input class="form-check-input" type="checkbox" role="switch" id="externalLinks" checked>
+                    <!-- LIMPAR -->
+                    <div class="p-4">
 
-                            <label class="form-check-label visually-hidden" for="externalLinks">
-                                Abrir links externos em nova aba
-                            </label>
+                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+
+                            <div>
+
+                                <h3 class="fs-5 fw-semibold mb-1">
+                                    Restaurar configurações
+                                </h3>
+
+                                <p class="text-secondary small mb-0">
+                                    Volte todas as preferências para os
+                                    valores padrão.
+                                </p>
+
+                            </div>
+
+
+                            <button type="button" class="btn btn-outline-danger">
+                                <i class="bi bi-arrow-counterclockwise me-2"></i>
+                                Restaurar padrão
+                            </button>
 
                         </div>
 
@@ -516,106 +615,8 @@
 
         </div>
 
-    </div>
-
-</section>
-
-
-<!-- PRIVACIDADE -->
-<section class="py-4">
-
-    <div class="row">
-
-        <div class="col-lg-9">
-
-            <div class="border rounded-4 overflow-hidden">
-
-                <div class="p-4 border-bottom">
-
-                    <div class="d-flex align-items-center gap-3">
-
-                        <div class="bg-primary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
-                            <i class="bi bi-shield-check fs-4 text-primary"></i>
-                        </div>
-
-                        <div>
-
-                            <h2 class="fs-4 fw-bold mb-1">
-                                Privacidade
-                            </h2>
-
-                            <p class="text-secondary small mb-0">
-                                Informações sobre seus dados e preferências.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- ARMAZENAMENTO -->
-                <div class="p-4 border-bottom">
-
-                    <div class="d-flex gap-3">
-
-                        <i class="bi bi-hdd fs-4 text-primary"></i>
-
-                        <div>
-
-                            <h3 class="fs-5 fw-semibold">
-                                Preferências locais
-                            </h3>
-
-                            <p class="text-secondary small mb-0">
-                                Algumas configurações podem ser armazenadas
-                                localmente no navegador para que suas
-                                preferências sejam mantidas entre visitas.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- LIMPAR -->
-                <div class="p-4">
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
-
-                        <div>
-
-                            <h3 class="fs-5 fw-semibold mb-1">
-                                Restaurar configurações
-                            </h3>
-
-                            <p class="text-secondary small mb-0">
-                                Volte todas as preferências para os
-                                valores padrão.
-                            </p>
-
-                        </div>
-
-
-                        <button type="button" class="btn btn-outline-danger">
-                            <i class="bi bi-arrow-counterclockwise me-2"></i>
-                            Restaurar padrão
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
+    </section>
+</form>
 
 
 <!-- INFORMAÇÕES -->
