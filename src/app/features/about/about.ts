@@ -15,4 +15,12 @@ export class About {
     link.download = 'Curriculo_Ronaldo_Sabino.pdf';
     link.click();
   }
+
+  redirectToLinkedIn() {
+    window.open('https://www.linkedin.com/in/ronaldo-sabino', '_blank');
+  }
+
+  redirectToGitHub() {
+    window.open('https://www.github.com/ronaldosabino', '_blank');
+  }
 }
