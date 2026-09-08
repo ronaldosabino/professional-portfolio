@@ -19,17 +19,29 @@ export class Contact {
   form = new FormGroup({
     name: new FormControl(''),
     email: new FormControl(''),
-    subject: new FormControl(null),
+    subject: new FormControl(),
     message: new FormControl(''),
   });
 
   submit() {
     const name = this.form.get('name')!.value;
     const email = this.form.get('email')!.value;
-    const subject = this.form.get('subject')!.value;
+    let subject = this.form.get('subject')!.value;
     const message = this.form.get('message')!.value;
 
-    if (name === '' || email === '' || subject === '' || message === '') {
+    if (subject === 'opportunity') {
+      subject = 'Oportunidade de Trabalho';
+    } else if (subject === 'project') {
+      subject = 'Projeto';
+    } else if (subject === 'collaboration') {
+      subject = 'Colaboração';
+    } else if (subject === 'conversation') {
+      subject = 'Conversa / Networking';
+    } else if (subject === 'other') {
+      subject = 'Outro';
+    }
+
+    if (name === '' || email === '' || subject === null || message === '') {
       alert('Preencha todos os campos do formulário!');
     } else {
       this.text = `Oi, Ronlado! Eu me chamo ${name}. Quero falar com você sobre um(a) ${subject}. ${message}. Este é o meu email para contato: ${email}`;
