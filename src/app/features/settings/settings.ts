@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { LanguageService } from '../../core/services/language.service';
 import { FormBuilder, FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { SettingsService } from '../../core/services/settings.service';
 
 @Component({
   selector: 'app-settings',
@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './settings.css',
 })
 export class Settings {
-  constructor(protected languageService: LanguageService) {}
+  constructor(protected settingsService: SettingsService) {}
 
   form = new FormGroup({
     theme: new FormControl('system'),
@@ -19,17 +19,17 @@ export class Settings {
   });
 
   changeTheme() {
-    this.languageService.theme = this.form.get('theme')!.value;
-    console.log(this.languageService.theme);
+    this.settingsService.theme = this.form.get('theme')!.value;
+    console.log(this.settingsService.theme);
   }
 
   changeLanguage() {
-    this.languageService.language = this.form.get('language')!.value;
-    console.log(this.languageService.language);
+    this.settingsService.language = this.form.get('language')!.value;
+    console.log(this.settingsService.language);
   }
 
   changeFontSize() {
-    this.languageService.fontSize = this.form.get('fontSize')!.value;
-    console.log(this.languageService.fontSize);
+    this.settingsService.fontSize = this.form.get('fontSize')!.value;
+    console.log(this.settingsService.fontSize);
   }
 }
