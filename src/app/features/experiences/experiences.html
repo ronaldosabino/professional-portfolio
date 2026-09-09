@@ -6,18 +6,20 @@
         <div class="col-lg-8">
 
             <span class="text-primary fw-semibold">
-                Trajetória profissional
+                {{ experiencesPage.header.label }}
             </span>
 
+
             <h1 class="display-4 fw-bold mt-2">
-                Experiências que
-                <span class="text-primary"> construíram minha trajetória.</span>
+                {{experiencesPage.header.title }}
+                <span class="text-primary">
+                    {{experiencesPage.header.titleHighlight }}
+                </span>
+
             </h1>
 
             <p class="lead text-secondary mt-4">
-                Minha experiência profissional é marcada pelo
-                desenvolvimento de aplicações web, evolução de
-                sistemas e busca contínua por soluções mais eficientes.
+                {{ experiencesPage.header.description }}
             </p>
 
         </div>
@@ -52,53 +54,83 @@
                         <div>
 
                             <span class="badge text-bg-primary mb-2">
-                                Atual
+                                {{ experiencesPage.currentExperience.badge }}
                             </span>
 
                             <h2 class="fs-2 fw-bold mb-1">
-                                Analista e Desenvolvedor de Sistemas Júnior
+                                {{ experiencesPage.currentExperience.position }}
                             </h2>
 
                             <p class="fw-semibold mb-0">
-                                Elógica Processamento de Dados Ltda.
+                                {{ experiencesPage.currentExperience.company }}
                             </p>
 
                         </div>
 
 
                         <span class="text-secondary small">
-                            Outubro de 2025 — Atualmente
+                            {{ experiencesPage.currentExperience.period }}
                         </span>
 
                     </div>
 
                     <h3 class="fs-5 fw-semibold mt-4">
-                        Principais responsabilidades
+                        {{ experiencesPage.responsibilitiesTitle }}
                     </h3>
 
                     <ul class="text-secondary">
                         <li class="mb-2">
-                            Atuação no levantamento e refinamento de requisitos junto aos clientes, conduzindo análises para identificar necessidades de negócio e traduzi-las em soluções técnicas viáveis para a equipe de desenvolvimento.
+                            {{
+                            experiencesPage
+                            .currentExperience
+                            .responsibilities
+                            .item1
+                            }}
                         </li>
 
                         <li class="mb-2">
-                            Desenvolvimento e manutenção de aplicações web responsivas utilizando Angular, com foco em desempenho, usabilidade e escalabilidade.
+                            {{
+                            experiencesPage
+                            .currentExperience
+                            .responsibilities
+                            .item2
+                            }}
                         </li>
 
                         <li class="mb-2">
-                            Integração de aplicações por meio do consumo de APIs REST
+                            {{
+                            experiencesPage
+                            .currentExperience
+                            .responsibilities
+                            .item3
+                            }}
                         </li>
 
                         <li class="mb-2">
-                            Desenvolvimento de interfaces seguindo Design System, garantindo consistência visual e padronização da experiência do usuário.
+                            {{
+                            experiencesPage
+                            .currentExperience
+                            .responsibilities
+                            .item4
+                            }}
                         </li>
 
                         <li class="mb-2">
-                            Versionamento e gerenciamento de código utilizando Git, seguindo boas práticas de desenvolvimento colaborativo.
+                            {{
+                            experiencesPage
+                            .currentExperience
+                            .responsibilities
+                            .item5
+                            }}
                         </li>
 
                         <li class="mb-2">
-                            Automatização de testes de carga com Grafana K6 para avaliação de desempenho, capacidade de resposta, estabilidade e escalabilidade das aplicações.
+                            {{
+                            experiencesPage
+                            .currentExperience
+                            .responsibilities
+                            .item6
+                            }}
                         </li>
 
                     </ul>
@@ -117,55 +149,55 @@
                         <div>
 
                             <h2 class="fs-2 fw-bold mb-1">
-                                Programador Trainee
+                                {{experiencesPage.previousExperience.position}}
                             </h2>
 
                             <p class="fw-semibold mb-0">
-                                Elógica Processamento de Dados Ltda.
+                                {{experiencesPage.previousExperience.company}}
                             </p>
 
                         </div>
 
 
                         <span class="text-secondary small">
-                            Agosto de 2024 — Setembro 2025
+                            {{experiencesPage.previousExperience.period}}
                         </span>
 
                     </div>
 
 
                     <h3 class="fs-5 fw-semibold mt-4">
-                        Principais responsabilidades
+                        {{ experiencesPage.responsibilitiesTitle }}
                     </h3>
 
                     <ul class="text-secondary">
 
                         <li class="mb-2">
-                            Desenvolvimento e manutenção de aplicações web utilizando Angular, implementando novas funcionalidades e realizando melhorias evolutivas.
+                            {{experiencesPage.previousExperience.responsibilities.item1}}
                         </li>
 
                         <li class="mb-2">
-                            Desenvolvimento de interfaces responsivas com HTML, CSS, Bootstrap e TypeScript.
+                            {{experiencesPage.previousExperience.responsibilities.item2}}
                         </li>
 
                         <li class="mb-2">
-                            Integração de aplicações por meio do consumo de APIs REST.
+                            {{experiencesPage.previousExperience.responsibilities.item3}}
                         </li>
 
                         <li class="mb-2">
-                            Correção de erros, manutenção corretiva e evolutiva em sistemas corporativos.
+                            {{experiencesPage.previousExperience.responsibilities.item4}}
                         </li>
 
                         <li class="mb-2">
-                            Participação na implementação de componentes reutilizáveis seguindo padrões definidos pelo Design System.
+                            {{experiencesPage.previousExperience.responsibilities.item5}}
                         </li>
 
                         <li class="mb-2">
-                            Versionamento de código utilizando Git e GitLab, colaborando com a equipe por meio de fluxo de desenvolvimento baseado em branches e merge requests.
+                            {{experiencesPage.previousExperience.responsibilities.item6}}
                         </li>
 
                         <li class="mb-2">
-                            Participação em reuniões técnicas, refinamento de demandas e acompanhamento das entregas junto à equipe de desenvolvimento.
+                            {{experiencesPage.previousExperience.responsibilities.item7}}
                         </li>
 
                     </ul>
@@ -184,33 +216,54 @@
                         <div>
 
                             <span class="badge text-bg-light mb-2">
-                                Início da trajetória
+                                {{ experiencesPage.firstExperience.badge }}
                             </span>
 
                             <h2 class="fs-2 fw-bold mb-1">
-                                Estágiário de Tecnologia da Informação
+                                {{ experiencesPage.firstExperience.position }}
                             </h2>
 
                             <p class=" fw-semibold mb-0">
-                                Elógica Processamento de Dados Ltda.
+                                {{ experiencesPage.firstExperience.company }}
                             </p>
 
                         </div>
 
 
                         <span class="text-secondary small">
-                            Agosto de 2023 — Julho de 2024
+                            {{ experiencesPage.firstExperience.period }}
                         </span>
 
                     </div>
 
+                    <h3 class="fs-5 fw-semibold mt-4">
+                        {{ experiencesPage.responsibilitiesTitle }}
+                    </h3>
+
                     <ul class="text-secondary">
-                        <li class="mb-2">Apoio no desenvolvimento e manutenção de aplicações web utilizando Angular.</li>
-                        <li class="mb-2">Implementação de ajustes e correções em interfaces responsivas utilizando HTML, CSS e TypeScript.</li>
-                        <li class="mb-2">Consumo de APIs REST para integração entre frontend e backend.</li>
-                        <li class="mb-2">Correção de bugs e manutenção evolutiva de funcionalidades existentes.</li>
-                        <li class="mb-2">Versionamento de código utilizando Git e GitLab.</li>
-                        <li class="mb-2">Suporte à equipe de desenvolvimento na implementação de novas funcionalidades e validação de requisitos.</li>
+                        <li class="mb-2">
+                            {{ experiencesPage.firstExperience.responsibilities.item1 }}
+                        </li>
+
+                        <li class="mb-2">
+                            {{ experiencesPage.firstExperience.responsibilities.item2 }}
+                        </li>
+
+                        <li class="mb-2">
+                            {{ experiencesPage.firstExperience.responsibilities.item3 }}
+                        </li>
+
+                        <li class="mb-2">
+                            {{ experiencesPage.firstExperience.responsibilities.item4 }}
+                        </li>
+
+                        <li class="mb-2">
+                            {{ experiencesPage.firstExperience.responsibilities.item5 }}
+                        </li>
+
+                        <li class="mb-2">
+                            {{ experiencesPage.firstExperience.responsibilities.item6 }}
+                        </li>
                     </ul>
 
                 </article>
@@ -232,18 +285,15 @@
         <div class="col-lg-5">
 
             <span class="text-primary fw-semibold">
-                Evolução
+                {{experiencesPage.evolution.label}}
             </span>
 
             <h2 class="display-6 fw-bold mt-2">
-                Mais do que escrever código
+                {{experiencesPage.evolution.title}}
             </h2>
 
             <p class="text-secondary mt-3">
-                Ao longo da minha experiência, minha atuação passou
-                a envolver não apenas desenvolvimento, mas também
-                análise de problemas, entendimento de requisitos
-                e colaboração com diferentes áreas.
+                {{ experiencesPage.evolution.description }}
             </p>
 
         </div>
@@ -260,12 +310,11 @@
                         <i class="bi bi-search fs-2 text-primary"></i>
 
                         <h3 class="fs-5 fw-semibold mt-3">
-                            Análise
+                            {{ experiencesPage.evolution.analysis.title }}
                         </h3>
 
                         <p class="text-secondary small mb-0">
-                            Compreensão de necessidades e transformação
-                            de requisitos em soluções técnicas.
+                            {{ experiencesPage.evolution.analysis.description }}
                         </p>
 
                     </div>
@@ -280,12 +329,11 @@
                         <i class="bi bi-people fs-2 text-primary"></i>
 
                         <h3 class="fs-5 fw-semibold mt-3">
-                            Colaboração
+                            {{ experiencesPage.evolution.collaboration.title }}
                         </h3>
 
                         <p class="text-secondary small mb-0">
-                            Comunicação com diferentes áreas para
-                            alinhar necessidades e possibilidades.
+                            {{ experiencesPage.evolution.collaboration.description }}
                         </p>
 
                     </div>
@@ -300,12 +348,11 @@
                         <i class="bi bi-gear fs-2 text-primary"></i>
 
                         <h3 class="fs-5 fw-semibold mt-3">
-                            Estrutura
+                            {{ experiencesPage.evolution.structure.title }}
                         </h3>
 
                         <p class="text-secondary small mb-0">
-                            Preocupação com arquitetura, manutenção,
-                            desempenho e evolução das aplicações.
+                            {{ experiencesPage.evolution.structure.description }}
                         </p>
 
                     </div>
@@ -320,12 +367,11 @@
                         <i class="bi bi-graph-up-arrow fs-2 text-primary"></i>
 
                         <h3 class="fs-5 fw-semibold mt-3">
-                            Evolução contínua
+                            {{ experiencesPage.evolution.continuousEvolution.title }}
                         </h3>
 
                         <p class="text-secondary small mb-0">
-                            Busca constante por novos conhecimentos,
-                            ferramentas e boas práticas.
+                            {{ experiencesPage.evolution.continuousEvolution.description }}
                         </p>
 
                     </div>
@@ -348,24 +394,22 @@
         <i class="bi bi-chat-dots display-5"></i>
 
         <h2 class="display-6 fw-bold mt-3">
-            Vamos conversar?
+            {{ experiencesPage.cta.title }}
         </h2>
 
         <p class="lead opacity-75 mx-auto my-4" style="max-width: 650px;">
-            Estou aberto a novos desafios, projetos e oportunidades
-            para continuar desenvolvendo minha carreira na área
-            de tecnologia.
+            {{ experiencesPage.cta.description }}
         </p>
 
         <div class="d-flex justify-content-center flex-wrap gap-3">
 
             <button routerLink="/education" class="btn btn-light btn-lg col-12 col-md-6 col-lg-3">
-                Educação
+                {{ experiencesPage.cta.educationButton }}
                 <i class="bi bi-arrow-right ms-2"></i>
             </button>
 
             <button routerLink="/contact" class="btn btn-outline-light btn-lg col-12 col-md-6 col-lg-3">
-                Entre em contato
+                {{ experiencesPage.cta.contactButton }}
             </button>
 
         </div>
