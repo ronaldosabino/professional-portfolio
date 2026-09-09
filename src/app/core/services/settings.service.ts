@@ -8,11 +8,4 @@ export class SettingsService {
   language: string | null = 'portuguese';
   theme: string | null = 'system';
   fontSize: string | null = 'normal';
-
-  detectedLanguage() {
-    if (this.language === 'portuguese') {
-    } else if (this.language === 'english') {
-    } else if (this.language === 'spanish') {
-    }
-  }
 }
