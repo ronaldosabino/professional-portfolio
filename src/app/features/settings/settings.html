@@ -5,17 +5,16 @@
 
         <div class="col-lg-8">
             <span class="text-primary fw-semibold">
-                Preferências
+                {{ settingsPage.header.label }}
             </span>
 
             <h1 class="display-4 fw-bold mt-2">
-                Ajustes e
-                <span class="text-primary"> configurações.</span>
+                {{ settingsPage.header.title }}
+                <span class="text-primary"> {{ settingsPage.header.titleHighLight }}</span>
             </h1>
 
             <p class="lead text-secondary mt-4">
-                Personalize alguns aspectos da experiência de navegação
-                de acordo com suas preferências.
+                {{ settingsPage.header.subtitle }}
             </p>
 
         </div>
@@ -46,11 +45,11 @@
                             <div>
 
                                 <h2 class="fs-4 fw-bold mb-1">
-                                    Aparência
+                                    {{ settingsPage.appearance.title }}
                                 </h2>
 
                                 <p class="text-secondary small mb-0">
-                                    Personalize a aparência do portfólio.
+                                    {{ settingsPage.appearance.subtitle }}
                                 </p>
 
                             </div>
@@ -68,11 +67,11 @@
                             <div class="col-md-7">
 
                                 <h3 class="fs-5 fw-semibold mb-1">
-                                    Tema
+                                    {{ settingsPage.appearance.theme.title }}
                                 </h3>
 
                                 <p class="text-secondary small mb-0">
-                                    Escolha como o portfólio deve ser exibido.
+                                    {{ settingsPage.appearance.theme.subtitle }}
                                 </p>
 
                             </div>
@@ -86,7 +85,7 @@
 
                                     <label class="btn btn-outline-secondary" for="themeLight">
                                         <i class="bi bi-sun me-1"></i>
-                                        Claro
+                                        {{ settingsPage.appearance.theme.labelLight }}
                                     </label>
 
 
@@ -94,7 +93,7 @@
 
                                     <label class="btn btn-outline-secondary" for="themeDark">
                                         <i class="bi bi-moon me-1"></i>
-                                        Escuro
+                                        {{ settingsPage.appearance.theme.labelDark }}
                                     </label>
 
 
@@ -102,7 +101,7 @@
 
                                     <label class="btn btn-outline-secondary" for="themeSystem">
                                         <i class="bi bi-display me-1"></i>
-                                        Sistema
+                                        {{ settingsPage.appearance.theme.labelSystem }}
                                     </label>
 
                                 </div>
@@ -122,12 +121,11 @@
                             <div>
 
                                 <h3 class="fs-5 fw-semibold mb-1">
-                                    Animações
+                                    {{ settingsPage.appearance.animations.title }}
                                 </h3>
 
                                 <p class="text-secondary small mb-0">
-                                    Ative ou desative as animações e
-                                    transições da interface.
+                                    {{ settingsPage.appearance.animations.subtitle }}
                                 </p>
 
                             </div>
@@ -176,11 +174,11 @@
                             <div>
 
                                 <h2 class="fs-4 fw-bold mb-1">
-                                    Idioma
+                                    {{ settingsPage.language.title }}
                                 </h2>
 
                                 <p class="text-secondary small mb-0">
-                                    Escolha o idioma dos textos.
+                                    {{ settingsPage.language.subtitle }}
                                 </p>
 
                             </div>
@@ -198,11 +196,11 @@
                             <div class="col-md-7">
 
                                 <h3 class="fs-5 fw-semibold mb-1">
-                                    Língua
+                                    {{ settingsPage.language.idiom.title }}
                                 </h3>
 
                                 <p class="text-secondary small mb-0">
-                                    Escolha a língua dos textos exibidos no portfólio.
+                                    {{ settingsPage.language.idiom.subtitle }}
                                 </p>
 
                             </div>
@@ -215,21 +213,21 @@
                                     <input type="radio" class="btn-check" name="language" id="portugueseLanguage" value="portuguese" (change)="changeLanguage()" formControlName="language" checked>
 
                                     <label class="btn btn-outline-secondary" for="portugueseLanguage">
-                                        Português
+                                        {{ settingsPage.language.idiom.labelPortuguese }}
                                     </label>
 
 
                                     <input type="radio" class="btn-check" name="language" id="englishLanguage" value="english" (change)="changeLanguage()" formControlName="language">
 
                                     <label class="btn btn-outline-secondary" for="englishLanguage">
-                                        English
+                                        {{ settingsPage.language.idiom.labelEnglish }}
                                     </label>
 
 
                                     <input type="radio" class="btn-check" name="language" id="spanishLanguage" value="spanish" (change)="changeLanguage()" formControlName="language">
 
                                     <label class="btn btn-outline-secondary" for="spanishLanguage">
-                                        Español
+                                        {{ settingsPage.language.idiom.labelSpanish }}
                                     </label>
 
                                 </div>
@@ -269,12 +267,11 @@
                             <div>
 
                                 <h2 class="fs-4 fw-bold mb-1">
-                                    Acessibilidade
+                                    {{ settingsPage.accessibility.title }}
                                 </h2>
 
                                 <p class="text-secondary small mb-0">
-                                    Ajuste a interface para uma experiência
-                                    de navegação mais confortável.
+                                    {{ settingsPage.accessibility.subtitle }}
                                 </p>
 
                             </div>
@@ -285,18 +282,18 @@
 
 
                     <!-- TAMANHO DA FONTE -->
-                    <div class="p-4 border-bottom">
+                    <div class="p-4 ">
 
                         <div class="row align-items-center g-4">
 
                             <div class="col-md-7">
 
                                 <h3 class="fs-5 fw-semibold mb-1">
-                                    Tamanho da fonte
+                                    {{ settingsPage.accessibility.fontSize.title }}
                                 </h3>
 
                                 <p class="text-secondary small mb-0">
-                                    Ajuste o tamanho dos textos do portfólio.
+                                    {{ settingsPage.accessibility.fontSize.subtitle }}
                                 </p>
 
                             </div>
@@ -309,21 +306,21 @@
                                     <input type="radio" class="btn-check" name="fontSize" id="fontSmall" value="small" (change)="changeFontSize()" formControlName="fontSize">
 
                                     <label class="btn btn-outline-secondary" for="fontSmall">
-                                        A-
+                                        {{ settingsPage.accessibility.fontSize.labelSmall }}
                                     </label>
 
 
                                     <input type="radio" class="btn-check" name="fontSize" id="fontNormal" value="normal" (change)="changeFontSize()" formControlName="fontSize" checked>
 
                                     <label class="btn btn-outline-secondary" for="fontNormal">
-                                        A
+                                        {{ settingsPage.accessibility.fontSize.labelNormal }}
                                     </label>
 
 
                                     <input type="radio" class="btn-check" name="fontSize" id="fontLarge" value="large" (change)="changeFontSize()" formControlName="fontSize">
 
                                     <label class="btn btn-outline-secondary" for="fontLarge">
-                                        A+
+                                        {{ settingsPage.accessibility.fontSize.labelLarge }}
                                     </label>
 
                                 </div>
@@ -336,7 +333,7 @@
 
 
                     <!-- CONTRASTE -->
-                    <div class="p-4 border-bottom">
+                    <!-- <div class="p-4 border-bottom">
 
                         <div class="d-flex justify-content-between align-items-center gap-4">
 
@@ -366,11 +363,11 @@
 
                         </div>
 
-                    </div>
+                    </div> -->
 
 
                     <!-- REDUZIR MOVIMENTO -->
-                    <div class="p-4">
+                    <!-- <div class="p-4">
 
                         <div class="d-flex justify-content-between align-items-center gap-4">
 
@@ -400,7 +397,7 @@
 
                         </div>
 
-                    </div>
+                    </div> -->
 
                 </div>
 
@@ -431,11 +428,11 @@
                             <div>
 
                                 <h2 class="fs-4 fw-bold mb-1">
-                                    Navegação
+                                    {{ settingsPage.navigation.title }}
                                 </h2>
 
                                 <p class="text-secondary small mb-0">
-                                    Configure alguns comportamentos de navegação.
+                                    {{ settingsPage.navigation.subtitle }}
                                 </p>
 
                             </div>
@@ -453,12 +450,11 @@
                             <div>
 
                                 <h3 class="fs-5 fw-semibold mb-1">
-                                    Voltar ao topo
+                                    {{ settingsPage.navigation.backToTop.title }}
                                 </h3>
 
                                 <p class="text-secondary small mb-0">
-                                    Ao mudar de página, iniciar a visualização
-                                    novamente no topo.
+                                    {{ settingsPage.navigation.backToTop.subtitle }}
                                 </p>
 
                             </div>
@@ -487,11 +483,11 @@
                             <div>
 
                                 <h3 class="fs-5 fw-semibold mb-1">
-                                    Links externos
+                                    {{ settingsPage.navigation.externalLinks.title }}
                                 </h3>
 
                                 <p class="text-secondary small mb-0">
-                                    Abrir links externos em uma nova aba.
+                                    {{ settingsPage.navigation.externalLinks.subtitle }}
                                 </p>
 
                             </div>
@@ -540,11 +536,11 @@
                             <div>
 
                                 <h2 class="fs-4 fw-bold mb-1">
-                                    Privacidade
+                                    {{ settingsPage.privacy.title }}
                                 </h2>
 
                                 <p class="text-secondary small mb-0">
-                                    Informações sobre seus dados e preferências.
+                                    {{ settingsPage.privacy.subtitle }}
                                 </p>
 
                             </div>
@@ -564,13 +560,11 @@
                             <div>
 
                                 <h3 class="fs-5 fw-semibold">
-                                    Preferências locais
+                                    {{ settingsPage.privacy.localpreferences.title }}
                                 </h3>
 
                                 <p class="text-secondary small mb-0">
-                                    Algumas configurações podem ser armazenadas
-                                    localmente no navegador para que suas
-                                    preferências sejam mantidas entre visitas.
+                                    {{ settingsPage.privacy.localpreferences.subtitle }}
                                 </p>
 
                             </div>
@@ -588,12 +582,11 @@
                             <div>
 
                                 <h3 class="fs-5 fw-semibold mb-1">
-                                    Restaurar configurações
+                                    {{ settingsPage.privacy.restoreSettings.title }}
                                 </h3>
 
                                 <p class="text-secondary small mb-0">
-                                    Volte todas as preferências para os
-                                    valores padrão.
+                                    {{ settingsPage.privacy.restoreSettings.subtitle }}
                                 </p>
 
                             </div>
@@ -601,7 +594,7 @@
 
                             <button type="button" class="btn btn-outline-danger">
                                 <i class="bi bi-arrow-counterclockwise me-2"></i>
-                                Restaurar padrão
+                                {{ settingsPage.privacy.restoreSettings.labelRestoreDefaults }}
                             </button>
 
                         </div>
@@ -634,17 +627,15 @@
                     <div>
 
                         <h2 class="fs-5 fw-bold">
-                            Sobre estas configurações
+                            {{ settingsPage.information.title }}
                         </h2>
 
                         <p class="text-secondary small mb-2">
-                            As configurações desta página afetam apenas
-                            a experiência de navegação neste portfólio.
+                            {{ settingsPage.information.subtitle }}
                         </p>
 
                         <p class="text-secondary small mb-0">
-                            Nenhuma dessas preferências altera seus dados
-                            pessoais ou informações profissionais.
+                            {{ settingsPage.information.subtitle2 }}
                         </p>
 
                     </div>
@@ -666,11 +657,11 @@
     <div class="text-center">
 
         <p class="text-secondary small mb-1">
-            Ronaldo Sabino — Portfólio
+            {{ settingsPage.version.copyright }}
         </p>
 
         <p class="text-secondary small mb-0">
-            Versão 1.0.0
+            {{ settingsPage.version.title }}
         </p>
 
     </div>
