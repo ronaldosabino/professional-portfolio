@@ -6,18 +6,16 @@
         <div class="col-lg-8">
 
             <span class="text-primary fw-semibold">
-                Formação acadêmica
+                {{ educationPage.header.label }}
             </span>
 
             <h1 class="display-4 fw-bold mt-2">
-                Conhecimento que acompanha
-                <span class="text-primary"> minha evolução.</span>
+                {{ educationPage.header.title }}
+                <span class="text-primary"> {{ educationPage.header.titleHighlight }} </span>
             </h1>
 
             <p class="lead text-secondary mt-4">
-                Minha formação combina conhecimento acadêmico,
-                especialização em Engenharia de Software e aprendizado
-                contínuo através da prática e do estudo de novas tecnologias.
+                {{ educationPage.header.description }}
             </p>
 
         </div>
@@ -51,29 +49,29 @@
                         <div>
 
                             <span class="badge text-bg-primary mb-2">
-                                Curso de Inglês
+                                {{ educationPage.mainEducation.englishCourse.badge }}
                             </span>
 
                             <h2 class="display-6 fw-bold mb-2">
-                                Programa de Línguas e Informática
+                                {{ educationPage.mainEducation.englishCourse.title }}
                             </h2>
 
                             <p class="fw-semibold mb-0">
-                                Universidade de Pernambuco
+                                {{ educationPage.mainEducation.englishCourse.institution }}
                             </p>
 
                         </div>
 
 
                         <span class="text-secondary small">
-                            Agosto de 2026 — Atualmente
+                            {{ educationPage.mainEducation.englishCourse.period }}
                         </span>
 
                     </div>
 
 
                     <p class="text-secondary">
-                        Formação em Inglês com foco no desenvolvimento das quatro principais habilidades de comunicação: ouvir, falar, ler e escrever.
+                        {{ educationPage.mainEducation.englishCourse.description }}
                     </p>
 
 
@@ -86,11 +84,11 @@
                                 <i class="bi bi-translate fs-2 text-primary"></i>
 
                                 <h3 class="fs-5 fw-semibold mt-3">
-                                    Inglês
+                                    {{ educationPage.mainEducation.englishCourse.skills.item1.title }}
                                 </h3>
 
                                 <p class="text-secondary small mb-0">
-                                    Aprofundamento em outro idioma.
+                                    {{ educationPage.mainEducation.englishCourse.skills.item1.description }}
                                 </p>
 
                             </div>
@@ -105,11 +103,11 @@
                                 <i class="bi bi-chat fs-2 text-primary"></i>
 
                                 <h3 class="fs-5 fw-semibold mt-3">
-                                    Comunicação
+                                    {{ educationPage.mainEducation.englishCourse.skills.item2.title }}
                                 </h3>
 
                                 <p class="text-secondary small mb-0">
-                                    Desenvolver a competência comunicativa.
+                                    {{ educationPage.mainEducation.englishCourse.skills.item2.description }}
                                 </p>
 
                             </div>
@@ -132,31 +130,29 @@
                         <div>
 
                             <span class="badge text-bg-light mb-2">
-                                Pós-graduação
+                                {{ educationPage.mainEducation.postgraduate.badge }}
                             </span>
 
                             <h2 class="display-6 fw-bold mb-2">
-                                Engenharia de Software
+                                {{ educationPage.mainEducation.postgraduate.title }}
                             </h2>
 
                             <p class="fw-semibold mb-0">
-                                Faculdade Focus
+                                {{ educationPage.mainEducation.postgraduate.institution }}
                             </p>
 
                         </div>
 
 
                         <span class="text-secondary small">
-                            Março de 2025 — Dezembro de 2025
+                            {{ educationPage.mainEducation.postgraduate.period }}
                         </span>
 
                     </div>
 
 
                     <p class="text-secondary">
-                        Especialização voltada ao aprofundamento dos
-                        conhecimentos relacionados à engenharia,
-                        desenvolvimento e manutenção de software.
+                        {{ educationPage.mainEducation.postgraduate.description }}
                     </p>
 
 
@@ -169,13 +165,11 @@
                                 <i class="bi bi-diagram-3 fs-2 text-primary"></i>
 
                                 <h3 class="fs-5 fw-semibold mt-3">
-                                    Engenharia de Software
+                                    {{ educationPage.mainEducation.postgraduate.skills.item1.title }}
                                 </h3>
 
                                 <p class="text-secondary small mb-0">
-                                    Aprofundamento em processos, práticas
-                                    e princípios utilizados na construção
-                                    de sistemas de software.
+                                    {{ educationPage.mainEducation.postgraduate.skills.item1.description }}
                                 </p>
 
                             </div>
@@ -190,12 +184,11 @@
                                 <i class="bi bi-gear fs-2 text-primary"></i>
 
                                 <h3 class="fs-5 fw-semibold mt-3">
-                                    Desenvolvimento
+                                    {{ educationPage.mainEducation.postgraduate.skills.item2.title }}
                                 </h3>
 
                                 <p class="text-secondary small mb-0">
-                                    Conhecimentos aplicados à organização,
-                                    evolução e manutenção de sistemas.
+                                    {{ educationPage.mainEducation.postgraduate.skills.item2.description }}
                                 </p>
 
                             </div>
@@ -219,32 +212,29 @@
                         <div>
 
                             <span class="badge text-bg-light mb-2">
-                                Graduação
+                                {{ educationPage.mainEducation.undergraduate.badge }}
                             </span>
 
                             <h2 class="display-6 fw-bold mb-2">
-                                Análise e Desenvolvimento de Sistemas
+                                {{ educationPage.mainEducation.undergraduate.title }}
                             </h2>
 
                             <p class="fw-semibold mb-0">
-                                Faculdade Senac Pernambuco
+                                {{ educationPage.mainEducation.undergraduate.institution }}
                             </p>
 
                         </div>
 
 
                         <span class="text-secondary small">
-                            Março de 2022 — Junho de 2024
+                            {{ educationPage.mainEducation.undergraduate.period }}
                         </span>
 
                     </div>
 
 
                     <p class="text-secondary">
-                        Formação que proporcionou uma base sólida em
-                        desenvolvimento de sistemas, programação,
-                        bancos de dados, engenharia de software e
-                        fundamentos da tecnologia da informação.
+                        {{ educationPage.mainEducation.undergraduate.description }}
                     </p>
 
 
@@ -257,12 +247,11 @@
                                 <i class="bi bi-code-slash fs-2 text-primary"></i>
 
                                 <h3 class="fs-5 fw-semibold mt-3">
-                                    Programação
+                                    {{ educationPage.mainEducation.undergraduate.skills.item1.title }}
                                 </h3>
 
                                 <p class="text-secondary small mb-0">
-                                    Fundamentos de desenvolvimento e
-                                    construção de aplicações.
+                                    {{ educationPage.mainEducation.undergraduate.skills.item1.description }}
                                 </p>
 
                             </div>
@@ -277,12 +266,11 @@
                                 <i class="bi bi-database fs-2 text-primary"></i>
 
                                 <h3 class="fs-5 fw-semibold mt-3">
-                                    Dados
+                                    {{ educationPage.mainEducation.undergraduate.skills.item2.title }}
                                 </h3>
 
                                 <p class="text-secondary small mb-0">
-                                    Conceitos relacionados a bancos de
-                                    dados e persistência de informações.
+                                    {{ educationPage.mainEducation.undergraduate.skills.item2.description }}
                                 </p>
 
                             </div>
@@ -297,12 +285,13 @@
                                 <i class="bi bi-diagram-3 fs-2 text-primary"></i>
 
                                 <h3 class="fs-5 fw-semibold mt-3">
-                                    Sistemas
+                                    {{ educationPage.mainEducation.undergraduate.skills.item3.title }}
+
                                 </h3>
 
                                 <p class="text-secondary small mb-0">
-                                    Análise, modelagem e desenvolvimento
-                                    de sistemas de informação.
+                                    {{ educationPage.mainEducation.undergraduate.skills.item3.description }}
+
                                 </p>
 
                             </div>
@@ -331,23 +320,19 @@
         <div class="col-lg-5">
 
             <span class="text-primary fw-semibold">
-                Além da formação
+                {{ educationPage.continuousLearning.label }}
             </span>
 
             <h2 class="display-6 fw-bold mt-2">
-                Aprendizado contínuo
+                {{ educationPage.continuousLearning.title }}
             </h2>
 
             <p class="text-secondary mt-3">
-                Tecnologia está em constante evolução. Por isso,
-                considero o aprendizado contínuo uma parte essencial
-                da minha carreira como desenvolvedor.
+                {{ educationPage.continuousLearning.paragraphs.item1 }}
             </p>
 
             <p class="text-secondary">
-                Grande parte desse aprendizado acontece através da
-                combinação entre estudo, experimentação e aplicação
-                prática em projetos reais.
+                {{ educationPage.continuousLearning.paragraphs.item2 }}
             </p>
 
         </div>
@@ -364,13 +349,11 @@
                         <i class="bi bi-book fs-2 text-primary"></i>
 
                         <h3 class="fs-5 fw-semibold mt-3">
-                            Estudos
+                            {{ educationPage.continuousLearning.items.item1.title }}
                         </h3>
 
                         <p class="text-secondary small mb-0">
-                            Acompanhamento de conceitos, padrões,
-                            ferramentas e tecnologias relevantes
-                            para o desenvolvimento de software.
+                            {{ educationPage.continuousLearning.items.item1.description }}
                         </p>
 
                     </div>
@@ -385,12 +368,11 @@
                         <i class="bi bi-code-square fs-2 text-primary"></i>
 
                         <h3 class="fs-5 fw-semibold mt-3">
-                            Prática
+                            {{ educationPage.continuousLearning.items.item2.title }}
                         </h3>
 
                         <p class="text-secondary small mb-0">
-                            Transformação do conhecimento em prática
-                            através de projetos e experimentos.
+                            {{ educationPage.continuousLearning.items.item2.description }}
                         </p>
 
                     </div>
@@ -405,12 +387,11 @@
                         <i class="bi bi-arrow-repeat fs-2 text-primary"></i>
 
                         <h3 class="fs-5 fw-semibold mt-3">
-                            Evolução
+                            {{ educationPage.continuousLearning.items.item3.title }}
                         </h3>
 
                         <p class="text-secondary small mb-0">
-                            Revisão constante de práticas e busca por
-                            maneiras melhores de desenvolver software.
+                            {{ educationPage.continuousLearning.items.item3.description }}
                         </p>
 
                     </div>
@@ -425,12 +406,11 @@
                         <i class="bi bi-lightbulb fs-2 text-primary"></i>
 
                         <h3 class="fs-5 fw-semibold mt-3">
-                            Experimentação
+                            {{ educationPage.continuousLearning.items.item4.title }}
                         </h3>
 
                         <p class="text-secondary small mb-0">
-                            Exploração de novas tecnologias para entender
-                            seus benefícios, limitações e aplicações.
+                            {{ educationPage.continuousLearning.items.item4.description }}
                         </p>
 
                     </div>
@@ -453,24 +433,22 @@
         <i class="bi bi-mortarboard display-5"></i>
 
         <h2 class="display-6 fw-bold mt-3">
-            Conhecimento em constante construção.
+            {{ educationPage.cta.title }}
         </h2>
 
         <p class="lead opacity-75 mx-auto my-4" style="max-width: 650px;">
-            A formação acadêmica é parte da trajetória, mas a evolução
-            profissional continua através da prática, dos projetos
-            e dos novos desafios.
+            {{ educationPage.cta.description }}
         </p>
 
         <div class="d-flex justify-content-center flex-wrap gap-3">
 
             <button routerLink="/skills" class="btn btn-light btn-lg col-12 col-md-6 col-lg-3">
-                Habilidades
+                {{ educationPage.cta.skillsButton }}
                 <i class="bi bi-arrow-right ms-2"></i>
             </button>
 
             <button routerLink="/contact" class="btn btn-outline-light btn-lg col-12 col-md-6 col-lg-3">
-                Entre em contato
+                {{ educationPage.cta.contactButton }}
             </button>
 
         </div>
