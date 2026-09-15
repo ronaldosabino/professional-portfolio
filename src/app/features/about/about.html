@@ -29,26 +29,20 @@
         <div class="col-lg-7">
 
             <span class="text-primary fw-semibold">
-                Sobre mim
+                {{ aboutPage.header.label }}
             </span>
 
             <h1 class="display-4 fw-bold mt-2">
-                Desenvolvedor, curioso
-                <span class="text-primary"> e sempre em evolução.</span>
+                {{ aboutPage.header.title }}
+                <span class="text-primary"> {{ aboutPage.header.titleHighlight }}</span>
             </h1>
 
             <p class="lead text-secondary mt-4">
-                Sou Ronaldo Sabino, Analista e Desenvolvedor de
-                Sistemas, apaixonado por tecnologia e pelo processo
-                de transformar problemas em soluções através do software.
+                {{ aboutPage.header.description }}
             </p>
 
             <p class="lead text-secondary">
-                Minha trajetória profissional tem sido construída
-                principalmente no desenvolvimento de aplicações web,
-                mas também envolve análise de requisitos, entendimento
-                de problemas de negócio e colaboração com diferentes
-                pessoas e áreas.
+                {{ aboutPage.header.description2 }}
             </p>
 
             <div class="row mb-4 g-3">
@@ -56,21 +50,21 @@
                 <div class="col-12 col-md-4">
                     <button (click)="redirectToLinkedIn()" aria-label="LinkedIn" class="btn btn-primary btn-lg d-flex align-items-center justify-content-center w-100">
                         <i class="bi bi-linkedin me-2"></i>
-                        LinkedIn
+                        {{ aboutPage.header.buttonLinkedIn }}
                     </button>
                 </div>
 
                 <div class="col-12 col-md-4">
                     <button (click)="redirectToGitHub()" aria-label="GitHub" class="btn btn-secondary btn-lg d-flex align-items-center justify-content-center w-100">
                         <i class="bi bi-github me-2"></i>
-                        GitHub
+                        {{ aboutPage.header.buttonGitHub }}
                     </button>
                 </div>
 
                 <div class="col-12 col-md-4">
                     <button (click)="downloadResume()" class="btn btn-outline-secondary btn-lg d-flex align-items-center justify-content-center w-100">
                         <i class="bi bi-download me-2"></i>
-                        Currículo
+                        {{ aboutPage.header.buttonResume }}
                     </button>
                 </div>
 
@@ -83,7 +77,7 @@
 
             <div class="rounded-4 d-flex align-items-center justify-content-center">
 
-                <!-- Substitua por sua foto -->
+                <!-- imagem -->
                 <img src="assets/image.png" alt="Foto de perfil" class="rounded img-fluid">
 
             </div>
@@ -103,43 +97,29 @@
         <div class="col-lg-9">
 
             <span class="text-primary fw-semibold">
-                Minha trajetória
+                {{ aboutPage.history.label }}
             </span>
 
             <h2 class="display-6 fw-bold mt-2">
-                De aprender tecnologia a construir soluções
+                {{ aboutPage.history.title }}
             </h2>
 
             <div class="mt-4">
 
                 <p class="text-secondary">
-                    Minha relação com a tecnologia começou a partir
-                    da curiosidade em entender como os sistemas e
-                    aplicações funcionavam. Com o tempo, essa curiosidade
-                    se transformou em interesse pelo desenvolvimento
-                    de software e, posteriormente, em uma carreira profissional.
+                    {{ aboutPage.history.paragraphs.item1 }}
                 </p>
 
                 <p class="text-secondary">
-                    Durante minha formação em Análise e Desenvolvimento
-                    de Sistemas, tive contato com diferentes áreas da
-                    tecnologia e comecei a construir uma visão mais ampla
-                    sobre o desenvolvimento de sistemas.
+                    {{ aboutPage.history.paragraphs.item2 }}
                 </p>
 
                 <p class="text-secondary">
-                    A experiência profissional trouxe uma nova perspectiva.
-                    Além de desenvolver software, passei a lidar diretamente
-                    com problemas reais, requisitos de negócio, manutenção
-                    de sistemas existentes e decisões que precisam considerar
-                    tanto aspectos técnicos quanto as necessidades dos usuários.
+                    {{ aboutPage.history.paragraphs.item3 }}
                 </p>
 
                 <p class="text-secondary">
-                    Essa experiência despertou meu interesse por uma visão
-                    cada vez mais estruturada sobre o desenvolvimento de
-                    software, o que me levou a continuar minha formação
-                    através da pós-graduação em Engenharia de Software.
+                    {{ aboutPage.history.paragraphs.item4 }}
                 </p>
 
             </div>
@@ -159,18 +139,15 @@
         <div class="col-lg-5">
 
             <span class="text-primary fw-semibold">
-                Minha forma de trabalhar
+                {{ aboutPage.workMethod.label }}
             </span>
 
             <h2 class="display-6 fw-bold mt-2">
-                Tecnologia é meio.
-                Solução é o objetivo.
+                {{ aboutPage.workMethod.title }}
             </h2>
 
             <p class="text-secondary mt-3">
-                Gosto de enxergar o desenvolvimento de software
-                além da implementação. Antes de pensar em código,
-                procuro entender o problema que precisa ser resolvido.
+                {{ aboutPage.workMethod.description }}
             </p>
 
         </div>
@@ -187,12 +164,11 @@
                         <i class="bi bi-search fs-2 text-primary"></i>
 
                         <h3 class="fs-5 fw-bold mt-3">
-                            Entender antes de desenvolver
+                            {{ aboutPage.workMethod.cards.item1.title }}
                         </h3>
 
                         <p class="text-secondary small mb-0">
-                            Procuro compreender o contexto, os requisitos
-                            e as necessidades antes de definir uma solução.
+                            {{ aboutPage.workMethod.cards.item1.description }}
                         </p>
 
                     </div>
@@ -207,12 +183,11 @@
                         <i class="bi bi-lightbulb fs-2 text-primary"></i>
 
                         <h3 class="fs-5 fw-bold mt-3">
-                            Buscar soluções
+                            {{ aboutPage.workMethod.cards.item2.title }}
                         </h3>
 
                         <p class="text-secondary small mb-0">
-                            Gosto de analisar diferentes possibilidades
-                            antes de escolher uma abordagem técnica.
+                            {{ aboutPage.workMethod.cards.item2.description }}
                         </p>
 
                     </div>
@@ -227,12 +202,11 @@
                         <i class="bi bi-layers fs-2 text-primary"></i>
 
                         <h3 class="fs-5 fw-bold mt-3">
-                            Pensar em evolução
+                            {{ aboutPage.workMethod.cards.item3.title }}
                         </h3>
 
                         <p class="text-secondary small mb-0">
-                            Busco construir soluções que possam ser
-                            mantidas, adaptadas e evoluídas ao longo do tempo.
+                            {{ aboutPage.workMethod.cards.item3.description }}
                         </p>
 
                     </div>
@@ -247,13 +221,11 @@
                         <i class="bi bi-people fs-2 text-primary"></i>
 
                         <h3 class="fs-5 fw-bold mt-3">
-                            Trabalhar em conjunto
+                            {{ aboutPage.workMethod.cards.item4.title }}
                         </h3>
 
                         <p class="text-secondary small mb-0">
-                            Acredito que boas soluções surgem da
-                            colaboração entre diferentes conhecimentos
-                            e perspectivas.
+                            {{ aboutPage.workMethod.cards.item4.description }}
                         </p>
 
                     </div>
@@ -277,26 +249,19 @@
         <div class="col-lg-8">
 
             <span class="text-primary fw-semibold">
-                Além do código
+                {{ aboutPage.beyondCode.label }}
             </span>
 
             <h2 class="display-6 fw-bold mt-2">
-                O desenvolvimento também envolve pessoas.
+                {{ aboutPage.beyondCode.title }}
             </h2>
 
             <p class="text-secondary mt-4">
-                Uma parte importante da minha experiência está
-                relacionada à comunicação. Entender o que uma pessoa
-                precisa, fazer perguntas, identificar problemas e
-                transformar uma necessidade em um requisito claro
-                são atividades tão importantes quanto a implementação
-                da solução.
+                {{ aboutPage.beyondCode.paragraphs.item1 }}
             </p>
 
             <p class="text-secondary">
-                Por isso, valorizo a comunicação clara, a capacidade
-                de ouvir diferentes perspectivas e a colaboração
-                durante o desenvolvimento de um projeto.
+                {{ aboutPage.beyondCode.paragraphs.item2 }}
             </p>
 
         </div>
@@ -316,11 +281,11 @@
             <div class="col-lg-5">
 
                 <span class="text-primary fw-semibold">
-                    Motivação
+                    {{ aboutPage.motivation.label }}
                 </span>
 
                 <h2 class="display-6 fw-bold mt-2">
-                    O que me faz continuar aprendendo?
+                    {{ aboutPage.motivation.title }}
                 </h2>
 
             </div>
@@ -335,13 +300,11 @@
                     <div>
 
                         <h3 class="fs-5 fw-bold">
-                            Novos desafios
+                            {{ aboutPage.motivation.items.item1.title }}
                         </h3>
 
                         <p class="text-secondary mb-0">
-                            Problemas diferentes me permitem sair da
-                            zona de conforto e ampliar minha capacidade
-                            de encontrar soluções.
+                            {{ aboutPage.motivation.items.item1.description }}
                         </p>
 
                     </div>
@@ -356,12 +319,11 @@
                     <div>
 
                         <h3 class="fs-5 fw-bold">
-                            Aprendizado
+                            {{ aboutPage.motivation.items.item2.title }}
                         </h3>
 
                         <p class="text-secondary mb-0">
-                            A tecnologia muda constantemente, e considero
-                            essencial continuar estudando e experimentando.
+                            {{ aboutPage.motivation.items.item2.description }}
                         </p>
 
                     </div>
@@ -376,13 +338,11 @@
                     <div>
 
                         <h3 class="fs-5 fw-bold">
-                            Impacto
+                            {{ aboutPage.motivation.items.item3.title }}
                         </h3>
 
                         <p class="text-secondary mb-0">
-                            Gosto de saber que o software desenvolvido
-                            resolve um problema real e facilita a vida
-                            de quem o utiliza.
+                            {{ aboutPage.motivation.items.item3.description }}
                         </p>
 
                     </div>
@@ -404,11 +364,11 @@
     <div class="text-center mb-5">
 
         <span class="text-primary fw-semibold">
-            Formação
+            {{ aboutPage.education.label }}
         </span>
 
         <h2 class="display-6 fw-bold mt-2">
-            Uma base para continuar evoluindo
+            {{ aboutPage.education.title }}
         </h2>
 
     </div>
@@ -421,21 +381,19 @@
             <div class="border rounded-4 p-4 h-100">
 
                 <span class="badge text-bg-primary">
-                    Pós-graduação
+                    {{ aboutPage.education.postgraduate.badge }}
                 </span>
 
                 <h3 class="fs-4 fw-bold mt-3">
-                    Engenharia de Software
+                    {{ aboutPage.education.postgraduate.title }}
                 </h3>
 
                 <p class="fw-semibold mb-2">
-                    Faculdade Focus
+                    {{ aboutPage.education.postgraduate.institution }}
                 </p>
 
                 <p class="text-secondary small mb-0">
-                    Especialização voltada ao aprofundamento dos
-                    conhecimentos em engenharia e desenvolvimento
-                    de software.
+                    {{ aboutPage.education.postgraduate.description }}
                 </p>
 
             </div>
@@ -447,20 +405,19 @@
             <div class="border rounded-4 p-4 h-100">
 
                 <span class="badge text-bg-primary">
-                    Graduação
+                    {{ aboutPage.education.undergraduate.badge }}
                 </span>
 
                 <h3 class="fs-4 fw-bold mt-3">
-                    Análise e Desenvolvimento de Sistemas
+                    {{ aboutPage.education.undergraduate.title }}
                 </h3>
 
                 <p class="fw-semibold mb-2">
-                    Faculdade Senac Pernambuco
+                    {{ aboutPage.education.undergraduate.institution }}
                 </p>
 
                 <p class="text-secondary small mb-0">
-                    Formação que estabeleceu minha base em
-                    desenvolvimento e análise de sistemas.
+                    {{ aboutPage.education.undergraduate.description }}
                 </p>
 
             </div>
@@ -473,7 +430,7 @@
     <div class="d-flex justify-content-center flex-column flex-md-row mt-4">
 
         <button routerLink="/education" class="btn btn-outline-primary">
-            Conhecer minha formação
+            {{ aboutPage.education.button }}
             <i class="bi bi-arrow-right ms-2"></i>
         </button>
 
@@ -490,24 +447,19 @@
         <div class="col-lg-9 text-center">
 
             <span class="text-primary fw-semibold">
-                Próximos passos
+                {{ aboutPage.professionalGoal.label }}
             </span>
 
             <h2 class="display-6 fw-bold mt-2">
-                Continuar evoluindo como profissional
+                {{ aboutPage.professionalGoal.title }}
             </h2>
 
             <p class="lead text-secondary mt-4">
-                Meu objetivo é continuar desenvolvendo soluções
-                eficientes, escaláveis e de qualidade, ampliando
-                tanto minha profundidade técnica quanto minha
-                capacidade de compreender problemas de negócio.
+                {{ aboutPage.professionalGoal.paragraphs.item1 }}
             </p>
 
             <p class="text-secondary">
-                Quero continuar assumindo novos desafios, conhecer
-                diferentes tecnologias e contribuir em projetos nos
-                quais engenharia, aprendizado e impacto caminhem juntos.
+                {{ aboutPage.professionalGoal.paragraphs.item2 }}
             </p>
 
         </div>
@@ -525,24 +477,22 @@
         <i class="bi bi-person-lines-fill display-5"></i>
 
         <h2 class="display-6 fw-bold mt-3">
-            Quer conhecer mais sobre meu trabalho?
+            {{ aboutPage.cta.title }}
         </h2>
 
         <p class="lead opacity-75 mx-auto my-4" style="max-width: 650px;">
-            Explore minhas experiências profissionais, conheça os
-            projetos que desenvolvi e veja as tecnologias que fazem
-            parte da minha trajetória.
+            {{ aboutPage.cta.description }}
         </p>
 
         <div class="d-flex justify-content-center flex-wrap gap-3">
 
             <button routerLink="/projects" class="btn btn-light btn-lg col-12 col-md-6 col-lg-3">
-                Projetos
+                {{ aboutPage.cta.projectsButton }}
                 <i class="bi bi-arrow-right ms-2"></i>
             </button>
 
             <button routerLink="/contact" class="btn btn-outline-light btn-lg col-12 col-md-6 col-lg-3">
-                Entre em contato
+                {{ aboutPage.cta.contactButton }}
             </button>
 
         </div>
