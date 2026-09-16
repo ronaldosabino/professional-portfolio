@@ -1,42 +1,33 @@
 <!-- CABEÇALHO -->
 <section class="py-5">
-
     <div class="row">
-
         <div class="col-lg-8">
-
             <span class="text-primary fw-semibold">
-                Competências
+                {{ skillsPage.header.label }}
             </span>
 
             <h1 class="display-4 fw-bold mt-2">
-                Tecnologias e conhecimentos que
-                <span class="text-primary"> fazem parte da minha prática.</span>
+                {{ skillsPage.header.title }}
+                <span class="text-primary">
+                    {{ skillsPage.header.titleHighlight }}
+                </span>
             </h1>
 
             <p class="lead text-secondary mt-4">
-                Minha principal área de atuação é o desenvolvimento
-                Front-End, especialmente com Angular, mas minha
-                experiência envolve diferentes tecnologias e conceitos
-                que fazem parte do desenvolvimento de aplicações web.
+                {{ skillsPage.header.description }}
             </p>
-
         </div>
-
     </div>
-
 </section>
 
 
 <!-- VISÃO GERAL -->
 <section class="py-5">
-
     <div class="row g-4">
 
+        <!-- FRONT-END -->
         <div class="col-md-4">
-
             <div class="border rounded-4 p-4 h-100">
-
                 <div class="d-flex align-items-center gap-3">
 
                     <div class="fs-2 text-primary">
@@ -45,31 +36,26 @@
 
                     <div>
                         <span class="text-secondary small">
-                            PRINCIPAL ÁREA
+                            {{ skillsPage.overview.mainAreaLabel }}
                         </span>
 
                         <h2 class="fs-4 fw-bold mb-0">
-                            Front-End
+                            {{ skillsPage.overview.mainAreaTitle }}
                         </h2>
                     </div>
 
                 </div>
 
                 <p class="text-secondary mt-4 mb-0">
-                    Desenvolvimento de aplicações web com foco
-                    em interfaces modernas, responsivas, reutilizáveis
-                    e orientadas à experiência do usuário.
+                    {{ skillsPage.overview.mainAreaDescription }}
                 </p>
-
             </div>
-
         </div>
 
 
+        <!-- INTEGRAÇÃO -->
         <div class="col-md-4">
-
             <div class="border rounded-4 p-4 h-100">
-
                 <div class="d-flex align-items-center gap-3">
 
                     <div class="fs-2 text-primary">
@@ -78,31 +64,26 @@
 
                     <div>
                         <span class="text-secondary small">
-                            EXPERIÊNCIA
+                            {{ skillsPage.overview.experienceLabel }}
                         </span>
 
                         <h2 class="fs-4 fw-bold mb-0">
-                            Integração
+                            {{ skillsPage.overview.experienceTitle }}
                         </h2>
                     </div>
 
                 </div>
 
                 <p class="text-secondary mt-4 mb-0">
-                    Integração entre aplicações através de APIs,
-                    comunicação HTTP e organização de serviços
-                    para consumo de dados.
+                    {{ skillsPage.overview.experienceDescription }}
                 </p>
-
             </div>
-
         </div>
 
 
+        <!-- PERFORMANCE -->
         <div class="col-md-4">
-
             <div class="border rounded-4 p-4 h-100">
-
                 <div class="d-flex align-items-center gap-3">
 
                     <div class="fs-2 text-primary">
@@ -111,561 +92,465 @@
 
                     <div>
                         <span class="text-secondary small">
-                            INTERESSE TÉCNICO
+                            {{ skillsPage.overview.technicalInterestLabel }}
                         </span>
 
                         <h2 class="fs-4 fw-bold mb-0">
-                            Performance
+                            {{ skillsPage.overview.technicalInterestTitle }}
                         </h2>
                     </div>
 
                 </div>
 
                 <p class="text-secondary mt-4 mb-0">
-                    Testes, análise de desempenho e preocupação
-                    com escalabilidade e comportamento das aplicações.
+                    {{ skillsPage.overview.technicalInterestDescription }}
                 </p>
-
             </div>
-
         </div>
 
     </div>
-
 </section>
 
 
 <!-- FRONT-END -->
 <section class="py-5">
-
     <div class="row align-items-start g-5">
 
         <div class="col-lg-4">
-
             <span class="text-primary fw-semibold">
-                01
+                {{ skillsPage.frontend.number }}
             </span>
 
             <h2 class="display-6 fw-bold mt-2">
-                Front-End
+                {{ skillsPage.frontend.title }}
             </h2>
 
             <p class="text-secondary mt-3">
-                Área em que concentro minha maior experiência
-                profissional, trabalhando na construção e evolução
-                de aplicações web.
+                {{ skillsPage.frontend.description }}
             </p>
-
         </div>
 
 
         <div class="col-lg-8">
-
             <div class="row g-3">
 
                 <!-- Angular -->
                 <div class="col-md-6">
-
                     <div class="border rounded-4 p-4 h-100">
 
                         <div class="d-flex justify-content-between align-items-start">
-
                             <i class="bi bi-code-square fs-2 text-primary"></i>
 
                             <span class="badge text-bg-primary">
-                                Principal
+                                {{ skillsPage.frontend.angular.badge }}
                             </span>
-
                         </div>
 
                         <h3 class="fs-4 fw-bold mt-4">
-                            Angular
+                            {{ skillsPage.frontend.angular.title }}
                         </h3>
 
                         <p class="text-secondary">
-                            Desenvolvimento de aplicações utilizando
-                            componentes, serviços, roteamento, formulários,
-                            interceptors e integração com APIs.
+                            {{ skillsPage.frontend.angular.description }}
                         </p>
 
                     </div>
-
                 </div>
 
 
                 <!-- TypeScript -->
                 <div class="col-md-6">
-
                     <div class="border rounded-4 p-4 h-100">
 
                         <i class="bi bi-filetype-tsx fs-2 text-primary"></i>
 
                         <h3 class="fs-4 fw-bold mt-4">
-                            TypeScript
+                            {{ skillsPage.frontend.typescript.title }}
                         </h3>
 
                         <p class="text-secondary">
-                            Desenvolvimento com tipagem, interfaces,
-                            classes, generics e recursos modernos
-                            da linguagem.
+                            {{ skillsPage.frontend.typescript.description }}
                         </p>
 
                     </div>
-
                 </div>
 
 
                 <!-- JavaScript -->
                 <div class="col-md-6">
-
                     <div class="border rounded-4 p-4 h-100">
 
                         <i class="bi bi-filetype-js fs-2 text-primary"></i>
 
                         <h3 class="fs-4 fw-bold mt-4">
-                            JavaScript
+                            {{ skillsPage.frontend.javascript.title }}
                         </h3>
 
                         <p class="text-secondary">
-                            Conhecimentos em fundamentos da linguagem,
-                            manipulação de dados, eventos, APIs do navegador
-                            e programação assíncrona.
+                            {{ skillsPage.frontend.javascript.description }}
                         </p>
 
                     </div>
-
                 </div>
 
 
                 <!-- HTML / CSS / JS -->
                 <div class="col-md-6">
-
                     <div class="border rounded-4 p-4 h-100">
 
                         <i class="bi bi-filetype-html fs-2 text-primary"></i>
 
                         <h3 class="fs-4 fw-bold mt-4">
-                            HTML • CSS • JS
+                            {{ skillsPage.frontend.htmlCssJs.title }}
                         </h3>
 
                         <p class="text-secondary">
-                            Construção de interfaces semânticas,
-                            responsivas e adaptadas a diferentes
-                            tamanhos de tela. Manipulação de dados, eventos, APIs do navegador
+                            {{ skillsPage.frontend.htmlCssJs.description }}
                         </p>
 
                     </div>
-
                 </div>
 
 
                 <!-- Bootstrap -->
                 <div class="col-md-6">
-
                     <div class="border rounded-4 p-4 h-100">
 
                         <i class="bi bi-bootstrap fs-2 text-primary"></i>
 
                         <h3 class="fs-4 fw-bold mt-4">
-                            Bootstrap
+                            {{ skillsPage.frontend.bootstrap.title }}
                         </h3>
 
                         <p class="text-secondary">
-                            Utilização do framework para criação de
-                            layouts responsivos, componentes e
-                            padronização visual.
+                            {{ skillsPage.frontend.bootstrap.description }}
                         </p>
 
                     </div>
-
                 </div>
 
 
                 <!-- Design System -->
                 <div class="col-md-6">
-
                     <div class="border rounded-4 p-4 h-100">
 
                         <i class="bi bi-palette fs-2 text-primary"></i>
 
                         <h3 class="fs-4 fw-bold mt-4">
-                            Design System
+                            {{ skillsPage.frontend.designSystem.title }}
                         </h3>
 
                         <p class="text-secondary">
-                            Desenvolvimento baseado em componentes
-                            reutilizáveis e padrões visuais para
-                            manter consistência entre interfaces.
+                            {{ skillsPage.frontend.designSystem.description }}
                         </p>
 
                     </div>
-
                 </div>
 
             </div>
-
         </div>
 
     </div>
-
 </section>
 
 
 <!-- BACK-END E INTEGRAÇÃO -->
 <section class="py-5">
-
     <div class="row align-items-start g-5">
 
         <div class="col-lg-4">
-
             <span class="text-primary fw-semibold">
-                02
+                {{ skillsPage.backend.number }}
             </span>
 
             <h2 class="display-6 fw-bold mt-2">
-                Back-End & APIs
+                {{ skillsPage.backend.title }}
             </h2>
 
             <p class="text-secondary mt-3">
-                Conhecimentos que complementam minha atuação
-                no desenvolvimento Front-End e permitem compreender
-                melhor todo o fluxo de uma aplicação.
+                {{ skillsPage.backend.description }}
             </p>
-
         </div>
 
 
         <div class="col-lg-8">
-
             <div class="row g-3">
 
                 <!-- REST -->
                 <div class="col-md-6">
-
                     <div class="border rounded-4 p-4 h-100">
 
                         <i class="bi bi-diagram-3 fs-2 text-primary"></i>
 
                         <h3 class="fs-4 fw-bold mt-4">
-                            APIs REST
+                            {{ skillsPage.backend.rest.title }}
                         </h3>
 
                         <p class="text-secondary">
-                            Integração entre aplicações através de
-                            requisições HTTP, tratamento de respostas
-                            e consumo de serviços.
+                            {{ skillsPage.backend.rest.description }}
                         </p>
 
                     </div>
-
                 </div>
 
 
                 <!-- HTTP -->
                 <div class="col-md-6">
-
                     <div class="border rounded-4 p-4 h-100">
 
                         <i class="bi bi-globe2 fs-2 text-primary"></i>
 
                         <h3 class="fs-4 fw-bold mt-4">
-                            HTTP
+                            {{ skillsPage.backend.http.title }}
                         </h3>
 
                         <p class="text-secondary">
-                            Conhecimentos sobre métodos HTTP, status
-                            de resposta, headers, interceptação e
-                            comunicação entre cliente e servidor.
+                            {{ skillsPage.backend.http.description }}
                         </p>
 
                     </div>
-
                 </div>
 
 
                 <!-- Python -->
                 <div class="col-md-6">
-
                     <div class="border rounded-4 p-4 h-100">
 
                         <i class="bi bi-filetype-py fs-2 text-primary"></i>
 
                         <h3 class="fs-4 fw-bold mt-4">
-                            Python
+                            {{ skillsPage.backend.python.title }}
                         </h3>
 
                         <p class="text-secondary">
-                            Conhecimentos aplicados ao desenvolvimento
-                            de serviços e APIs, complementando a atuação
-                            no desenvolvimento de aplicações.
+                            {{ skillsPage.backend.python.description }}
                         </p>
 
                     </div>
-
                 </div>
 
 
                 <!-- FastAPI -->
                 <div class="col-md-6">
-
                     <div class="border rounded-4 p-4 h-100">
 
                         <i class="bi bi-lightning-charge fs-2 text-primary"></i>
 
                         <h3 class="fs-4 fw-bold mt-4">
-                            FastAPI
+                            {{ skillsPage.backend.fastApi.title }}
                         </h3>
 
                         <p class="text-secondary">
-                            Desenvolvimento e integração com APIs
-                            utilizando Python e FastAPI.
+                            {{ skillsPage.backend.fastApi.description }}
                         </p>
 
                     </div>
-
                 </div>
 
             </div>
-
         </div>
 
     </div>
-
 </section>
+
 
 <!-- BANCO DE DADOS -->
 <section class="py-5">
-
     <div class="row align-items-start g-5">
 
         <div class="col-lg-4">
-
             <span class="text-primary fw-semibold">
-                03
+                {{ skillsPage.database.number }}
             </span>
 
             <h2 class="display-6 fw-bold mt-2">
-                Dados
+                {{ skillsPage.database.title }}
             </h2>
 
             <p class="text-secondary mt-3">
-                Conhecimentos relacionados à utilização de bancos de
-                dados relacionais para armazenamento, organização e
-                consulta de informações em aplicações.
+                {{ skillsPage.database.description }}
             </p>
-
         </div>
 
 
         <div class="col-lg-8">
-
             <div class="row g-3">
 
+                <!-- SQL -->
                 <div class="col-md-6">
-
                     <div class="border rounded-4 p-4 h-100">
 
                         <i class="bi bi-database fs-2 text-primary"></i>
 
                         <h3 class="fs-4 fw-bold mt-4">
-                            SQL
+                            {{ skillsPage.database.sql.title }}
                         </h3>
 
                         <p class="text-secondary">
-                            Criação e execução de consultas para inserção,
-                            atualização, exclusão e recuperação de dados
-                            utilizando SQL.
+                            {{ skillsPage.database.sql.description }}
                         </p>
 
                     </div>
-
                 </div>
 
 
+                <!-- Relacionamentos -->
                 <div class="col-md-6">
-
                     <div class="border rounded-4 p-4 h-100">
 
                         <i class="bi bi-diagram-3 fs-2 text-primary"></i>
 
                         <h3 class="fs-4 fw-bold mt-4">
-                            Relacionamentos
+                            {{ skillsPage.database.relationships.title }}
                         </h3>
 
                         <p class="text-secondary">
-                            Utilização de relacionamentos entre tabelas,
-                            chaves primárias e estrangeiras para estruturar
-                            e organizar os dados.
+                            {{ skillsPage.database.relationships.description }}
                         </p>
 
                     </div>
-
                 </div>
 
 
+                <!-- Consultas -->
                 <div class="col-md-6">
-
                     <div class="border rounded-4 p-4 h-100">
 
                         <i class="bi bi-table fs-2 text-primary"></i>
 
                         <h3 class="fs-4 fw-bold mt-4">
-                            Consultas
+                            {{ skillsPage.database.queries.title }}
                         </h3>
 
                         <p class="text-secondary">
-                            Construção de consultas utilizando filtros,
-                            ordenação, agrupamentos e diferentes tipos
-                            de JOIN para obtenção de informações.
+                            {{ skillsPage.database.queries.description }}
                         </p>
 
                     </div>
-
                 </div>
 
 
+                <!-- Manipulação de dados -->
                 <div class="col-md-6">
-
                     <div class="border rounded-4 p-4 h-100">
 
                         <i class="bi bi-database-gear fs-2 text-primary"></i>
 
                         <h3 class="fs-4 fw-bold mt-4">
-                            Manipulação de dados
+                            {{ skillsPage.database.dataManipulation.title }}
                         </h3>
 
                         <p class="text-secondary">
-                            Conhecimentos sobre criação e alteração de
-                            tabelas, índices e estruturas necessárias
-                            para o funcionamento do banco de dados.
+                            {{ skillsPage.database.dataManipulation.description }}
                         </p>
 
                     </div>
-
                 </div>
 
             </div>
-
         </div>
 
     </div>
-
 </section>
 
 
 <!-- DEVOPS / FERRAMENTAS -->
 <section class="py-5">
-
     <div class="row align-items-start g-5">
 
         <div class="col-lg-4">
-
             <span class="text-primary fw-semibold">
-                04
+                {{ skillsPage.devops.number }}
             </span>
 
             <h2 class="display-6 fw-bold mt-2">
-                Ferramentas & Infraestrutura
+                {{ skillsPage.devops.title }}
             </h2>
 
             <p class="text-secondary mt-3">
-                Ferramentas que fazem parte do fluxo de desenvolvimento,
-                testes, versionamento e disponibilização de aplicações.
+                {{ skillsPage.devops.description }}
             </p>
-
         </div>
 
 
         <div class="col-lg-8">
-
             <div class="row g-3">
 
+                <!-- Git -->
                 <div class="col-md-6">
-
                     <div class="border rounded-4 p-4 h-100">
 
                         <i class="bi bi-git fs-2 text-primary"></i>
 
                         <h3 class="fs-4 fw-bold mt-4">
-                            Git
+                            {{ skillsPage.devops.git.title }}
                         </h3>
 
                         <p class="text-secondary">
-                            Versionamento de código, organização de
-                            branches e colaboração no desenvolvimento.
+                            {{ skillsPage.devops.git.description }}
                         </p>
 
                     </div>
-
                 </div>
 
 
+                <!-- Deploy -->
                 <div class="col-md-6">
-
                     <div class="border rounded-4 p-4 h-100">
 
                         <i class="bi bi-cloud fs-2 text-primary"></i>
 
                         <h3 class="fs-4 fw-bold mt-4">
-                            Deploy
+                            {{ skillsPage.devops.deploy.title }}
                         </h3>
 
                         <p class="text-secondary">
-                            Conhecimentos relacionados à publicação,
-                            hospedagem e infraestrutura de aplicações.
+                            {{ skillsPage.devops.deploy.description }}
                         </p>
 
                     </div>
-
                 </div>
 
 
+                <!-- K6 -->
                 <div class="col-md-6">
-
                     <div class="border rounded-4 p-4 h-100">
 
                         <i class="bi bi-speedometer2 fs-2 text-primary"></i>
 
                         <h3 class="fs-4 fw-bold mt-4">
-                            K6
+                            {{ skillsPage.devops.k6.title }}
                         </h3>
 
                         <p class="text-secondary">
-                            Criação e execução de testes de carga para
-                            avaliar desempenho e comportamento de APIs
-                            e aplicações.
+                            {{ skillsPage.devops.k6.description }}
                         </p>
 
                     </div>
-
                 </div>
 
 
+                <!-- CLI -->
                 <div class="col-md-6">
-
                     <div class="border rounded-4 p-4 h-100">
 
                         <i class="bi bi-terminal fs-2 text-primary"></i>
 
                         <h3 class="fs-4 fw-bold mt-4">
-                            CLI & Automação
+                            {{ skillsPage.devops.cliAutomation.title }}
                         </h3>
 
                         <p class="text-secondary">
-                            Utilização de ferramentas de linha de comando
-                            e automação para otimizar tarefas recorrentes.
+                            {{ skillsPage.devops.cliAutomation.description }}
                         </p>
 
                     </div>
-
                 </div>
 
             </div>
-
         </div>
 
     </div>
-
 </section>
 
 
@@ -677,17 +562,15 @@
         <div class="col-lg-8 text-center">
 
             <span class="text-primary fw-semibold">
-                Além das tecnologias
+                {{ skillsPage.practices.label }}
             </span>
 
             <h2 class="display-6 fw-bold mt-2">
-                Como aplico meus conhecimentos
+                {{ skillsPage.practices.title }}
             </h2>
 
             <p class="text-secondary mt-3">
-                Ferramentas são importantes, mas a qualidade de uma
-                solução também depende das decisões tomadas durante
-                o desenvolvimento.
+                {{ skillsPage.practices.description }}
             </p>
 
         </div>
@@ -697,87 +580,78 @@
 
     <div class="row g-4 mt-2">
 
+        <!-- Componentização -->
         <div class="col-md-6 col-lg-3">
-
             <div class="text-center p-4">
 
                 <i class="bi bi-boxes fs-1 text-primary"></i>
 
                 <h3 class="fs-5 fw-bold mt-3">
-                    Componentização
+                    {{ skillsPage.practices.componentization.title }}
                 </h3>
 
                 <p class="text-secondary small">
-                    Criação de componentes reutilizáveis e
-                    responsabilidades bem definidas.
+                    {{ skillsPage.practices.componentization.description }}
                 </p>
 
             </div>
-
         </div>
 
 
+        <!-- Responsividade -->
         <div class="col-md-6 col-lg-3">
-
             <div class="text-center p-4">
 
                 <i class="bi bi-phone fs-1 text-primary"></i>
 
                 <h3 class="fs-5 fw-bold mt-3">
-                    Responsividade
+                    {{ skillsPage.practices.responsiveness.title }}
                 </h3>
 
                 <p class="text-secondary small">
-                    Interfaces adaptadas a diferentes dispositivos
-                    e tamanhos de tela.
+                    {{ skillsPage.practices.responsiveness.description }}
                 </p>
 
             </div>
-
         </div>
 
 
+        <!-- Qualidade -->
         <div class="col-md-6 col-lg-3">
-
             <div class="text-center p-4">
 
                 <i class="bi bi-shield-check fs-1 text-primary"></i>
 
                 <h3 class="fs-5 fw-bold mt-3">
-                    Qualidade
+                    {{ skillsPage.practices.quality.title }}
                 </h3>
 
                 <p class="text-secondary small">
-                    Preocupação com manutenção, organização e
-                    confiabilidade das aplicações.
+                    {{ skillsPage.practices.quality.description }}
                 </p>
 
             </div>
-
         </div>
 
 
+        <!-- Evolução -->
         <div class="col-md-6 col-lg-3">
-
             <div class="text-center p-4">
 
                 <i class="bi bi-arrow-repeat fs-1 text-primary"></i>
 
                 <h3 class="fs-5 fw-bold mt-3">
-                    Evolução
+                    {{ skillsPage.practices.evolution.title }}
                 </h3>
 
                 <p class="text-secondary small">
-                    Busca constante por melhorias e aprendizado
-                    de novas tecnologias.
+                    {{ skillsPage.practices.evolution.description }}
                 </p>
 
             </div>
-
         </div>
 
     </div>
-
 </section>
 
 
@@ -789,23 +663,22 @@
         <i class="bi bi-code-slash display-5"></i>
 
         <h2 class="display-6 fw-bold mt-3">
-            Quer conhecer meu trabalho na prática?
+            {{ skillsPage.cta.title }}
         </h2>
 
         <p class="lead opacity-75 mx-auto my-4" style="max-width: 650px;">
-            Veja alguns dos projetos em que essas tecnologias e
-            conhecimentos são aplicados para construir soluções reais.
+            {{ skillsPage.cta.description }}
         </p>
 
         <div class="d-flex justify-content-center flex-wrap gap-3">
 
             <button routerLink="/projects" class="btn btn-light btn-lg col-12 col-md-6 col-lg-3">
-                Ver projetos
+                {{ skillsPage.cta.projectsButton }}
                 <i class="bi bi-arrow-right ms-2"></i>
             </button>
 
             <button routerLink="/experiences" class="btn btn-outline-light btn-lg col-12 col-md-6 col-lg-3">
-                Ver experiências
+                {{ skillsPage.cta.experiencesButton }}
             </button>
 
         </div>
