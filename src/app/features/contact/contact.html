@@ -1,4 +1,5 @@
 <!-- CABEÇALHO -->
+
 <section class="py-5">
 
     <div class="row">
@@ -6,18 +7,18 @@
         <div class="col-lg-8">
 
             <span class="text-primary fw-semibold">
-                Contato
+                {{ contactPage.header.label }}
             </span>
 
             <h1 class="display-4 fw-bold mt-2">
-                Vamos conversar sobre
-                <span class="text-primary"> tecnologia e oportunidades.</span>
+                {{ contactPage.header.title }}
+                <span class="text-primary">
+                    {{ contactPage.header.titleHighlight }}
+                </span>
             </h1>
 
             <p class="lead text-secondary mt-4">
-                Se você quiser conversar sobre um projeto, oportunidade
-                profissional ou simplesmente trocar uma ideia sobre
-                desenvolvimento de software, entre em contato comigo.
+                {{ contactPage.header.description }}
             </p>
 
         </div>
@@ -28,29 +29,30 @@
 
 
 <!-- CONTATOS + FORMULÁRIO -->
+
 <section class="py-5">
 
     <div class="row g-5">
 
         <!-- INFORMAÇÕES -->
+
         <div class="col-lg-5">
 
             <span class="text-primary fw-semibold">
-                Fale comigo
+                {{ contactPage.contact.label }}
             </span>
 
             <h2 class="display-6 fw-bold mt-2">
-                Encontre a melhor forma de entrar em contato.
+                {{ contactPage.contact.title }}
             </h2>
 
             <p class="text-secondary mt-3">
-                Estou aberto a conversas relacionadas a desenvolvimento
-                de software, oportunidades profissionais, projetos
-                e colaboração.
+                {{ contactPage.contact.description }}
             </p>
 
 
             <!-- E-MAIL -->
+
             <div class="d-flex gap-3 mt-5">
 
                 <div class="bg-primary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
@@ -60,7 +62,7 @@
                 <div>
 
                     <span class="text-secondary small">
-                        E-MAIL
+                        {{ contactPage.contact.email.label }}
                     </span>
 
                     <a href="mailto:filiperonaldo1@gmail.com" class="d-block fw-semibold text-decoration-none">
@@ -73,6 +75,7 @@
 
 
             <!-- LINKEDIN -->
+
             <div class="d-flex gap-3 mt-4">
 
                 <div class="bg-primary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
@@ -82,7 +85,7 @@
                 <div>
 
                     <span class="text-secondary small">
-                        LINKEDIN
+                        {{ contactPage.contact.linkedin.label }}
                     </span>
 
                     <a href="https://linkedin.com/in/ronaldo-sabino" target="_blank" rel="noopener noreferrer" class="d-block fw-semibold text-decoration-none">
@@ -95,6 +98,7 @@
 
 
             <!-- GITHUB -->
+
             <div class="d-flex gap-3 mt-4">
 
                 <div class="bg-primary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
@@ -104,7 +108,7 @@
                 <div>
 
                     <span class="text-secondary small">
-                        GITHUB
+                        {{ contactPage.contact.github.label }}
                     </span>
 
                     <a href="https://github.com/ronaldosabino" target="_blank" rel="noopener noreferrer" class="d-block fw-semibold text-decoration-none">
@@ -115,7 +119,9 @@
 
             </div>
 
+
             <!-- WHATSAPP -->
+
             <div class="d-flex gap-3 mt-4">
 
                 <div class="bg-primary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
@@ -125,10 +131,10 @@
                 <div>
 
                     <span class="text-secondary small">
-                        WHATSAPP
+                        {{ contactPage.contact.whatsapp.label }}
                     </span>
 
-                    <a href="https://wa.me/5581994479584?text=Olá%20Ronaldo!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade." target="_blank" rel="noopener noreferrer" class="d-block fw-semibold text-decoration-none">
+                    <a href="https://wa.me/5581994479584?text=Olá%20Ronaldo!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade" target="_blank" rel="noopener noreferrer" class="d-block fw-semibold text-decoration-none">
                         +55 81 9447-9584
                     </a>
 
@@ -138,6 +144,7 @@
 
 
             <!-- LOCALIZAÇÃO -->
+
             <div class="d-flex gap-3 mt-4">
 
                 <div class="bg-primary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
@@ -147,11 +154,11 @@
                 <div>
 
                     <span class="text-secondary small">
-                        LOCALIZAÇÃO
+                        {{ contactPage.contact.location.label }}
                     </span>
 
                     <span class="d-block fw-semibold">
-                        Recife, Pernambuco — Brasil
+                        {{ contactPage.contact.location.value }}
                     </span>
 
                 </div>
@@ -160,6 +167,7 @@
 
 
             <!-- DISPONIBILIDADE -->
+
             <div class="border rounded-4 p-4 mt-5">
 
                 <div class="d-flex align-items-center gap-2">
@@ -167,14 +175,13 @@
                     <span class="bg-success rounded-circle" style="width: 10px; height: 10px;"></span>
 
                     <span class="fw-semibold">
-                        Disponível para conversar
+                        {{ contactPage.contact.availability.title }}
                     </span>
 
                 </div>
 
                 <p class="text-secondary small mt-2 mb-0">
-                    Tenho interesse em conhecer novos projetos,
-                    desafios técnicos e oportunidades profissionais.
+                    {{ contactPage.contact.availability.description }}
                 </p>
 
             </div>
@@ -183,6 +190,7 @@
 
 
         <!-- FORMULÁRIO -->
+
         <div class="col-lg-7">
 
             <div class="border rounded-4 p-4 p-lg-5">
@@ -190,16 +198,15 @@
                 <div class="mb-4">
 
                     <span class="text-primary fw-semibold">
-                        Envie uma mensagem
+                        {{ contactPage.form.label }}
                     </span>
 
                     <h2 class="fs-2 fw-bold mt-2">
-                        Como posso ajudar?
+                        {{ contactPage.form.title }}
                     </h2>
 
                     <p class="text-secondary mb-0">
-                        Preencha os campos abaixo e entrarei em contato
-                        assim que possível.
+                        {{ contactPage.form.description }}
                     </p>
 
                 </div>
@@ -208,60 +215,63 @@
                 <form [formGroup]="form">
 
                     <!-- NOME -->
+
                     <div class="mb-4">
 
                         <label for="name" class="form-label fw-semibold">
-                            Nome
+                            {{ contactPage.form.name.label }}
                         </label>
 
-                        <input type="text" id="name" class="form-control form-control-lg" placeholder="Seu nome" formControlName="name">
+                        <input type="text" id="name" class="form-control form-control-lg" [placeholder]="contactPage.form.name.placeholder" formControlName="name">
 
                     </div>
 
 
                     <!-- E-MAIL -->
+
                     <div class="mb-4">
 
                         <label for="email" class="form-label fw-semibold">
-                            E-mail
+                            {{ contactPage.form.email.label }}
                         </label>
 
-                        <input type="email" id="email" class="form-control form-control-lg" placeholder="seuemail@email.com" formControlName="email">
+                        <input type="email" id="email" class="form-control form-control-lg" [placeholder]="contactPage.form.email.placeholder" formControlName="email">
 
                     </div>
 
 
                     <!-- ASSUNTO -->
+
                     <div class="mb-4">
 
                         <label for="subject" class="form-label fw-semibold">
-                            Assunto
+                            {{ contactPage.form.subject.label }}
                         </label>
 
                         <select id="subject" class="form-select form-select-lg" formControlName="subject">
 
-                            <option selected disabled [value]=null>
-                                Selecione uma opção
+                            <option selected disabled [value]="null">
+                                {{ contactPage.form.subject.placeholder }}
                             </option>
 
                             <option value="opportunity">
-                                Oportunidade profissional
+                                {{ contactPage.form.subject.opportunity }}
                             </option>
 
                             <option value="project">
-                                Projeto
+                                {{ contactPage.form.subject.project }}
                             </option>
 
                             <option value="collaboration">
-                                Colaboração
+                                {{ contactPage.form.subject.collaboration }}
                             </option>
 
                             <option value="conversation">
-                                Conversa / Networking
+                                {{ contactPage.form.subject.conversation }}
                             </option>
 
                             <option value="other">
-                                Outro assunto
+                                {{ contactPage.form.subject.other }}
                             </option>
 
                         </select>
@@ -270,23 +280,30 @@
 
 
                     <!-- MENSAGEM -->
+
                     <div class="mb-4">
 
                         <label for="message" class="form-label fw-semibold">
-                            Mensagem
+                            {{ contactPage.form.message.label }}
                         </label>
 
-                        <textarea id="message" class="form-control" rows="6" placeholder="Escreva sua mensagem..." formControlName="message"></textarea>
+                        <textarea id="message" class="form-control" rows="6" [placeholder]="contactPage.form.message.placeholder" formControlName="message"></textarea>
 
                     </div>
 
 
                     <!-- BOTÃO -->
+
                     <div class="d-flex justify-content-end">
+
                         <button (click)="submit()" class="btn btn-primary btn-lg d-flex align-items-center">
-                            Enviar mensagem
+
+                            {{ contactPage.form.submitButton }}
+
                             <i class="bi bi-send ms-2"></i>
+
                         </button>
+
                     </div>
 
                 </form>
@@ -301,6 +318,7 @@
 
 
 <!-- OPORTUNIDADES -->
+
 <section class="py-5">
 
     <div class="row justify-content-center">
@@ -308,17 +326,15 @@
         <div class="col-lg-8 text-center">
 
             <span class="text-primary fw-semibold">
-                Oportunidades
+                {{ contactPage.opportunities.label }}
             </span>
 
             <h2 class="display-6 fw-bold mt-2">
-                Em que tipo de oportunidade tenho interesse?
+                {{ contactPage.opportunities.title }}
             </h2>
 
             <p class="text-secondary mt-3">
-                Tenho interesse em oportunidades que possibilitem
-                crescimento profissional, aprendizado contínuo e
-                participação em projetos relevantes.
+                {{ contactPage.opportunities.description }}
             </p>
 
         </div>
@@ -328,6 +344,8 @@
 
     <div class="row g-4 mt-3">
 
+        <!-- OPORTUNIDADES PROFISSIONAIS -->
+
         <div class="col-md-4">
 
             <div class="border rounded-4 p-4 h-100">
@@ -335,18 +353,19 @@
                 <i class="bi bi-briefcase fs-2 text-primary"></i>
 
                 <h3 class="fs-5 fw-bold mt-3">
-                    Oportunidades profissionais
+                    {{ contactPage.opportunities.professional.title }}
                 </h3>
 
                 <p class="text-secondary small mb-0">
-                    Posições relacionadas ao desenvolvimento de
-                    software e à engenharia de aplicações web.
+                    {{ contactPage.opportunities.professional.description }}
                 </p>
 
             </div>
 
         </div>
 
+
+        <!-- PROJETOS -->
 
         <div class="col-md-4">
 
@@ -355,18 +374,19 @@
                 <i class="bi bi-code-square fs-2 text-primary"></i>
 
                 <h3 class="fs-5 fw-bold mt-3">
-                    Projetos
+                    {{ contactPage.opportunities.projects.title }}
                 </h3>
 
                 <p class="text-secondary small mb-0">
-                    Projetos que envolvam desenvolvimento,
-                    modernização ou evolução de aplicações.
+                    {{ contactPage.opportunities.projects.description }}
                 </p>
 
             </div>
 
         </div>
 
+
+        <!-- NETWORKING -->
 
         <div class="col-md-4">
 
@@ -375,12 +395,11 @@
                 <i class="bi bi-people fs-2 text-primary"></i>
 
                 <h3 class="fs-5 fw-bold mt-3">
-                    Networking
+                    {{ contactPage.opportunities.networking.title }}
                 </h3>
 
                 <p class="text-secondary small mb-0">
-                    Conversas com profissionais e pessoas interessadas
-                    em tecnologia, desenvolvimento e inovação.
+                    {{ contactPage.opportunities.networking.description }}
                 </p>
 
             </div>
@@ -393,6 +412,7 @@
 
 
 <!-- FAQ -->
+
 <section class="py-5">
 
     <div class="row">
@@ -400,15 +420,15 @@
         <div class="col-lg-5">
 
             <span class="text-primary fw-semibold">
-                Dúvidas
+                {{ contactPage.faq.label }}
             </span>
 
             <h2 class="display-6 fw-bold mt-2">
-                Antes de entrar em contato
+                {{ contactPage.faq.title }}
             </h2>
 
             <p class="text-secondary mt-3">
-                Algumas respostas rápidas para facilitar nossa conversa.
+                {{ contactPage.faq.description }}
             </p>
 
         </div>
@@ -419,12 +439,13 @@
             <div class="accordion" id="contactAccordion">
 
                 <!-- ITEM 1 -->
+
                 <div class="accordion-item">
 
                     <h3 class="accordion-header">
 
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#questionOne">
-                            Você está aberto a oportunidades profissionais?
+                            {{ contactPage.faq.questionOne.question }}
                         </button>
 
                     </h3>
@@ -432,9 +453,7 @@
                     <div id="questionOne" class="accordion-collapse collapse show" data-bs-parent="#contactAccordion">
 
                         <div class="accordion-body text-secondary">
-                            Sim. Tenho interesse em conhecer novas
-                            oportunidades e desafios relacionados à
-                            área de desenvolvimento de software.
+                            {{ contactPage.faq.questionOne.answer }}
                         </div>
 
                     </div>
@@ -443,12 +462,13 @@
 
 
                 <!-- ITEM 2 -->
+
                 <div class="accordion-item">
 
                     <h3 class="accordion-header">
 
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionTwo">
-                            Você trabalha com projetos?
+                            {{ contactPage.faq.questionTwo.question }}
                         </button>
 
                     </h3>
@@ -456,9 +476,7 @@
                     <div id="questionTwo" class="accordion-collapse collapse" data-bs-parent="#contactAccordion">
 
                         <div class="accordion-body text-secondary">
-                            Tenho interesse em conversar sobre projetos
-                            relacionados ao desenvolvimento de aplicações
-                            web e soluções de software.
+                            {{ contactPage.faq.questionTwo.answer }}
                         </div>
 
                     </div>
@@ -467,12 +485,13 @@
 
 
                 <!-- ITEM 3 -->
+
                 <div class="accordion-item">
 
                     <h3 class="accordion-header">
 
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionThree">
-                            Posso entrar em contato para networking?
+                            {{ contactPage.faq.questionThree.question }}
                         </button>
 
                     </h3>
@@ -480,9 +499,7 @@
                     <div id="questionThree" class="accordion-collapse collapse" data-bs-parent="#contactAccordion">
 
                         <div class="accordion-body text-secondary">
-                            Claro. Gosto de conhecer outros profissionais,
-                            trocar experiências e conversar sobre tecnologia
-                            e desenvolvimento de software.
+                            {{ contactPage.faq.questionThree.answer }}
                         </div>
 
                     </div>
@@ -491,12 +508,13 @@
 
 
                 <!-- ITEM 4 -->
+
                 <div class="accordion-item">
 
                     <h3 class="accordion-header">
 
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionFour">
-                            Quanto tempo leva para responder?
+                            {{ contactPage.faq.questionFour.question }}
                         </button>
 
                     </h3>
@@ -504,9 +522,7 @@
                     <div id="questionFour" class="accordion-collapse collapse" data-bs-parent="#contactAccordion">
 
                         <div class="accordion-body text-secondary">
-                            Procuro responder às mensagens assim que
-                            possível. Para assuntos profissionais,
-                            quanto mais contexto você enviar, melhor.
+                            {{ contactPage.faq.questionFour.answer }}
                         </div>
 
                     </div>
@@ -523,6 +539,7 @@
 
 
 <!-- CTA FINAL -->
+
 <section class="py-5">
 
     <div class="bg-primary text-white rounded-4 p-5 text-center">
@@ -530,19 +547,21 @@
         <i class="bi bi-chat-square-text display-5"></i>
 
         <h2 class="display-6 fw-bold mt-3">
-            Tem uma ideia ou oportunidade?
+            {{ contactPage.cta.title }}
         </h2>
 
         <p class="lead opacity-75 mx-auto my-4" style="max-width: 650px;">
-            Não precisa esperar pelo momento perfeito.
-            Envie uma mensagem e vamos conversar.
+            {{ contactPage.cta.description }}
         </p>
 
         <div class="d-flex justify-content-center flex-wrap gap-3">
 
             <button (click)="sendMessage()" class="btn btn-light btn-lg col-12 col-md-6">
-                Enviar mensagem
+
+                {{ contactPage.cta.button }}
+
                 <i class="bi bi-arrow-right ms-2"></i>
+
             </button>
 
         </div>
