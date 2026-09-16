@@ -1,4 +1,5 @@
 <!-- CABEÇALHO -->
+
 <section class="py-5">
 
     <div class="row">
@@ -6,24 +7,25 @@
         <div class="col-lg-8">
 
             <span class="text-primary fw-semibold">
-                Portfólio
+                {{ projectsPage.header.label }}
             </span>
 
             <h1 class="display-4 fw-bold mt-2">
-                Projetos que transformam
-                <span class="text-primary"> ideias em soluções.</span>
+
+                {{ projectsPage.header.title }}
+
+                <span class="text-primary">
+                    {{ projectsPage.header.titleHighlight }}
+                </span>
+
             </h1>
 
             <p class="lead text-secondary mt-4">
-                Uma seleção de projetos, aplicações e experimentos
-                desenvolvidos ao longo da minha trajetória como
-                desenvolvedor.
+                {{ projectsPage.header.description }}
             </p>
 
             <p class="text-secondary">
-                Aqui você pode conhecer um pouco mais sobre as
-                tecnologias utilizadas, os desafios encontrados e
-                as decisões tomadas durante o desenvolvimento.
+                {{ projectsPage.header.description2 }}
             </p>
 
         </div>
@@ -31,7 +33,6 @@
     </div>
 
 </section>
-
 
 <!-- FILTROS -->
 <!-- <section class="pb-4">
@@ -64,6 +65,7 @@
 
 
 <!-- PROJETOS EM DESTAQUE -->
+
 <section class="py-5">
 
     <div class="d-flex align-items-end justify-content-between mb-4">
@@ -71,11 +73,11 @@
         <div>
 
             <span class="text-primary fw-semibold">
-                Destaques
+                {{ projectsPage.featured.label }}
             </span>
 
             <h2 class="fs-1 fw-bold mt-2 mb-0">
-                Projetos em destaque
+                {{ projectsPage.featured.title }}
             </h2>
 
         </div>
@@ -86,14 +88,13 @@
     <div class="row g-4">
 
         <!-- PROJETO 1 -->
+
         <div class="col-12 col-lg-4">
 
             <article class="border rounded-4 overflow-hidden h-100">
 
                 <div class="bg-body-tertiary d-flex align-items-center justify-content-center" style="height: 320px;">
-
                     <i class="bi bi-robot display-1 text-primary"></i>
-
                 </div>
 
 
@@ -102,52 +103,52 @@
                     <div class="d-flex flex-wrap gap-2 mb-3">
 
                         <span class="badge text-bg-light">
-                            Inteligência Artificial
+                            {{ projectsPage.featured.projectOne.tags.artificialIntelligence }}
                         </span>
 
                         <span class="badge text-bg-light">
-                            Python
+                            {{ projectsPage.featured.projectOne.tags.python }}
                         </span>
 
                         <span class="badge text-bg-light">
-                            Angular
+                            {{ projectsPage.featured.projectOne.tags.angular }}
                         </span>
 
                     </div>
 
 
                     <h3 class="fs-2 fw-bold">
-                        RisoflorAI
+                        {{ projectsPage.featured.projectOne.title }}
                     </h3>
 
 
                     <p class="text-secondary">
-                        Aplicação web desenvolvida com foco em inteligência artificial e integração de sistemas.
+                        {{ projectsPage.featured.projectOne.description }}
                     </p>
 
 
                     <div class="mt-4">
 
                         <h4 class="fs-6 fw-semibold">
-                            Principais contribuições
+                            {{ projectsPage.featured.projectOne.contributionsTitle }}
                         </h4>
 
                         <ul class="text-secondary">
 
                             <li>
-                                Chatbot com Inteligência Artificial
+                                {{ projectsPage.featured.projectOne.contributions.itemOne }}
                             </li>
 
                             <li>
-                                Integração com APIs REST
+                                {{ projectsPage.featured.projectOne.contributions.itemTwo }}
                             </li>
 
                             <li>
-                                Integração com Inteligência Artificial
+                                {{ projectsPage.featured.projectOne.contributions.itemThree }}
                             </li>
 
                             <li>
-                                Desenvolvimento de interfaces responsivas
+                                {{ projectsPage.featured.projectOne.contributions.itemFour }}
                             </li>
 
                         </ul>
@@ -159,12 +160,16 @@
 
                         <button href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
                             <i class="bi bi-file-earmark-text me-2"></i>
-                            Detalhes
+
+                            {{ projectsPage.featured.projectOne.detailsButton }}
+
                         </button>
 
                         <a href="https://risoflorai.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary">
                             <i class="bi bi-box-arrow-up-right me-2"></i>
-                            Ver projeto
+
+                            {{ projectsPage.featured.projectOne.viewProjectButton }}
+
                         </a>
 
                     </div>
@@ -175,15 +180,15 @@
 
         </div>
 
+
         <!-- PROJETO 2 -->
+
         <div class="col-12 col-md-6 col-lg-4">
 
             <article class="border rounded-4 overflow-hidden h-100">
 
                 <div class="bg-body-tertiary d-flex align-items-center justify-content-center" style="height: 320px;">
-
                     <i class="bi bi-tornado display-1 text-primary"></i>
-
                 </div>
 
 
@@ -192,53 +197,52 @@
                     <div class="d-flex flex-wrap gap-2 mb-3">
 
                         <span class="badge text-bg-light">
-                            Educacional
+                            {{ projectsPage.featured.projectTwo.tags.educational }}
                         </span>
 
                         <span class="badge text-bg-light">
-                            Bootstrap
+                            {{ projectsPage.featured.projectTwo.tags.bootstrap }}
                         </span>
 
                         <span class="badge text-bg-light">
-                            Angular
+                            {{ projectsPage.featured.projectTwo.tags.angular }}
                         </span>
 
                     </div>
 
 
                     <h3 class="fs-2 fw-bold">
-                        Brainstorm
+                        {{ projectsPage.featured.projectTwo.title }}
                     </h3>
 
 
-                    <p class="text-secondary">
-                        Projeto voltado a Educação.<br>
-                        Cursos e aulas para explorar o potencial de um desenvolvedor.
+                    <p class="text-secondary" style="white-space: pre-line;">
+                        {{ projectsPage.featured.projectTwo.description }}
                     </p>
 
 
                     <div class="mt-4">
 
                         <h4 class="fs-6 fw-semibold">
-                            Principais contribuições
+                            {{ projectsPage.featured.projectTwo.contributionsTitle }}
                         </h4>
 
                         <ul class="text-secondary">
 
                             <li>
-                                Desenvolvimento de interfaces responsivas
+                                {{ projectsPage.featured.projectTwo.contributions.itemOne }}
                             </li>
 
                             <li>
-                                Componentização da aplicação
+                                {{ projectsPage.featured.projectTwo.contributions.itemTwo }}
                             </li>
 
                             <li>
-                                Aplicação de boas práticas de Front-End
+                                {{ projectsPage.featured.projectTwo.contributions.itemThree }}
                             </li>
 
                             <li>
-                                Plataforma educacional
+                                {{ projectsPage.featured.projectTwo.contributions.itemFour }}
                             </li>
 
                         </ul>
@@ -250,12 +254,16 @@
 
                         <button href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
                             <i class="bi bi-file-earmark-text me-2"></i>
-                            Detalhes
+
+                            {{ projectsPage.featured.projectTwo.detailsButton }}
+
                         </button>
 
                         <button href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary">
                             <i class="bi bi-box-arrow-up-right me-2"></i>
-                            Ver projeto
+
+                            {{ projectsPage.featured.projectTwo.viewProjectButton }}
+
                         </button>
 
                     </div>
@@ -266,15 +274,15 @@
 
         </div>
 
+
         <!-- PROJETO 3 -->
+
         <div class="col-12 col-md-6 col-lg-4">
 
             <article class="border rounded-4 overflow-hidden h-100">
 
                 <div class="bg-body-tertiary d-flex align-items-center justify-content-center" style="height: 320px;">
-
                     <i class="bi bi-speedometer2 display-1 text-primary"></i>
-
                 </div>
 
 
@@ -283,54 +291,52 @@
                     <div class="d-flex flex-wrap gap-2 mb-3">
 
                         <span class="badge text-bg-light">
-                            Performance
+                            {{ projectsPage.featured.projectThree.tags.performance }}
                         </span>
 
                         <span class="badge text-bg-light">
-                            K6
+                            {{ projectsPage.featured.projectThree.tags.k6 }}
                         </span>
 
                         <span class="badge text-bg-light">
-                            APIs
+                            {{ projectsPage.featured.projectThree.tags.apis }}
                         </span>
 
                     </div>
 
 
                     <h3 class="fs-2 fw-bold">
-                        Testes de Performance
+                        {{ projectsPage.featured.projectThree.title }}
                     </h3>
 
 
                     <p class="text-secondary">
-                        Projeto voltado à avaliação de desempenho
-                        e comportamento de aplicações submetidas
-                        a diferentes níveis de carga.
+                        {{ projectsPage.featured.projectThree.description }}
                     </p>
 
 
                     <div class="mt-4">
 
                         <h4 class="fs-6 fw-semibold">
-                            Principais contribuições
+                            {{ projectsPage.featured.projectThree.contributionsTitle }}
                         </h4>
 
                         <ul class="text-secondary">
 
                             <li>
-                                Criação de cenários de carga
+                                {{ projectsPage.featured.projectThree.contributions.itemOne }}
                             </li>
 
                             <li>
-                                Avaliação de tempo de resposta
+                                {{ projectsPage.featured.projectThree.contributions.itemTwo }}
                             </li>
 
                             <li>
-                                Identificação de gargalos
+                                {{ projectsPage.featured.projectThree.contributions.itemThree }}
                             </li>
 
                             <li>
-                                Análise de escalabilidade
+                                {{ projectsPage.featured.projectThree.contributions.itemFour }}
                             </li>
 
                         </ul>
@@ -342,12 +348,16 @@
 
                         <button href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
                             <i class="bi bi-file-earmark-text me-2"></i>
-                            Detalhes
+
+                            {{ projectsPage.featured.projectThree.detailsButton }}
+
                         </button>
 
                         <button href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary">
                             <i class="bi bi-box-arrow-up-right me-2"></i>
-                            Ver projeto
+
+                            {{ projectsPage.featured.projectThree.viewProjectButton }}
+
                         </button>
 
                     </div>
@@ -364,21 +374,21 @@
 
 
 <!-- OUTROS PROJETOS -->
+
 <section class="py-5">
 
     <div class="mb-4">
 
         <span class="text-primary fw-semibold">
-            Mais trabalhos
+            {{ projectsPage.otherProjects.label }}
         </span>
 
         <h2 class="fs-1 fw-bold mt-2">
-            Outros projetos
+            {{ projectsPage.otherProjects.title }}
         </h2>
 
         <p class="text-secondary">
-            Projetos menores, estudos e experimentos desenvolvidos
-            para colocar conhecimentos em prática.
+            {{ projectsPage.otherProjects.description }}
         </p>
 
     </div>
@@ -386,7 +396,9 @@
 
     <div class="row g-4">
 
-        <!-- PROJETO -->
+
+        <!-- MENU -->
+
         <div class="col-md-6 col-lg-4">
 
             <article class="border rounded-4 p-4 h-100">
@@ -395,7 +407,7 @@
 
                     <i class="bi bi-fork-knife fs-2 text-primary"></i>
 
-                    <a href="https://menuronaldo.netlify.app" target="_blank" rel="noopener noreferrer" class="text-secondary" aria-label="Abrir projeto">
+                    <a href="https://menuronaldo.netlify.app" target="_blank" rel="noopener noreferrer" class="text-secondary" [attr.aria-label]="projectsPage.otherProjects.menu.openProject">
                         <i class="bi bi-arrow-up-right fs-5"></i>
                     </a>
 
@@ -405,12 +417,11 @@
                 <div class="mt-4">
 
                     <h3 class="fs-4">
-                        Menu
+                        {{ projectsPage.otherProjects.menu.title }}
                     </h3>
 
-                    <p class="text-secondary">
-                        Cardápio digital. <br>
-                        Desenvolvimento baseado em Design System e responsividade.
+                    <p class="text-secondary" style="white-space: pre-line;">
+                        {{ projectsPage.otherProjects.menu.description }}
                     </p>
 
                 </div>
@@ -419,15 +430,15 @@
                 <div class="d-flex flex-wrap gap-2 mt-4">
 
                     <span class="badge text-bg-light">
-                        Angular
+                        {{ projectsPage.otherProjects.menu.tags.angular }}
                     </span>
 
                     <span class="badge text-bg-light">
-                        TypeScript
+                        {{ projectsPage.otherProjects.menu.tags.typescript }}
                     </span>
 
                     <span class="badge text-bg-light">
-                        Bootstrap
+                        {{ projectsPage.otherProjects.menu.tags.bootstrap }}
                     </span>
 
                 </div>
@@ -437,7 +448,8 @@
         </div>
 
 
-        <!-- PROJETO -->
+        <!-- API REST -->
+
         <div class="col-md-6 col-lg-4">
 
             <article class="border rounded-4 p-4 h-100">
@@ -446,7 +458,7 @@
 
                     <i class="bi bi-database fs-2 text-primary"></i>
 
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="text-secondary" aria-label="Abrir projeto">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="text-secondary" [attr.aria-label]="projectsPage.otherProjects.restApi.openProject">
                         <i class="bi bi-arrow-up-right fs-5"></i>
                     </a>
 
@@ -456,13 +468,11 @@
                 <div class="mt-4">
 
                     <h3 class="fs-4">
-                        API REST
+                        {{ projectsPage.otherProjects.restApi.title }}
                     </h3>
 
                     <p class="text-secondary">
-                        Projeto desenvolvido para estudar integração
-                        entre aplicações, comunicação HTTP e
-                        organização de serviços.
+                        {{ projectsPage.otherProjects.restApi.description }}
                     </p>
 
                 </div>
@@ -471,15 +481,15 @@
                 <div class="d-flex flex-wrap gap-2 mt-4">
 
                     <span class="badge text-bg-light">
-                        REST
+                        {{ projectsPage.otherProjects.restApi.tags.rest }}
                     </span>
 
                     <span class="badge text-bg-light">
-                        API
+                        {{ projectsPage.otherProjects.restApi.tags.api }}
                     </span>
 
                     <span class="badge text-bg-light">
-                        Backend
+                        {{ projectsPage.otherProjects.restApi.tags.backend }}
                     </span>
 
                 </div>
@@ -489,7 +499,8 @@
         </div>
 
 
-        <!-- PROJETO -->
+        <!-- DESIGN SYSTEM -->
+
         <div class="col-md-6 col-lg-4">
 
             <article class="border rounded-4 p-4 h-100">
@@ -498,7 +509,7 @@
 
                     <i class="bi bi-palette fs-2 text-primary"></i>
 
-                    <a href="https://www.figma.com/proto/X2EoV309FwtS6h7yPNni8Z/CARD%C3%81PIO-DIGITAL?node-id=13-267&t=knp6glFnt2fdl0At-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1" target="_blank" rel="noopener noreferrer" class="text-secondary" aria-label="Abrir projeto">
+                    <a href="https://www.figma.com/proto/X2EoV309FwtS6h7yPNni8Z/CARD%C3%81PIO-DIGITAL?node-id=13-267&t=knp6glFnt2fdl0At-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1" target="_blank" rel="noopener noreferrer" class="text-secondary" [attr.aria-label]="projectsPage.otherProjects.designSystem.openProject">
                         <i class="bi bi-arrow-up-right fs-5"></i>
                     </a>
 
@@ -508,13 +519,11 @@
                 <div class="mt-4">
 
                     <h3 class="fs-4">
-                        Design System
+                        {{ projectsPage.otherProjects.designSystem.title }}
                     </h3>
 
                     <p class="text-secondary">
-                        Estudo voltado à criação de componentes
-                        reutilizáveis e padronização visual
-                        de aplicações web.
+                        {{ projectsPage.otherProjects.designSystem.description }}
                     </p>
 
                 </div>
@@ -523,15 +532,15 @@
                 <div class="d-flex flex-wrap gap-2 mt-4">
 
                     <span class="badge text-bg-light">
-                        UI
+                        {{ projectsPage.otherProjects.designSystem.tags.ui }}
                     </span>
 
                     <span class="badge text-bg-light">
-                        Components
+                        {{ projectsPage.otherProjects.designSystem.tags.components }}
                     </span>
 
                     <span class="badge text-bg-light">
-                        Bootstrap
+                        {{ projectsPage.otherProjects.designSystem.tags.bootstrap }}
                     </span>
 
                 </div>
@@ -541,7 +550,8 @@
         </div>
 
 
-        <!-- PROJETO -->
+        <!-- DASHBOARD -->
+
         <div class="col-md-6 col-lg-4">
 
             <article class="border rounded-4 p-4 h-100">
@@ -550,7 +560,7 @@
 
                     <i class="bi bi-bar-chart-line fs-2 text-primary"></i>
 
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="text-secondary" aria-label="Abrir projeto">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="text-secondary" [attr.aria-label]="projectsPage.otherProjects.dashboard.openProject">
                         <i class="bi bi-arrow-up-right fs-5"></i>
                     </a>
 
@@ -560,13 +570,11 @@
                 <div class="mt-4">
 
                     <h3 class="fs-4">
-                        Dashboard
+                        {{ projectsPage.otherProjects.dashboard.title }}
                     </h3>
 
                     <p class="text-secondary">
-                        Interface para visualização e organização
-                        de informações através de indicadores
-                        e elementos gráficos.
+                        {{ projectsPage.otherProjects.dashboard.description }}
                     </p>
 
                 </div>
@@ -575,15 +583,15 @@
                 <div class="d-flex flex-wrap gap-2 mt-4">
 
                     <span class="badge text-bg-light">
-                        Angular
+                        {{ projectsPage.otherProjects.dashboard.tags.angular }}
                     </span>
 
                     <span class="badge text-bg-light">
-                        Charts
+                        {{ projectsPage.otherProjects.dashboard.tags.charts }}
                     </span>
 
                     <span class="badge text-bg-light">
-                        UI
+                        {{ projectsPage.otherProjects.dashboard.tags.ui }}
                     </span>
 
                 </div>
@@ -593,7 +601,8 @@
         </div>
 
 
-        <!-- PROJETO -->
+        <!-- INTERFACE RESPONSIVA -->
+
         <div class="col-md-6 col-lg-4">
 
             <article class="border rounded-4 p-4 h-100">
@@ -602,7 +611,7 @@
 
                     <i class="bi bi-phone fs-2 text-primary"></i>
 
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="text-secondary" aria-label="Abrir projeto">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="text-secondary" [attr.aria-label]="projectsPage.otherProjects.responsiveInterface.openProject">
                         <i class="bi bi-arrow-up-right fs-5"></i>
                     </a>
 
@@ -612,13 +621,11 @@
                 <div class="mt-4">
 
                     <h3 class="fs-4">
-                        Interface Responsiva
+                        {{ projectsPage.otherProjects.responsiveInterface.title }}
                     </h3>
 
                     <p class="text-secondary">
-                        Projeto focado na criação de uma experiência
-                        consistente entre dispositivos desktop,
-                        tablet e mobile.
+                        {{ projectsPage.otherProjects.responsiveInterface.description }}
                     </p>
 
                 </div>
@@ -627,15 +634,15 @@
                 <div class="d-flex flex-wrap gap-2 mt-4">
 
                     <span class="badge text-bg-light">
-                        HTML
+                        {{ projectsPage.otherProjects.responsiveInterface.tags.html }}
                     </span>
 
                     <span class="badge text-bg-light">
-                        CSS
+                        {{ projectsPage.otherProjects.responsiveInterface.tags.css }}
                     </span>
 
                     <span class="badge text-bg-light">
-                        Bootstrap
+                        {{ projectsPage.otherProjects.responsiveInterface.tags.bootstrap }}
                     </span>
 
                 </div>
@@ -645,7 +652,8 @@
         </div>
 
 
-        <!-- PROJETO -->
+        <!-- ESTUDOS E EXPERIMENTOS -->
+
         <div class="col-md-6 col-lg-4">
 
             <article class="border rounded-4 p-4 h-100">
@@ -654,7 +662,7 @@
 
                     <i class="bi bi-terminal fs-2 text-primary"></i>
 
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="text-secondary" aria-label="Abrir projeto">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="text-secondary" [attr.aria-label]="projectsPage.otherProjects.studies.openProject">
                         <i class="bi bi-arrow-up-right fs-5"></i>
                     </a>
 
@@ -664,13 +672,11 @@
                 <div class="mt-4">
 
                     <h3 class="fs-4">
-                        Estudos e experimentos
+                        {{ projectsPage.otherProjects.studies.title }}
                     </h3>
 
                     <p class="text-secondary">
-                        Pequenos projetos desenvolvidos para
-                        experimentar novas tecnologias, padrões
-                        e abordagens de desenvolvimento.
+                        {{ projectsPage.otherProjects.studies.description }}
                     </p>
 
                 </div>
@@ -679,15 +685,15 @@
                 <div class="d-flex flex-wrap gap-2 mt-4">
 
                     <span class="badge text-bg-light">
-                        Experimentos
+                        {{ projectsPage.otherProjects.studies.tags.experiments }}
                     </span>
 
                     <span class="badge text-bg-light">
-                        JavaScript
+                        {{ projectsPage.otherProjects.studies.tags.javascript }}
                     </span>
 
                     <span class="badge text-bg-light">
-                        Angular
+                        {{ projectsPage.otherProjects.studies.tags.angular }}
                     </span>
 
                 </div>
@@ -702,6 +708,7 @@
 
 
 <!-- CTA -->
+
 <section class="py-5">
 
     <div class="bg-primary text-white text-center rounded-4 p-5">
@@ -709,23 +716,23 @@
         <i class="bi bi-lightbulb fs-1 text-primary"></i>
 
         <h2 class="display-6 fw-bold mt-3">
-            Tem um projeto em mente?
+            {{ projectsPage.cta.title }}
         </h2>
 
         <p class="lead opacity-75 mx-auto my-4" style="max-width: 650px;">
-            Se você está procurando alguém para transformar uma
-            ideia em uma solução web, vamos conversar.
+            {{ projectsPage.cta.description }}
         </p>
 
         <div class="d-flex justify-content-center flex-wrap gap-3">
 
             <button routerLink="/experiences" class="btn btn-light btn-lg col-12 col-md-6 col-lg-3">
-                Experiências
+                {{ projectsPage.cta.experiencesButton }}
+
                 <i class="bi bi-arrow-right ms-2"></i>
             </button>
 
             <button routerLink="/contact" class="btn btn-outline-light btn-lg col-12 col-md-6 col-lg-3">
-                Entre em contato
+                {{ projectsPage.cta.contactButton }}
             </button>
 
         </div>
