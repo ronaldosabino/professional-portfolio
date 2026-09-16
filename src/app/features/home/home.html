@@ -7,18 +7,16 @@
         <div class="col-lg-7">
 
             <span class="dancing-script fs-1 text-primary mb-3">
-                Ronaldo Filipe Sabino
+                {{ homePage.hero.name }}
             </span>
 
             <h1 class="display-4 fw-bold mb-4">
-                Transformo ideias em
-                <span class="text-primary"> soluções digitais.</span>
+                {{ homePage.hero.title }}
+                <span class="text-primary"> {{ homePage.hero.titleHighLight }}</span>
             </h1>
 
             <p class="lead text-secondary mb-4">
-                Analista e Desenvolvedor de Sistemas com foco em Angular,
-                interfaces modernas e construção de aplicações
-                web eficientes, escaláveis e centradas no usuário.
+                {{ homePage.hero.description }}
             </p>
 
             <div class="row mb-4 g-3">
@@ -26,14 +24,14 @@
                 <div class="col-12 col-md-6">
                     <button routerLink="/projects" class="btn btn-primary btn-lg d-flex align-items-center justify-content-center w-100">
                         <i class="bi bi-code-slash me-2"></i>
-                        Ver projetos
+                        {{ homePage.hero.projectsButton }}
                     </button>
                 </div>
 
                 <div class="col-12 col-md-6">
                     <button routerLink="/about" class="btn btn-outline-secondary btn-lg d-flex align-items-center justify-content-center w-100">
                         <i class="bi bi-person me-2"></i>
-                        Sobre mim
+                        {{ homePage.hero.aboutButton }}
                     </button>
                 </div>
 
@@ -42,18 +40,18 @@
             <div class="row mt-5 text-secondary">
 
                 <div class="col-4">
-                    <strong class="d-block fs-4 text-dark">3+</strong>
-                    <small>Anos de experiência</small>
+                    <strong class="d-block fs-4 text-dark">{{ homePage.hero.experienceYears }}</strong>
+                    <small>{{ homePage.hero.experienceYearsLabel }}</small>
                 </div>
 
                 <div class="col-4">
-                    <strong class="d-block fs-4 text-dark">Angular</strong>
-                    <small>Principal tecnologia</small>
+                    <strong class="d-block fs-4 text-dark">{{ homePage.hero.mainTechnology }}</strong>
+                    <small>{{ homePage.hero.mainTechnologyLabel }}</small>
                 </div>
 
                 <div class="col-4">
-                    <strong class="d-block fs-4 text-dark">Full Cycle</strong>
-                    <small>Visão além do Front-End</small>
+                    <strong class="d-block fs-4 text-dark">{{ homePage.hero.mainTechnology }}</strong>
+                    <small>{{ homePage.hero.fullCycleLabel }}</small>
                 </div>
 
             </div>
@@ -87,24 +85,21 @@
 
             <div class="col-12 col-md-8">
                 <span class="text-primary fw-semibold">
-                    O que eu faço
+                    {{ homePage.areas.label }}
                 </span>
 
                 <h2 class="display-6 fw-bold mt-2">
-                    Desenvolvimento orientado a resultados
+                    {{ homePage.areas.title }}
                 </h2>
 
                 <p class="text-secondary mt-3">
-                    Meu trabalho vai além de escrever código.
-                    Busco compreender o problema, analisar as necessidades
-                    e construir soluções que façam sentido para o negócio
-                    e para quem utiliza o sistema.
+                    {{ homePage.areas.description }}
                 </p>
             </div>
 
             <div class="d-flex justify-content-md-end flex-column flex-md-row col-12 col-md-4">
                 <button routerLink="/experiences" class="btn btn-outline-primary">
-                    Ver experiências
+                    {{ homePage.areas.experiencesButton }}
                     <i class="bi bi-arrow-right ms-2"></i>
                 </button>
             </div>
@@ -123,14 +118,11 @@
                 <i class="bi bi-window-stack fs-2 text-primary"></i>
 
                 <h3 class="fs-4 mt-4">
-                    Front-End
+                    {{ homePage.areas.frontEnd.title }}
                 </h3>
 
                 <p class="text-secondary mb-0">
-                    Desenvolvimento de interfaces responsivas,
-                    componentizadas e focadas em usabilidade,
-                    utilizando Angular e tecnologias modernas
-                    do ecossistema web.
+                    {{ homePage.areas.frontEnd.description }}
                 </p>
 
             </div>
@@ -145,13 +137,11 @@
                 <i class="bi bi-diagram-3 fs-2 text-primary"></i>
 
                 <h3 class="fs-4 mt-4">
-                    Integração de sistemas
+                    {{ homePage.areas.systemsIntegration.title }}
                 </h3>
 
                 <p class="text-secondary mb-0">
-                    Integração com APIs REST e desenvolvimento
-                    de aplicações capazes de consumir e
-                    organizar diferentes fontes de dados.
+                    {{ homePage.areas.description }}
                 </p>
 
             </div>
@@ -166,13 +156,11 @@
                 <i class="bi bi-speedometer2 fs-2 text-primary"></i>
 
                 <h3 class="fs-4 mt-4">
-                    Performance
+                    {{ homePage.areas.performance.title }}
                 </h3>
 
                 <p class="text-secondary mb-0">
-                    Análise de desempenho, testes de carga e
-                    preocupação com escalabilidade para criar
-                    aplicações mais eficientes e confiáveis.
+                    {{ homePage.areas.performance.description }}
                 </p>
 
             </div>
@@ -192,17 +180,15 @@
         <div class="col-lg-5">
 
             <span class="text-primary fw-semibold">
-                Minha abordagem
+                {{ homePage.approach.label }}
             </span>
 
             <h2 class="display-6 fw-bold mt-2">
-                Do problema à solução
+                {{ homePage.approach.title }}
             </h2>
 
             <p class="text-secondary mt-3">
-                Uma boa aplicação começa antes do código.
-                Procuro entender o contexto da demanda para
-                então definir uma solução técnica adequada.
+                {{ homePage.approach.description }}
             </p>
 
         </div>
@@ -223,12 +209,11 @@
                         <div>
 
                             <h3 class="fs-5">
-                                Entendimento
+                                {{ homePage.approach.understanding.title }}
                             </h3>
 
                             <p class="text-secondary small">
-                                Compreensão do problema, dos requisitos
-                                e das necessidades dos usuários.
+                                {{ homePage.approach.understanding.description }}
                             </p>
 
                         </div>
@@ -249,13 +234,11 @@
                         <div>
 
                             <h3 class="fs-5">
-                                Planejamento
+                                {{ homePage.approach.planning.title }}
                             </h3>
 
                             <p class="text-secondary small">
-                                Análise das alternativas e definição
-                                da abordagem técnica mais adequada.
-                            </p>
+                                {{ homePage.approach.planning.description }}
 
                         </div>
 
@@ -275,12 +258,11 @@
                         <div>
 
                             <h3 class="fs-5">
-                                Desenvolvimento
+                                {{ homePage.approach.development.title }}
                             </h3>
 
                             <p class="text-secondary small">
-                                Implementação utilizando boas práticas,
-                                componentização e código sustentável.
+                                {{ homePage.approach.development.description }}
                             </p>
 
                         </div>
@@ -301,12 +283,11 @@
                         <div>
 
                             <h3 class="fs-5">
-                                Evolução
+                                {{ homePage.approach.evolution.title }}
                             </h3>
 
                             <p class="text-secondary small">
-                                Testes, análise de desempenho e
-                                melhorias contínuas na solução.
+                                {{ homePage.approach.evolution.description }}
                             </p>
 
                         </div>
@@ -330,17 +311,15 @@
     <div class="text-center mb-5">
 
         <span class="text-primary fw-semibold">
-            Tecnologias
+            {{ homePage.technologies.label }}
         </span>
 
         <h2 class="display-6 fw-bold mt-2">
-            Ferramentas que fazem parte do meu dia a dia
+            {{ homePage.technologies.title }}
         </h2>
 
         <p class="text-secondary mx-auto" style="max-width: 700px;">
-            Minha principal atuação está no desenvolvimento Front-End,
-            mas também possuo contato com diferentes tecnologias que
-            complementam o desenvolvimento de aplicações.
+            {{ homePage.technologies.description }}
         </p>
 
     </div>
@@ -395,7 +374,7 @@
     <div class="d-flex flex-column flex-md-row justify-content-center mt-4">
 
         <button routerLink="/skills" class="btn btn-outline-primary">
-            Outras habilidades
+            {{ homePage.technologies.otherSkillsButton }}
             <i class="bi bi-arrow-right ms-2"></i>
         </button>
 
@@ -411,26 +390,22 @@
         <div class="col-lg-12">
 
             <span class="text-primary fw-semibold">
-                O que guia meu trabalho
+                {{ homePage.principles.label }}
             </span>
 
             <h2 class="display-6 fw-bold mt-2">
-                Mais do que fazer funcionar
+                {{ homePage.principles.title }}
             </h2>
 
             <p class="text-secondary mt-3">
-                Desenvolver uma aplicação não significa apenas entregar
-                funcionalidades. Busco construir soluções que sejam
-                compreensíveis, consistentes e capazes de evoluir junto
-                com as necessidades do projeto.
+                {{ homePage.principles.description }}
             </p>
 
             <ul class="text-secondary d-none d-md-block">
-                <li>Priorizo código organizado, legível e
-                    componentizado, facilitando a manutenção</li>
-                <li>Busco interfaces intuitivas, responsivas e consistentes, considerando a experiência de quem realmente utiliza o sistema.</li>
-                <li>Tenho atenção a validações, tratamento de erros, desempenho e confiabilidade para entregar aplicações mais robustas.</li>
-                <li>Acredito que uma boa solução pode sempre evoluir. Por isso, busco aprender, revisar decisões e aprimorar minhas práticas.</li>
+                <li>{{ homePage.principles.sustainableCode.description }}</li>
+                <li>{{ homePage.principles.userExperience.description }}</li>
+                <li>{{ homePage.principles.quality.description }}</li>
+                <li>{{ homePage.principles.continuousEvolution.description }}</li>
             </ul>
 
         </div>
@@ -447,13 +422,11 @@
                         <i class="bi bi-code-slash fs-2 text-primary"></i>
 
                         <h3 class="fs-5 mt-4">
-                            Código sustentável
+                            {{ homePage.principles.sustainableCode.title }}
                         </h3>
 
                         <p class="text-secondary small mb-0">
-                            Priorizo código organizado, legível e
-                            componentizado, facilitando a manutenção
-                            e a evolução da aplicação.
+                            {{ homePage.principles.sustainableCode.description }}
                         </p>
 
                     </div>
@@ -468,13 +441,11 @@
                         <i class="bi bi-person-check fs-2 text-primary"></i>
 
                         <h3 class="fs-5 mt-4">
-                            Experiência do usuário
+                            {{ homePage.principles.sustainableCode.title }}
                         </h3>
 
                         <p class="text-secondary small mb-0">
-                            Busco interfaces intuitivas, responsivas
-                            e consistentes, considerando a experiência
-                            de quem realmente utiliza o sistema.
+                            {{ homePage.principles.sustainableCode.description }}
                         </p>
 
                     </div>
@@ -489,13 +460,11 @@
                         <i class="bi bi-shield-check fs-2 text-primary"></i>
 
                         <h3 class="fs-5 mt-4">
-                            Qualidade
+                            {{ homePage.principles.quality.title }}
                         </h3>
 
                         <p class="text-secondary small mb-0">
-                            Tenho atenção a validações, tratamento de
-                            erros, desempenho e confiabilidade para
-                            entregar aplicações mais robustas.
+                            {{ homePage.principles.quality.description }}
                         </p>
 
                     </div>
@@ -510,13 +479,11 @@
                         <i class="bi bi-arrow-repeat fs-2 text-primary"></i>
 
                         <h3 class="fs-5 mt-4">
-                            Evolução contínua
+                            {{ homePage.principles.continuousEvolution.title }}
                         </h3>
 
                         <p class="text-secondary small mb-0">
-                            Acredito que uma boa solução pode sempre
-                            evoluir. Por isso, busco aprender, revisar
-                            decisões e aprimorar minhas práticas.
+                            {{ homePage.principles.continuousEvolution.description }}
                         </p>
 
                     </div>
@@ -540,17 +507,17 @@
         <div>
 
             <span class="text-primary fw-semibold">
-                Portfólio
+                {{ homePage.projects.label }}
             </span>
 
             <h2 class="display-6 fw-bold mt-2 mb-0">
-                Alguns projetos
+                {{ homePage.projects.title }}
             </h2>
 
         </div>
 
         <button routerLink="/projects" class="btn btn-outline-primary">
-            Ver projetos
+            {{ homePage.projects.viewProjectsButton }}
             <i class="bi bi-arrow-right ms-2"></i>
         </button>
 
@@ -573,7 +540,7 @@
                     <div class="d-flex gap-2 flex-wrap mb-3">
 
                         <span class="badge text-bg-light">
-                            Inteligência Artificial
+                            {{ homePage.projects.risoflorAI.category }}
                         </span>
 
                         <span class="badge text-bg-light">
@@ -591,13 +558,11 @@
                     </h3>
 
                     <p class="text-secondary">
-                        Chatbot.<br>
-                        Aplicação desenvolvida com foco em
-                        Inteligência Artificial e Integração de Sistemas.
+                        {{ homePage.projects.risoflorAI.description }}
                     </p>
 
                     <a routerLink="/projetos" class="link-primary text-decoration-none">
-                        Conhecer projeto
+                        {{ homePage.projects.risoflorAI.link }}
                         <i class="bi bi-arrow-right ms-1"></i>
                     </a>
 
@@ -621,7 +586,7 @@
 
                     <div class="d-flex gap-2 flex-wrap mb-3">
                         <span class="badge text-bg-light">
-                            Educacional
+                            {{ homePage.projects.brainstorm.category }}
                         </span>
 
                         <span class="badge text-bg-light">
@@ -638,12 +603,11 @@
                     </h3>
 
                     <p class="text-secondary">
-                        Solução voltada à educação. <br>
-                        Aulas e cursos para explorar o potencial de um desenvolvedor.
+                        {{ homePage.projects.brainstorm.description }}
                     </p>
 
                     <a routerLink="/projetos" class="link-primary text-decoration-none">
-                        Conhecer projeto
+                        {{ homePage.projects.brainstorm.link }}
                         <i class="bi bi-arrow-right ms-1"></i>
                     </a>
 
@@ -671,7 +635,7 @@
                         </span>
 
                         <span class="badge text-bg-light">
-                            Responsivo
+                            {{ homePage.projects.menu.category }}
                         </span>
 
                         <span class="badge text-bg-light">
@@ -684,12 +648,11 @@
                     </h3>
 
                     <p class="text-secondary">
-                        Cardápio digital. <br>
-                        Desenvolvimento baseado em Design System e responsividade.
+                        {{ homePage.projects.menu.description }}
                     </p>
 
                     <a routerLink="/projetos" class="link-primary text-decoration-none">
-                        Conhecer projeto
+                        {{ homePage.projects.menu.link }}
                         <i class="bi bi-arrow-right ms-1"></i>
                     </a>
 
@@ -712,17 +675,15 @@
         <div class="col-lg-8 text-center">
 
             <span class="text-primary fw-semibold">
-                Formação
+                {{ homePage.education.label }}
             </span>
 
             <h2 class="display-6 fw-bold mt-2">
-                Uma base construída para continuar evoluindo
+                {{ homePage.education.title }}
             </h2>
 
             <p class="text-secondary mt-3">
-                A formação acadêmica complementa minha experiência
-                prática e contribui para uma visão mais estruturada
-                sobre desenvolvimento e engenharia de software.
+                {{ homePage.education.description }}
             </p>
 
         </div>
@@ -737,11 +698,12 @@
             <div class="border rounded-4 p-4 h-100">
 
                 <span class="badge text-bg-primary">
-                    Pós-Graduação
+                    {{ homePage.education.postgraduate.badge }}
                 </span>
 
                 <h3 class="fs-4 mt-2">
-                    Engenharia de Software
+                    {{ homePage.education.postgraduate.title }}
+
                 </h3>
 
                 <p class="text-secondary mb-0">
@@ -757,11 +719,11 @@
             <div class="border rounded-4 p-4 h-100">
 
                 <span class="badge text-bg-primary">
-                    Graduação
+                    {{ homePage.education.undergraduate.badge }}
                 </span>
 
                 <h3 class="fs-4 mt-2">
-                    Análise e Desenvolvimento de Sistemas
+                    {{ homePage.education.undergraduate.title }}
                 </h3>
 
                 <p class="text-secondary mb-0">
@@ -775,7 +737,7 @@
         <div class="d-flex flex-column flex-md-row justify-content-center">
 
             <button routerLink="/education" class="btn btn-outline-primary">
-                Conhecer formação
+                {{ homePage.education.viewEducationButton }}
                 <i class="bi bi-arrow-right ms-2"></i>
             </button>
 
@@ -792,24 +754,22 @@
     <div class="bg-primary text-white rounded-4 p-5 text-center">
 
         <h2 class="display-6 fw-bold">
-            Vamos construir algo juntos?
+            {{ homePage.cta.title }}
         </h2>
 
         <p class="lead opacity-75 mx-auto my-4" style="max-width: 650px;">
-            Estou sempre aberto a conhecer novos projetos,
-            desafios e oportunidades para continuar evoluindo
-            como desenvolvedor.
+            {{ homePage.cta.description }}
         </p>
 
         <div class="d-flex justify-content-center flex-wrap gap-3">
 
             <button routerLink="/about" class="btn btn-light btn-lg col-12 col-md-6 col-lg-3">
-                Sobre mim
+                {{ homePage.cta.aboutButton }}
                 <i class="bi bi-arrow-right ms-2"></i>
             </button>
 
             <button routerLink="/contact" class="btn btn-outline-light btn-lg col-12 col-md-6 col-lg-3">
-                Entre em contato
+                {{ homePage.cta.contactButton }}
             </button>
 
         </div>
