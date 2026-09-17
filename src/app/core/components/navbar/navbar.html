@@ -18,7 +18,7 @@
                     <li class="nav-item">
 
                         <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link" aria-current="page">
-                            Home
+                            {{ navbar.home }}
                         </a>
 
                     </li>
@@ -27,7 +27,7 @@
                     <li class="nav-item">
 
                         <a routerLink="/about" routerLinkActive="active" class="nav-link">
-                            Sobre
+                            {{ navbar.about }}
                         </a>
 
                     </li>
@@ -36,7 +36,7 @@
                     <li class="nav-item">
 
                         <a routerLink="/skills" routerLinkActive="active" class="nav-link">
-                            Habilidades
+                            {{ navbar.skills }}
                         </a>
 
                     </li>
@@ -45,7 +45,7 @@
                     <li class="nav-item">
 
                         <a routerLink="/projects" routerLinkActive="active" class="nav-link">
-                            Projetos
+                            {{ navbar.projects }}
                         </a>
 
                     </li>
@@ -54,7 +54,7 @@
                     <li class="nav-item">
 
                         <a routerLink="/experiences" routerLinkActive="active" class="nav-link">
-                            Experiências
+                            {{ navbar.experiences }}
                         </a>
 
                     </li>
@@ -63,7 +63,7 @@
                     <li class="nav-item">
 
                         <a routerLink="/education" routerLinkActive="active" class="nav-link">
-                            Educação
+                            {{ navbar.education }}
                         </a>
 
                     </li>
@@ -72,7 +72,7 @@
                     <li class="nav-item">
 
                         <a routerLink="/contact" routerLinkActive="active" class="nav-link">
-                            Contato
+                            {{ navbar.contact }}
                         </a>
 
                     </li>
@@ -126,7 +126,7 @@
 
                     <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link py-3 px-3 rounded-3" data-bs-dismiss="offcanvas">
                         <i class="bi bi-house me-2"></i>
-                        Início
+                        {{ navbar.home }}
                     </a>
 
                 </li>
@@ -136,7 +136,7 @@
 
                     <a routerLink="/about" routerLinkActive="active" class="nav-link py-3 px-3 rounded-3" data-bs-dismiss="offcanvas">
                         <i class="bi bi-person me-2"></i>
-                        Sobre
+                        {{ navbar.about }}
                     </a>
 
                 </li>
@@ -146,7 +146,7 @@
 
                     <a routerLink="/skills" routerLinkActive="active" class="nav-link py-3 px-3 rounded-3" data-bs-dismiss="offcanvas">
                         <i class="bi bi-code-slash me-2"></i>
-                        Habilidades
+                        {{ navbar.skills }}
                     </a>
 
                 </li>
@@ -156,7 +156,7 @@
 
                     <a routerLink="/projects" routerLinkActive="active" class="nav-link py-3 px-3 rounded-3" data-bs-dismiss="offcanvas">
                         <i class="bi bi-folder me-2"></i>
-                        Projetos
+                        {{ navbar.projects }}
                     </a>
 
                 </li>
@@ -166,7 +166,7 @@
 
                     <a routerLink="/experiences" routerLinkActive="active" class="nav-link py-3 px-3 rounded-3" data-bs-dismiss="offcanvas">
                         <i class="bi bi-briefcase me-2"></i>
-                        Experiências
+                        {{ navbar.experiences }}
                     </a>
 
                 </li>
@@ -176,7 +176,7 @@
 
                     <a routerLink="/education" routerLinkActive="active" class="nav-link py-3 px-3 rounded-3" data-bs-dismiss="offcanvas">
                         <i class="bi bi-mortarboard me-2"></i>
-                        Educação
+                        {{ navbar.education }}
                     </a>
 
                 </li>
@@ -186,7 +186,7 @@
 
                     <a routerLink="/contact" routerLinkActive="active" class="nav-link py-3 px-3 rounded-3" data-bs-dismiss="offcanvas">
                         <i class="bi bi-envelope me-2"></i>
-                        Contato
+                        {{ navbar.contact }}
                     </a>
 
                 </li>
@@ -203,7 +203,7 @@
 
                     <a routerLink="/settings" routerLinkActive="active" class="nav-link py-3 px-3 rounded-3" data-bs-dismiss="offcanvas">
                         <i class="bi bi-gear me-2"></i>
-                        Ajustes
+                        {{ navbar.settings }}
                     </a>
 
                 </li>
@@ -223,7 +223,7 @@
                 </p>
 
                 <p class="text-secondary small mb-0">
-                    Analista e Desenvolvedor de Sistemas
+                    {{ navbar.profession }}
                 </p>
 
             </div>
