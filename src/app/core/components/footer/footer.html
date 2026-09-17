@@ -7,183 +7,206 @@
             <!-- IDENTIDADE -->
             <div class="col-lg-4 col-12">
 
-
                 <h2 class="text-primary fs-3 fw-bold mb-3">
                     Ronaldo Sabino
                 </h2>
 
                 <p class="text-secondary mb-4" style="max-width: 420px;">
-                    Analista e Desenvolvedor de Sistemas apaixonado
-                    por tecnologia, desenvolvimento de software e
-                    pela criação de soluções que geram valor.
+                    {{ footer.description }}
                 </p>
-
 
                 <!-- REDES -->
                 <div class="d-flex gap-2">
 
-                    <button (click)="redirectToLinkedIn()" rel="noopener noreferrer" class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px;" aria-label="LinkedIn">
+                    <button (click)="redirectToLinkedIn()" rel="noopener noreferrer" class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px;" [attr.aria-label]="footer.linkedin">
+
                         <i class="bi bi-linkedin"></i>
+
                     </button>
 
+                    <button (click)="redirectToGitHub()" rel="noopener noreferrer" class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px;" [attr.aria-label]="footer.github">
 
-                    <button (click)="redirectToGitHub()" rel="noopener noreferrer" class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px;" aria-label="GitHub">
                         <i class="bi bi-github"></i>
+
                     </button>
 
-                    <button (click)="redirectToWhatsApp()" class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px;" aria-label="WhatsApp">
+                    <button (click)="redirectToWhatsApp()" class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px;" [attr.aria-label]="footer.whatsapp">
+
                         <i class="bi bi-whatsapp"></i>
+
                     </button>
 
-                    <!-- <a href="mailto:filiperonlado1@gmail.com" class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px;" aria-label="E-mail">
-                        <i class="bi bi-envelope-at-fill"></i>
-                    </a> -->
+                    <!--
+          <a
+            href="mailto:filiperonaldo1@gmail.com"
+            class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center"
+            style="width: 42px; height: 42px;"
+            aria-label="E-mail">
+
+            <i class="bi bi-envelope-at-fill"></i>
+
+          </a>
+          -->
 
                 </div>
 
             </div>
 
-
             <!-- NAVEGAÇÃO -->
             <div class="col-6 col-lg-2">
 
                 <h3 class="fs-6 fw-bold mb-3">
-                    Navegação
+                    {{ footer.navigation }}
                 </h3>
 
                 <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
 
                     <li>
                         <a routerLink="/home" class="text-secondary text-decoration-none">
-                            Home
+
+                            {{ footer.home }}
+
                         </a>
                     </li>
 
                     <li>
                         <a routerLink="/about" class="text-secondary text-decoration-none">
-                            Sobre mim
+
+                            {{ footer.about }}
+
                         </a>
                     </li>
 
                     <li>
                         <a routerLink="/projects" class="text-secondary text-decoration-none">
-                            Projetos
+
+                            {{ footer.projects }}
+
                         </a>
                     </li>
 
                     <li>
                         <a routerLink="/experiences" class="text-secondary text-decoration-none">
-                            Experiências
+
+                            {{ footer.experiences }}
+
                         </a>
                     </li>
 
                     <li>
                         <a routerLink="/education" class="text-secondary text-decoration-none">
-                            Educação
+
+                            {{ footer.education }}
+
                         </a>
                     </li>
 
                     <li>
                         <a routerLink="/skills" class="text-secondary text-decoration-none">
-                            Habilidades
+
+                            {{ footer.skills }}
+
                         </a>
                     </li>
 
                     <li>
                         <a routerLink="/contact" class="text-secondary text-decoration-none">
-                            Contato
+
+                            {{ footer.contact }}
+
                         </a>
                     </li>
 
                 </ul>
 
             </div>
-
 
             <!-- CONTATO -->
             <div class="d-none d-md-block col-6 col-lg-3">
 
                 <h3 class="fs-6 fw-bold mb-3">
-                    Contato
+                    {{ footer.contact }}
                 </h3>
 
                 <ul class="list-unstyled mb-0">
 
                     <li class="mb-2">
-
                         <a routerLink="/contact" class="text-secondary text-decoration-none">
-                            +55 81 9447-9584
-                        </a>
 
+                            +55 81 9447-9584
+
+                        </a>
                     </li>
 
                     <li class="mb-2">
-
                         <a href="mailto:seuemail@email.com" class="text-secondary text-decoration-none">
-                            filiperonaldo1@gmail.com
-                        </a>
 
+                            filiperonaldo1@gmail.com
+
+                        </a>
                     </li>
 
                     <li>
-
                         <span class="text-secondary">
                             Recife, Brasil
                         </span>
-
                     </li>
 
                 </ul>
 
             </div>
 
-
             <!-- CTA -->
             <div class="col-lg-3">
 
                 <h3 class="fs-6 fw-bold mb-3">
-                    Vamos conversar?
+                    {{ footer.letsTalk }}
                 </h3>
 
                 <p class="text-secondary small">
-                    Tem um projeto, oportunidade ou simplesmente
-                    quer trocar uma ideia sobre tecnologia?
+                    {{ footer.ctaDescription }}
                 </p>
 
                 <a routerLink="/contact" class="btn btn-primary mt-2">
-                    Entre em contato
+
+                    {{ footer.contactButton }}
+
                     <i class="bi bi-arrow-right ms-2"></i>
+
                 </a>
 
             </div>
 
         </div>
 
-
         <!-- DIVISOR -->
         <hr class="my-4">
-
 
         <!-- RODAPÉ INFERIOR -->
         <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
 
             <p class="text-secondary small mb-0">
-                © 2026 Ronaldo Sabino. Todos os direitos reservados.
+                © 2026 Ronaldo Sabino. {{ footer.copyright }}
             </p>
-
 
             <div class="d-flex align-items-center gap-3">
 
                 <a routerLink="/home" class="text-secondary small text-decoration-none">
-                    Início
+
+                    {{ footer.start }}
+
                 </a>
 
                 <a routerLink="/settings" class="text-secondary small text-decoration-none">
-                    Ajustes
+
+                    {{ footer.settings }}
+
                 </a>
 
                 <a (click)="scrollToTop()" class="text-secondary small text-decoration-none pointer">
-                    Voltar ao topo
+
+                    {{ footer.backToTop }}
+
                 </a>
 
             </div>
