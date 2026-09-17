@@ -81,7 +81,7 @@
 
                                 <div class="btn-group w-100" role="group">
 
-                                    <input type="radio" class="btn-check" name="theme" id="themeLight" value="light" (change)="changeTheme()" formControlName="theme">
+                                    <input type="radio" class="btn-check" name="theme" id="themeLight" value="light" formControlName="theme">
 
                                     <label class="btn btn-outline-secondary" for="themeLight">
                                         <i class="bi bi-sun me-1"></i>
@@ -89,7 +89,7 @@
                                     </label>
 
 
-                                    <input type="radio" class="btn-check" name="theme" id="themeDark" value="dark" (change)="changeTheme()" formControlName="theme">
+                                    <input type="radio" class="btn-check" name="theme" id="themeDark" value="dark" formControlName="theme">
 
                                     <label class="btn btn-outline-secondary" for="themeDark">
                                         <i class="bi bi-moon me-1"></i>
@@ -97,7 +97,7 @@
                                     </label>
 
 
-                                    <input type="radio" class="btn-check" name="theme" id="themeSystem" value="system" (change)="changeTheme()" formControlName="theme" checked>
+                                    <input type="radio" class="btn-check" name="theme" id="themeSystem" value="system" formControlName="theme">
 
                                     <label class="btn btn-outline-secondary" for="themeSystem">
                                         <i class="bi bi-display me-1"></i>
@@ -303,21 +303,21 @@
 
                                 <div class="btn-group w-100" role="group">
 
-                                    <input type="radio" class="btn-check" name="fontSize" id="fontSmall" value="small" (change)="changeFontSize()" formControlName="fontSize">
+                                    <input type="radio" class="btn-check" name="fontSize" id="fontSmall" value="small" formControlName="fontSize">
 
                                     <label class="btn btn-outline-secondary" for="fontSmall">
                                         {{ settingsPage.accessibility.fontSize.labelSmall }}
                                     </label>
 
 
-                                    <input type="radio" class="btn-check" name="fontSize" id="fontNormal" value="normal" (change)="changeFontSize()" formControlName="fontSize" checked>
+                                    <input type="radio" class="btn-check" name="fontSize" id="fontNormal" value="normal" formControlName="fontSize" checked>
 
                                     <label class="btn btn-outline-secondary" for="fontNormal">
                                         {{ settingsPage.accessibility.fontSize.labelNormal }}
                                     </label>
 
 
-                                    <input type="radio" class="btn-check" name="fontSize" id="fontLarge" value="large" (change)="changeFontSize()" formControlName="fontSize">
+                                    <input type="radio" class="btn-check" name="fontSize" id="fontLarge" value="large" formControlName="fontSize">
 
                                     <label class="btn btn-outline-secondary" for="fontLarge">
                                         {{ settingsPage.accessibility.fontSize.labelLarge }}

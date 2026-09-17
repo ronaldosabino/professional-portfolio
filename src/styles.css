@@ -1,4 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+body {
+  position: relative;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+/* Tema escuro */
+[data-bs-theme='dark'] .text-secondary {
+  color: var(--bs-light) !important;
+}
+
+/* Exemplos de componentes */
+.card,
+.settings-group {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+.text-muted {
+  color: var(--text-secondary) !important;
+}
+
 .pointer {
   cursor: pointer;
 }
@@ -8,15 +42,4 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-}
-
-html,
-body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-body {
-  position: relative;
 }

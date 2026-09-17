@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { SettingsService } from '../../core/services/settings.service';
+import { SettingsService, Theme } from '../../core/services/settings.service';
 
 @Component({
   selector: 'app-settings',
@@ -116,36 +116,40 @@ export class Settings {
   }
 
   form = new FormGroup({
-    theme: new FormControl('system'),
-    language: new FormControl('portuguese'),
-    fontSize: new FormControl('normal'),
+    theme: new FormControl<Theme>('system', { nonNullable: true }),
+    language: new FormControl('portuguese', { nonNullable: true }),
+    fontSize: new FormControl('normal', { nonNullable: true }),
   });
 
   ngOnInit() {
     this.detectLanguage();
-    this.loadSettings();
+    // Sincroniza o formulário com as configurações carregadas.
+    this.form.patchValue(
+      {
+        theme: this.settingsService.theme,
+        language: this.settingsService.language,
+        fontSize: this.settingsService.fontSize,
+      },
+      { emitEvent: false },
+    );
 
-    this.form.valueChanges.subscribe(() => {
-      this.saveSettings();
+    this.detectLanguage();
+
+    // Tema
+    this.form.controls.theme.valueChanges.subscribe((theme) => {
+      this.settingsService.setTheme(theme);
     });
-  }
 
-  private loadSettings(): void {
-    const savedSettings = localStorage.getItem(this.storageKey);
+    // Idioma
+    this.form.controls.language.valueChanges.subscribe((language) => {
+      this.settingsService.setLanguage(language);
+      this.detectLanguage();
+    });
 
-    if (savedSettings) {
-      try {
-        const settings = JSON.parse(savedSettings);
-
-        this.form.patchValue(settings);
-      } catch (error) {
-        console.error('Erro ao carregar as configurações:', error);
-      }
-    }
-  }
-
-  private saveSettings(): void {
-    localStorage.setItem(this.storageKey, JSON.stringify(this.form.getRawValue()));
+    // Tamanho da fonte
+    this.form.controls.fontSize.valueChanges.subscribe((fontSize) => {
+      this.settingsService.setFontSize(fontSize);
+    });
   }
 
   resetSettings(): void {
@@ -159,10 +163,6 @@ export class Settings {
     localStorage.setItem('userSettings', JSON.stringify(this.form.getRawValue()));
   }
 
-  changeTheme() {
-    this.settingsService.theme = this.form.get('theme')!.value;
-  }
-
   changeLanguage(): void {
     const language = this.form.get('language')?.value;
 
@@ -171,10 +171,6 @@ export class Settings {
     }
 
     this.detectLanguage();
-  }
-
-  changeFontSize() {
-    this.settingsService.fontSize = this.form.get('fontSize')!.value;
   }
 
   detectLanguage() {
