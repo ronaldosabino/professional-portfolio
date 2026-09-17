@@ -10,6 +10,8 @@ import { SettingsService } from '../../core/services/settings.service';
   styleUrl: './settings.css',
 })
 export class Settings {
+  private readonly storageKey = 'userSettings';
+
   settingsPage = {
     // CABEÇALHO
     header: {
@@ -121,6 +123,40 @@ export class Settings {
 
   ngOnInit() {
     this.detectLanguage();
+    this.loadSettings();
+
+    this.form.valueChanges.subscribe(() => {
+      this.saveSettings();
+    });
+  }
+
+  private loadSettings(): void {
+    const savedSettings = localStorage.getItem(this.storageKey);
+
+    if (savedSettings) {
+      try {
+        const settings = JSON.parse(savedSettings);
+
+        this.form.patchValue(settings);
+      } catch (error) {
+        console.error('Erro ao carregar as configurações:', error);
+      }
+    }
+  }
+
+  private saveSettings(): void {
+    localStorage.setItem(this.storageKey, JSON.stringify(this.form.getRawValue()));
+  }
+
+  resetSettings(): void {
+    this.form.reset({
+      theme: 'system',
+      language: 'portuguese',
+      fontSize: 'normal',
+    });
+
+    // Atualiza o localStorage com os valores iniciais
+    localStorage.setItem('userSettings', JSON.stringify(this.form.getRawValue()));
   }
 
   changeTheme() {
