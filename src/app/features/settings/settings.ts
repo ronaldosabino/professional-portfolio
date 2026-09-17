@@ -103,7 +103,15 @@ export class Settings {
       copyright: '',
     },
   };
-  constructor(protected settingsService: SettingsService) {}
+
+  constructor(protected settingsService: SettingsService) {
+    this.form.controls.language.valueChanges.subscribe((language) => {
+      if (language) {
+        this.settingsService.setLanguage(language);
+        this.detectLanguage();
+      }
+    });
+  }
 
   form = new FormGroup({
     theme: new FormControl('system'),
@@ -119,8 +127,13 @@ export class Settings {
     this.settingsService.theme = this.form.get('theme')!.value;
   }
 
-  changeLanguage() {
-    this.settingsService.language = this.form.get('language')!.value;
+  changeLanguage(): void {
+    const language = this.form.get('language')?.value;
+
+    if (language) {
+      this.settingsService.setLanguage(language);
+    }
+
     this.detectLanguage();
   }
 
