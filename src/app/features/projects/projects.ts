@@ -85,6 +85,17 @@ export class Projects {
       title: '',
       description: '',
 
+      dentalClinic: {
+        title: '',
+        description: '',
+        openProject: '',
+        tags: {
+          health: '',
+          angular: '',
+          responsive: '',
+        },
+      },
+
       menu: {
         title: '',
         description: '',
@@ -104,17 +115,6 @@ export class Projects {
           rest: '',
           api: '',
           backend: '',
-        },
-      },
-
-      designSystem: {
-        title: '',
-        description: '',
-        openProject: '',
-        tags: {
-          ui: '',
-          components: '',
-          bootstrap: '',
         },
       },
 
@@ -250,6 +250,18 @@ export class Projects {
           description:
             'Projetos menores, estudos e experimentos desenvolvidos para colocar conhecimentos em prática.',
 
+          dentalClinic: {
+            title: 'Clínica Odontológica',
+            description:
+              'Projeto voltado à criação de uma lading page para uma clínica ondotolóigica, com foco em conversão de visitantes em clientes.',
+            openProject: 'Abrir projeto',
+            tags: {
+              health: 'Saúde',
+              angular: 'Angular',
+              responsive: 'Responsivo',
+            },
+          },
+
           menu: {
             title: 'Menu',
             description:
@@ -271,18 +283,6 @@ export class Projects {
               rest: 'REST',
               api: 'API',
               backend: 'Backend',
-            },
-          },
-
-          designSystem: {
-            title: 'Design System',
-            description:
-              'Estudo voltado à criação de componentes reutilizáveis e padronização visual de aplicações web.',
-            openProject: 'Abrir projeto',
-            tags: {
-              ui: 'UI',
-              components: 'Components',
-              bootstrap: 'Bootstrap',
             },
           },
 
@@ -414,6 +414,18 @@ export class Projects {
           description:
             'Smaller projects, studies, and experiments developed to put knowledge into practice.',
 
+          dentalClinic: {
+            title: 'Dental Clinic',
+            description:
+              'Project focused on creating a landing page for a dental clinic, with the goal of converting visitors into clients.',
+            openProject: 'Open project',
+            tags: {
+              health: 'Health',
+              angular: 'Angular',
+              responsive: 'Responsive',
+            },
+          },
+
           menu: {
             title: 'Menu',
             description:
@@ -435,18 +447,6 @@ export class Projects {
               rest: 'REST',
               api: 'API',
               backend: 'Backend',
-            },
-          },
-
-          designSystem: {
-            title: 'Design System',
-            description:
-              'Study focused on creating reusable components and visual standardization for web applications.',
-            openProject: 'Open project',
-            tags: {
-              ui: 'UI',
-              components: 'Components',
-              bootstrap: 'Bootstrap',
             },
           },
 
@@ -578,6 +578,18 @@ export class Projects {
           description:
             'Proyectos pequeños, estudios y experimentos desarrollados para poner los conocimientos en práctica.',
 
+          dentalClinic: {
+            title: 'Clínica Dental',
+            description:
+              'Proyecto orientado a la creación de una landing page para una clínica odontológica, con el objetivo de convertir visitantes en clientes.',
+            openProject: 'Abrir proyecto',
+            tags: {
+              health: 'Salud',
+              angular: 'Angular',
+              responsive: 'Responsivo',
+            },
+          },
+
           menu: {
             title: 'Menú',
             description: 'Menú digital. \nDesarrollo basado en Design System y diseño responsivo.',
@@ -598,18 +610,6 @@ export class Projects {
               rest: 'REST',
               api: 'API',
               backend: 'Backend',
-            },
-          },
-
-          designSystem: {
-            title: 'Design System',
-            description:
-              'Estudio enfocado en la creación de componentes reutilizables y la estandarización visual de aplicaciones web.',
-            openProject: 'Abrir proyecto',
-            tags: {
-              ui: 'UI',
-              components: 'Components',
-              bootstrap: 'Bootstrap',
             },
           },
 
