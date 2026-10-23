@@ -16,9 +16,125 @@ body {
     color 0.2s ease;
 }
 
-/* Tema escuro */
+/* Transições compartilhadas */
+/* .btn-outline-primary,
+.btn-outline-secondary,
+.btn-outline-light, */
+.btn-dynamic {
+  transition:
+    background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+}
+
+/* =========================
+   TEMA ESCURO
+   ========================= */
+
 [data-bs-theme='dark'] .text-secondary {
   color: var(--bs-light) !important;
+}
+
+/* Primary */
+/* [data-bs-theme='dark'] .btn-outline-primary {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+  color: #fff !important;
+}
+
+[data-bs-theme='dark'] .btn-outline-primary:hover {
+  background-color: #0b5ed7 !important;
+  border-color: #0a58ca !important;
+}
+
+[data-bs-theme='dark'] .btn-outline-primary:active {
+  background-color: #0a53be !important;
+  border-color: #0a53be !important;
+} */
+
+/* Secondary */
+/* [data-bs-theme='dark'] .btn-outline-secondary {
+  background-color: var(--bs-secondary) !important;
+  border-color: var(--bs-secondary) !important;
+  color: #fff !important;
+}
+
+[data-bs-theme='dark'] .btn-outline-secondary:hover {
+  background-color: #5c636a !important;
+  border-color: #565e64 !important;
+}
+
+[data-bs-theme='dark'] .btn-outline-secondary:active {
+  background-color: #51585e !important;
+  border-color: #4c5359 !important;
+} */
+
+/* Light */
+/* [data-bs-theme='dark'] .btn-outline-light {
+  background-color: var(--bs-light) !important;
+  border-color: var(--bs-light) !important;
+  color: #000 !important;
+}
+
+[data-bs-theme='dark'] .btn-outline-light:hover {
+  background-color: #d3d4d5 !important;
+  border-color: #c6c7c8 !important;
+}
+
+[data-bs-theme='dark'] .btn-outline-light:active {
+  background-color: #c6c7c8 !important;
+  border-color: #babbbc !important;
+} */
+
+/* Botão dinâmico no tema escuro */
+[data-bs-theme='dark'] .btn-dynamic {
+  background-color: var(--bs-light) !important;
+  border-color: var(--bs-light) !important;
+  color: #000 !important;
+}
+
+[data-bs-theme='dark'] .btn-dynamic:hover {
+  background-color: #d3d4d5 !important;
+  border-color: #c6c7c8 !important;
+  color: #000 !important;
+}
+
+[data-bs-theme='dark'] .btn-dynamic:active {
+  background-color: #c6c7c8 !important;
+  border-color: #babbbc !important;
+  color: #000 !important;
+}
+
+/* =========================
+   TEMA CLARO
+   ========================= */
+
+[data-bs-theme='light'] .btn-dynamic {
+  background-color: var(--bs-dark) !important;
+  border-color: var(--bs-dark) !important;
+  color: #fff !important;
+}
+
+[data-bs-theme='light'] .btn-dynamic:hover {
+  background-color: #424649 !important;
+  border-color: #373b3e !important;
+  color: #fff !important;
+}
+
+[data-bs-theme='light'] .btn-dynamic:active {
+  background-color: #373b3e !important;
+  border-color: #2c3033 !important;
+  color: #fff !important;
+}
+
+/* Foco visível para navegação por teclado */
+.btn-outline-primary:focus-visible,
+.btn-outline-secondary:focus-visible,
+.btn-outline-light:focus-visible,
+.btn-dynamic:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.35);
 }
 
 /* Exemplos de componentes */
