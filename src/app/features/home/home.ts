@@ -110,6 +110,7 @@ export class Home {
     projects: {
       label: '',
       title: '',
+      description: '',
       viewProjectsButton: '',
 
       risoflorAI: {
@@ -319,6 +320,9 @@ export class Home {
           label: 'Portfólio',
 
           title: 'Alguns projetos',
+
+          description:
+            'Uma seleção de projetos que demonstra minha experiência prática no desenvolvimento de aplicações, explorando diferentes tecnologias, integrações e soluções para necessidades reais.',
 
           viewProjectsButton: 'Ver projetos',
 
@@ -542,6 +546,9 @@ export class Home {
 
           title: 'Some projects',
 
+          description:
+            'A selection of projects that demonstrates my practical experience in application development, exploring various technologies, integrations, and solutions for real-world needs.',
+
           viewProjectsButton: 'View projects',
 
           risoflorAI: {
@@ -761,6 +768,9 @@ export class Home {
           label: 'Portafolio',
 
           title: 'Algunos proyectos',
+
+          description:
+            'Una selección de proyectos que demuestra mi experiencia práctica en el desarrollo de aplicaciones, explorando diferentes tecnologías, integraciones y soluciones para necesidades reales.',
 
           viewProjectsButton: 'Ver proyectos',
 

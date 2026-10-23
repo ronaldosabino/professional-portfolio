@@ -83,6 +83,7 @@
 
         <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
 
+
             <div class="col-12 col-md-8">
                 <span class="text-primary fw-semibold">
                     {{ homePage.areas.label }}
@@ -502,10 +503,9 @@
 <!-- PROJETOS -->
 <section class="py-5">
 
-    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-5">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-5">
 
-        <div>
-
+        <div class="col-12 col-md-8">
             <span class="text-primary fw-semibold">
                 {{ homePage.projects.label }}
             </span>
@@ -514,12 +514,18 @@
                 {{ homePage.projects.title }}
             </h2>
 
+            <p class="text-secondary mt-3">
+                {{ homePage.areas.description }}
+            </p>
         </div>
 
-        <button routerLink="/projects" class="btn btn-primary">
-            {{ homePage.projects.viewProjectsButton }}
-            <i class="bi bi-arrow-right ms-2"></i>
-        </button>
+        <div class="col-12 col-md-4 d-flex justify-content-md-end flex-column flex-md-row">
+            <button routerLink="/projects" class="btn btn-primary">
+                {{ homePage.projects.viewProjectsButton }}
+                <i class="bi bi-arrow-right ms-2"></i>
+            </button>
+        </div>
+
 
     </div>
 
