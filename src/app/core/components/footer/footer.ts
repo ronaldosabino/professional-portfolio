@@ -57,7 +57,7 @@ export class Footer {
         description:
           'Analista e Desenvolvedor de Sistemas apaixonado por tecnologia, desenvolvimento de software e pela criação de soluções que geram valor.',
         navigation: 'Navegação',
-        home: 'Home',
+        home: 'Início',
         about: 'Sobre mim',
         projects: 'Projetos',
         experiences: 'Experiências',
