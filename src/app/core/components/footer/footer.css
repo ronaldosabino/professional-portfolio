@@ -35,3 +35,30 @@
   width: 16px;
   height: 16px;
 }
+
+.nav-link {
+  position: relative;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--bs-primary);
+}
+
+.contact-item {
+  color: var(--bs-text-liht);
+  position: relative;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.contact-item:hover {
+  color: var(--bs-primary);
+}
+
+.location:hover {
+  color: var(--bs-text-liht);
+}
