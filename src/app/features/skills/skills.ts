@@ -175,7 +175,7 @@ export class Skills {
     cta: {
       title: '',
       description: '',
-      projectsButton: '',
+      contactButton: '',
       experiencesButton: '',
     },
   };
@@ -381,7 +381,7 @@ export class Skills {
           title: 'Quer conhecer meu trabalho na prática?',
           description:
             'Veja alguns dos projetos em que essas tecnologias e conhecimentos são aplicados para construir soluções reais.',
-          projectsButton: 'Ver projetos',
+          contactButton: 'Contato',
           experiencesButton: 'Ver experiências',
         },
       };
@@ -578,7 +578,7 @@ export class Skills {
           title: 'Want to see my work in practice?',
           description:
             'Explore some of the projects where these technologies and skills are applied to build real-world solutions.',
-          projectsButton: 'View projects',
+          contactButton: 'Contact',
           experiencesButton: 'View experiences',
         },
       };
@@ -778,7 +778,7 @@ export class Skills {
           title: '¿Quieres conocer mi trabajo en la práctica?',
           description:
             'Conoce algunos de los proyectos en los que estas tecnologías y conocimientos se aplican para construir soluciones reales.',
-          projectsButton: 'Ver proyectos',
+          contactButton: 'Contacto',
           experiencesButton: 'Ver experiencias',
         },
       };
