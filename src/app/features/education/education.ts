@@ -287,12 +287,9 @@ export class Education {
 
         // CTA
         cta: {
-          title: 'Conhecimento em constante construção.',
-          description: `
-        A formação acadêmica é parte da trajetória, mas a evolução
-        profissional continua através da prática, dos projetos
-        e dos novos desafios.
-      `,
+          title: 'Aprendizado que se transforma em habilidade.',
+          description:
+            'Conheça as tecnologias, ferramentas e competências que desenvolvi ao longo da minha formação e trajetória profissional.',
           skillsButton: 'Habilidades',
           contactButton: 'Entre em contato',
         },
@@ -414,9 +411,9 @@ export class Education {
         },
 
         cta: {
-          title: 'Knowledge under constant construction.',
+          title: 'Learning that translates into skills.',
           description:
-            'Academic education is part of the journey, but professional growth continues through practice, projects, and new challenges.',
+            'Explore the technologies, tools, and competencies I have developed throughout my education and professional journey.',
 
           skillsButton: 'Skills',
           contactButton: 'Get in touch',
@@ -541,9 +538,9 @@ export class Education {
         },
 
         cta: {
-          title: 'Conocimiento en constante construcción.',
+          title: 'El aprendizaje se convierte en habilidades.',
           description:
-            'La formación académica es parte de la trayectoria, pero la evolución profesional continúa a través de la práctica, los proyectos y los nuevos desafíos.',
+            'Conoce las tecnologías, herramientas y competencias que he desarrollado a lo largo de mi formación y trayectoria profesional.',
 
           skillsButton: 'Habilidades',
           contactButton: 'Contáctame',
