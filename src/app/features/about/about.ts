@@ -328,11 +328,9 @@ export class About {
 
         // CTA
         cta: {
-          title: 'Quer conhecer mais sobre meu trabalho?',
+          title: 'Vamos conhecer meus projetos?',
           description: `
-        Explore minhas experiências profissionais, conheça os
-        projetos que desenvolvi e veja as tecnologias que fazem
-        parte da minha trajetória.
+        Explore alguns dos projetos em que aplico meus conhecimentos para desenvolver soluções digitais funcionais, eficientes e intuitivas.
       `,
           projectsButton: 'Projetos',
           contactButton: 'Entre em contato',
@@ -531,12 +529,9 @@ export class About {
 
         // CTA
         cta: {
-          title: 'Want to learn more about my work?',
-          description: `
-        Explore my professional experiences, discover the projects
-        I have developed, and see the technologies that are part
-        of my journey.
-      `,
+          title: 'Shall we explore my projects?',
+          description:
+            'Explore some of the projects where I apply my knowledge to build functional, efficient, and intuitive digital solutions',
           projectsButton: 'Projects',
           contactButton: 'Get in touch',
         },
@@ -736,11 +731,9 @@ export class About {
 
         // CTA
         cta: {
-          title: '¿Quieres conocer más sobre mi trabajo?',
+          title: '¿Conocemos mis proyectos?',
           description: `
-        Explora mis experiencias profesionales, conoce los proyectos
-        que he desarrollado y descubre las tecnologías que forman
-        parte de mi trayectoria.
+        Explora algunos de los proyectos en los que aplico mis conocimientos para desarrollar soluciones digitales funcionales, eficientes e intuitivas.
       `,
           projectsButton: 'Proyectos',
           contactButton: 'Contáctame',
