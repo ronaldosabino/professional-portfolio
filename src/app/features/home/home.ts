@@ -378,10 +378,10 @@ export class Home {
 
         // CTA
         cta: {
-          title: 'Vamos construir algo juntos?',
+          title: 'Vamos além do código!',
 
           description:
-            'Estou sempre aberto a conhecer novos projetos, desafios e oportunidades para continuar evoluindo como desenvolvedor.',
+            'Conheça minha trajetória, minha forma de trabalhar e o que me motiva a transformar ideias em soluções digitais.',
 
           aboutButton: 'Sobre mim',
 
@@ -602,10 +602,10 @@ export class Home {
 
         // CTA
         cta: {
-          title: 'Shall we build something together?',
+          title: 'More than just code.',
 
           description:
-            'I am always open to discovering new projects, challenges, and opportunities to continue growing as a developer.',
+            'Discover my professional journey, my away of working, and what drives me to turn ideas into digital solutions.',
 
           aboutButton: 'About me',
 
@@ -825,10 +825,10 @@ export class Home {
 
         // CTA
         cta: {
-          title: '¿Construimos algo juntos?',
+          title: '¡Vamos más allá del código!',
 
           description:
-            'Siempre estoy abierto a conocer nuevos proyectos, desafíos y oportunidades para seguir evolucionando como desarrollador.',
+            'Conoce mi trayectoria profesional, mi forma de trabajar y lo que me motiva a transformar ideas en soluciones digitales.',
 
           aboutButton: 'Sobre mí',
 
