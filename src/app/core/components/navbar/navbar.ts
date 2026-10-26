@@ -38,7 +38,7 @@ export class Navbar {
     if (language === 'portuguese') {
       this.navbar = {
         home: 'Início',
-        about: 'Sobre',
+        about: 'Sobre mim',
         skills: 'Habilidades',
         projects: 'Projetos',
         experiences: 'Experiências',
@@ -50,7 +50,7 @@ export class Navbar {
     } else if (language === 'english') {
       this.navbar = {
         home: 'Home',
-        about: 'About',
+        about: 'About me',
         skills: 'Skills',
         projects: 'Projects',
         experiences: 'Experience',
