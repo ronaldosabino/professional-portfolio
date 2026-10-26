@@ -87,6 +87,7 @@ export class About {
     education: {
       label: '',
       title: '',
+      description: '',
       postgraduate: {
         badge: '',
         title: '',
@@ -282,6 +283,8 @@ export class About {
         education: {
           label: 'Formação',
           title: 'Uma base para continuar evoluindo',
+          description:
+            'A formação acadêmica complementa minha experiência prática e contribui para uma visão mais estruturada sobre desenvolvimento e engenharia de software.',
           postgraduate: {
             badge: 'Pós-graduação',
             title: 'Engenharia de Software',
@@ -484,6 +487,8 @@ export class About {
         education: {
           label: 'Education',
           title: 'A foundation for continuous growth',
+          description:
+            'My academic background complements my practical experience and contributes to a more structured view of software development and engineering.',
           postgraduate: {
             badge: 'Postgraduate degree',
             title: 'Software Engineering',
@@ -688,6 +693,8 @@ export class About {
         education: {
           label: 'Formación',
           title: 'Una base para seguir evolucionando',
+          description:
+            'Mi formación académica complementa mi experiencia práctica y contribuye a una visión más estructurada sobre el desarrollo y la ingeniería de software.',
           postgraduate: {
             badge: 'Posgrado',
             title: 'Ingeniería de Software',
