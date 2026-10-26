@@ -35,7 +35,6 @@ export class Navbar {
   }
 
   detectedLanguage(language: string): void {
-    console.log(language);
     if (language === 'portuguese') {
       this.navbar = {
         home: 'Início',

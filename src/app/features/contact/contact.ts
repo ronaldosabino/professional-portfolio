@@ -600,7 +600,6 @@ export class Contact {
       alert('Preencha todos os campos do formulário!');
     } else {
       this.text = `Oi, Ronlado! Eu me chamo ${name}. Quero falar com você sobre um(a) ${subject}. ${message}. Este é o meu email para contato: ${email}`;
-      console.log(this.form.getRawValue());
       window.open(`https://wa.me/5581994479584?text=${this.text}`, '_blank');
     }
   }
