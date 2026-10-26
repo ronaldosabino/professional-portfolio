@@ -324,9 +324,9 @@ export class Projects {
         },
 
         cta: {
-          title: 'Tem um projeto em mente?',
+          title: 'Por trás de cada projeto, uma experiência.',
           description:
-            'Se você está procurando alguém para transformar uma ideia em uma solução web, vamos conversar.',
+            'Conheça minha trajetória profissional e descubra como transformo requisitos e desafios técnicos em soluções digitais.',
           experiencesButton: 'Experiências',
           contactButton: 'Entre em contato',
         },
@@ -488,9 +488,9 @@ export class Projects {
         },
 
         cta: {
-          title: 'Have a project in mind?',
+          title: 'Behind every project, there is experience.',
           description:
-            "If you're looking for someone to turn an idea into a web solution, let's talk.",
+            'Explore my professional journey and discover how I turn requirements and technical challenges into digital solutions.',
           experiencesButton: 'Experience',
           contactButton: 'Get in touch',
         },
@@ -651,9 +651,9 @@ export class Projects {
         },
 
         cta: {
-          title: '¿Tienes un proyecto en mente?',
+          title: 'Detrás de cada proyecto, hay experiencia.',
           description:
-            'Si buscas a alguien para transformar una idea en una solución web, hablemos.',
+            'Conoce mi trayectoria profesional y descubre cómo transformo requisitos y desafíos técnicos en soluciones digitales.',
           experiencesButton: 'Experiencias',
           contactButton: 'Contáctame',
         },
