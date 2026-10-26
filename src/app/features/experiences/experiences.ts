@@ -323,13 +323,10 @@ export class Experiences {
 
         // CTA
         cta: {
-          title: 'Vamos conversar?',
+          title: 'Conhecimento que impulsiona a evolução.',
 
-          description: `
-          Estou aberto a novos desafios, projetos e oportunidades
-          para continuar desenvolvendo minha carreira na área
-          de tecnologia.
-        `,
+          description:
+            'Minha trajetória profissional é construída com aprendizado contínuo, e minha formação acadêmica complementa essa jornada de desenvolvimento.',
 
           educationButton: 'Educação',
 
@@ -532,12 +529,10 @@ export class Experiences {
         },
 
         cta: {
-          title: 'Let’s talk?',
+          title: 'Knowledge that drives growth.',
 
-          description: `
-        I am open to new challenges, projects, and opportunities
-        to continue developing my career in technology.
-      `,
+          description:
+            'My professional journey is built on continuous learning, while my academic background complements this path of development.',
 
           educationButton: 'Education',
 
@@ -747,13 +742,10 @@ export class Experiences {
         },
 
         cta: {
-          title: '¿Hablamos?',
+          title: 'El conocimiento impulsa el crecimiento.',
 
-          description: `
-        Estoy abierto a nuevos desafíos, proyectos y oportunidades
-        para continuar desarrollando mi carrera en el área
-        de tecnología.
-      `,
+          description:
+            'Mi trayectoria profesional se construye a través del aprendizaje continuo, y mi formación académica complementa este camino de desarrollo.',
 
           educationButton: 'Educación',
 
