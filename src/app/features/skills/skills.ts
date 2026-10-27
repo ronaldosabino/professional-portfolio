@@ -378,9 +378,9 @@ export class Skills {
         },
 
         cta: {
-          title: 'Quer conhecer meu trabalho na prática?',
+          title: 'Vamos transformar ideias em soluções?',
           description:
-            'Veja alguns dos projetos em que essas tecnologias e conhecimentos são aplicados para construir soluções reais.',
+            'Estou aberto a novos desafios, oportunidades profissionais e conexões com pessoas que acreditam no poder da tecnologia.',
           contactButton: 'Contato',
           experiencesButton: 'Ver experiências',
         },
@@ -575,9 +575,9 @@ export class Skills {
         },
 
         cta: {
-          title: 'Want to see my work in practice?',
+          title: 'Shall we turn ideas into solutions?',
           description:
-            'Explore some of the projects where these technologies and skills are applied to build real-world solutions.',
+            'I am open to new challenges, professional opportunities, and connections with people who believe in the power of technology.',
           contactButton: 'Contact',
           experiencesButton: 'View experiences',
         },
@@ -775,9 +775,9 @@ export class Skills {
         },
 
         cta: {
-          title: '¿Quieres conocer mi trabajo en la práctica?',
+          title: '¿Transformamos ideas en soluciones?',
           description:
-            'Conoce algunos de los proyectos en los que estas tecnologías y conocimientos se aplican para construir soluciones reales.',
+            'Estoy abierto a nuevos desafíos, oportunidades profesionales y conexiones con personas que creen en el poder de la tecnología.',
           contactButton: 'Contacto',
           experiencesButton: 'Ver experiencias',
         },
