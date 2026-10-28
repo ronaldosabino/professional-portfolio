@@ -36,6 +36,10 @@ body {
   color: var(--bs-light) !important;
 }
 
+[data-bs-theme='dark'] .text-dark {
+  color: var(--bs-light) !important;
+}
+
 /* Primary */
 /* [data-bs-theme='dark'] .btn-outline-primary {
   background-color: var(--bs-primary) !important;
